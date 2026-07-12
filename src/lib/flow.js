@@ -9,8 +9,10 @@ import { SLOT_W, driverValue } from "./layout.js";
 
 const pathGen = line().x((d) => d[0]).y((d) => d[1]).curve(curveBasis);
 
-const MINW = SLOT_W * 0.22;
-const MAXW = SLOT_W * 1.35;
+// Fourchette large : les mastodontes (Chine, Rome, Empire britannique) deviennent
+// de gros fleuves, les petits États de minces filets (rapport ~10:1).
+const MINW = 8;
+const MAXW = SLOT_W * 3.6;
 
 // Largeur par type (mode « équilibré »).
 function widthByType(p) {
@@ -27,27 +29,21 @@ function profile(t, tp) {
 }
 
 export function buildFlow(layout, widthBy = "even") {
-    // Bornes de √(valeur) pour normaliser en mode superficie/population.
-    let lo = Infinity;
-    let hi = -Infinity;
+    // Médiane de la valeur (référence) pour le mode superficie/population.
+    let ref = 1;
     if (widthBy !== "even") {
-        for (const a of layout.labelAnchors) {
-            const v = driverValue(a.p, widthBy);
-            if (v != null) {
-                const s = Math.sqrt(v);
-                if (s < lo) lo = s;
-                if (s > hi) hi = s;
-            }
-        }
+        const vals = layout.labelAnchors
+            .map((a) => driverValue(a.p, widthBy))
+            .filter((v) => v != null)
+            .sort((a, b) => a - b);
+        if (vals.length) ref = vals[vals.length >> 1] || 1;
     }
-    const span = hi - lo || 1;
 
     const maxWidth = (p) => {
         if (widthBy === "even") return widthByType(p);
         const v = driverValue(p, widthBy);
         if (v == null) return MINW;
-        const norm = (Math.sqrt(v) - lo) / span;
-        return MINW + norm * (MAXW - MINW);
+        return Math.max(MINW, Math.min(MAXW, SLOT_W * Math.pow(v / ref, 0.42)));
     };
 
     const streams = [];
@@ -69,7 +65,9 @@ export function buildFlow(layout, widthBy = "even") {
             left.push([cx - half, yy]);
             right.push([cx + half, yy]);
         }
-        streams.push({ p, d: pathGen(left.concat(right.reverse())) + "Z", color: civColor(p.civ) });
+        streams.push({ p, d: pathGen(left.concat(right.reverse())) + "Z", color: civColor(p.civ), mw });
     }
+    // Les gros fleuves d'abord (dessous), les filets par-dessus : rien n'est masqué.
+    streams.sort((a, b) => b.mw - a.mw);
     return { streams };
 }

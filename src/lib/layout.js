@@ -41,25 +41,20 @@ export function computeMosaic(polities, widthBy = "even") {
     const byRegion = new Map(REGIONS.map((r) => [r.key, []]));
     for (const p of polities) if (byRegion.has(p.region)) byRegion.get(p.region).push(p);
 
-    // Bornes de √(valeur) pour normaliser la largeur en mode superficie/population.
-    let lo = Infinity;
-    let hi = -Infinity;
-    if (widthBy !== "even") {
-        for (const p of polities) {
-            const v = driverValue(p, widthBy);
-            if (v != null) {
-                const s = Math.sqrt(v);
-                if (s < lo) lo = s;
-                if (s > hi) hi = s;
-            }
-        }
+    // Mosaïque : la largeur du bloc ∈ [0.4, 1] × la voie (grand empire = voie
+    // pleine, petit État = fin), sans jamais déborder la voie (grille continue).
+    let areaMax = 1;
+    let popMax = 1;
+    for (const p of polities) {
+        if (p.area > areaMax) areaMax = p.area;
+        if (p.pop > popMax) popMax = p.pop;
     }
-    const dspan = hi - lo || 1;
     const wfrac = (p) => {
         if (widthBy === "even") return 1;
         const v = driverValue(p, widthBy);
-        if (v == null) return 0.26;
-        return 0.28 + 0.72 * ((Math.sqrt(v) - lo) / dspan);
+        if (v == null) return 0.45;
+        const ref = widthBy === "area" ? areaMax : popMax;
+        return Math.max(0.45, Math.min(1, Math.pow(v / ref, 0.26)));
     };
 
     const blocks = [];
