@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+:root {
+    color-scheme: light;
+    --ink: #1e293b;
+    --paper: #fbf7ee;
+}
+
+html,
+body,
+#root {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    font-family: system-ui, "PingFang SC", "Microsoft YaHei", -apple-system, sans-serif;
+    background: var(--paper);
+    color: var(--ink);
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Le canevas de la frise n'a jamais de sélection de texte accidentelle au drag. */
+.timeline-svg {
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: none;
+    display: block;
+}

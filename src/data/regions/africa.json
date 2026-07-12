@@ -1,0 +1,698 @@
+[
+  {
+    "id": "early-dynastic-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -3100,
+    "end": -2686,
+    "name": { "zh": "古埃及早王朝", "en": "Early Dynastic Egypt", "fr": "Égypte thinite" },
+    "desc": {
+      "zh": "上下埃及首次统一，确立法老王权与象形文字。",
+      "en": "Unification of Upper and Lower Egypt; birth of pharaonic kingship and hieroglyphs.",
+      "fr": "Première unification de la Haute et Basse-Égypte ; naissance de la royauté pharaonique."
+    },
+    "lat": 29.85,
+    "lng": 31.25,
+    "tags": ["kingdom", "dynasty"]
+  },
+  {
+    "id": "old-kingdom-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -2686,
+    "end": -2181,
+    "name": { "zh": "古埃及古王国", "en": "Old Kingdom of Egypt", "fr": "Ancien Empire égyptien" },
+    "desc": {
+      "zh": "金字塔时代，中央集权的法老国家臻于鼎盛。",
+      "en": "The Age of the Pyramids; height of the centralized pharaonic state.",
+      "fr": "L'âge des pyramides ; apogée de l'État pharaonique centralisé."
+    },
+    "lat": 29.85,
+    "lng": 31.25,
+    "tags": ["kingdom", "dynasty"],
+    "peak": -2560
+  },
+  {
+    "id": "first-intermediate-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -2181,
+    "end": -2055,
+    "name": { "zh": "第一中间期", "en": "First Intermediate Period", "fr": "Première Période intermédiaire" },
+    "desc": {
+      "zh": "中央权力崩溃、地方割据的分裂时期。",
+      "en": "Collapse of central authority; an era of regional fragmentation.",
+      "fr": "Effondrement du pouvoir central ; époque de fragmentation régionale."
+    },
+    "lat": 29.1,
+    "lng": 30.9,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "middle-kingdom-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -2055,
+    "end": -1650,
+    "name": { "zh": "古埃及中王国", "en": "Middle Kingdom of Egypt", "fr": "Moyen Empire égyptien" },
+    "desc": {
+      "zh": "埃及重归统一，文学与艺术的古典时代。",
+      "en": "Reunified Egypt; classical age of literature and art.",
+      "fr": "Égypte réunifiée ; âge classique de la littérature et de l'art."
+    },
+    "lat": 25.7,
+    "lng": 32.6,
+    "tags": ["kingdom", "dynasty"],
+    "peak": -1900
+  },
+  {
+    "id": "second-intermediate-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -1650,
+    "end": -1550,
+    "name": { "zh": "第二中间期", "en": "Second Intermediate Period", "fr": "Deuxième Période intermédiaire" },
+    "desc": {
+      "zh": "希克索斯人统治北方，埃及再度分裂。",
+      "en": "Hyksos rule in the north; Egypt fragments once more.",
+      "fr": "Domination des Hyksôs au nord ; l'Égypte se morcelle de nouveau."
+    },
+    "lat": 30.8,
+    "lng": 31.8,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "new-kingdom-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -1550,
+    "end": -1069,
+    "name": { "zh": "古埃及新王国", "en": "New Kingdom of Egypt", "fr": "Nouvel Empire égyptien" },
+    "desc": {
+      "zh": "埃及帝国的黄金时代，图特摩斯与拉美西斯远征扩张。",
+      "en": "Golden age of the Egyptian empire; conquests of Thutmose and Ramesses.",
+      "fr": "Âge d'or de l'empire égyptien ; conquêtes de Thoutmôsis et Ramsès."
+    },
+    "lat": 25.7,
+    "lng": 32.6,
+    "tags": ["empire", "kingdom"],
+    "peak": -1279
+  },
+  {
+    "id": "third-intermediate-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -1069,
+    "end": -664,
+    "name": { "zh": "第三中间期", "en": "Third Intermediate Period", "fr": "Troisième Période intermédiaire" },
+    "desc": {
+      "zh": "王权衰落，利比亚与库施势力相继掌权。",
+      "en": "Decline of royal power; Libyan and Kushite dynasties rule in turn.",
+      "fr": "Déclin du pouvoir royal ; dynasties libyennes puis koushites au pouvoir."
+    },
+    "lat": 30.98,
+    "lng": 31.88,
+    "tags": ["kingdom", "dynasty"]
+  },
+  {
+    "id": "late-period-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -664,
+    "end": -332,
+    "name": { "zh": "后期埃及", "en": "Late Period of Egypt", "fr": "Basse époque égyptienne" },
+    "desc": {
+      "zh": "本土王朝复兴，最终被波斯与马其顿征服。",
+      "en": "Revival of native dynasties before Persian and Macedonian conquest.",
+      "fr": "Renaissance des dynasties indigènes avant les conquêtes perse et macédonienne."
+    },
+    "lat": 30.97,
+    "lng": 30.77,
+    "tags": ["kingdom", "dynasty"]
+  },
+  {
+    "id": "ptolemaic-kingdom",
+    "region": "africa",
+    "civ": "egypt",
+    "start": -305,
+    "end": -30,
+    "name": { "zh": "托勒密王朝", "en": "Ptolemaic Kingdom", "fr": "Royaume ptolémaïque" },
+    "desc": {
+      "zh": "希腊化的埃及王朝，亚历山大成为地中海学术中心。",
+      "en": "Hellenistic Egyptian dynasty; Alexandria becomes a Mediterranean center of learning.",
+      "fr": "Dynastie hellénistique d'Égypte ; Alexandrie, foyer de savoir méditerranéen."
+    },
+    "lat": 31.2,
+    "lng": 29.9,
+    "tags": ["kingdom", "dynasty"],
+    "peak": -246
+  },
+  {
+    "id": "modern-egypt",
+    "region": "africa",
+    "civ": "egypt",
+    "start": 1953,
+    "end": 2026,
+    "name": { "zh": "现代埃及", "en": "Modern Egypt", "fr": "Égypte moderne" },
+    "desc": {
+      "zh": "1953年建立的共和国，阿拉伯世界的政治文化中心。",
+      "en": "Republic founded in 1953; a political and cultural hub of the Arab world.",
+      "fr": "République fondée en 1953 ; pôle politique et culturel du monde arabe."
+    },
+    "lat": 30.04,
+    "lng": 31.24,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "kingdom-of-kerma",
+    "region": "africa",
+    "civ": "nubia",
+    "start": -2500,
+    "end": -1500,
+    "name": { "zh": "克尔玛王国", "en": "Kingdom of Kerma", "fr": "Royaume de Kerma" },
+    "desc": {
+      "zh": "努比亚最早的城市文明与王国，与埃及长期对峙。",
+      "en": "Nubia's earliest urban kingdom; long-time rival of Egypt.",
+      "fr": "Premier royaume urbain de Nubie ; rival de longue date de l'Égypte."
+    },
+    "lat": 19.6,
+    "lng": 30.4,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "kingdom-of-kush",
+    "region": "africa",
+    "civ": "nubia",
+    "start": -1070,
+    "end": -350,
+    "name": { "zh": "库施王国", "en": "Kingdom of Kush", "fr": "Royaume de Koush" },
+    "desc": {
+      "zh": "努比亚强国，第25王朝一度统治整个埃及。",
+      "en": "Nubian power whose 25th Dynasty briefly ruled all Egypt.",
+      "fr": "Puissance nubienne dont la XXVe dynastie régna un temps sur toute l'Égypte."
+    },
+    "lat": 18.5,
+    "lng": 31.8,
+    "tags": ["kingdom"],
+    "peak": -700
+  },
+  {
+    "id": "kingdom-of-meroe",
+    "region": "africa",
+    "civ": "nubia",
+    "start": -350,
+    "end": 350,
+    "name": { "zh": "麦罗埃王国", "en": "Kingdom of Meroë", "fr": "Royaume de Méroé" },
+    "desc": {
+      "zh": "库施后期都城，铁器冶炼与自有文字的中心。",
+      "en": "Later Kushite capital; center of ironworking with its own script.",
+      "fr": "Capitale koushite tardive ; centre de métallurgie du fer à l'écriture propre."
+    },
+    "lat": 16.93,
+    "lng": 33.72,
+    "tags": ["kingdom"],
+    "peak": 100
+  },
+  {
+    "id": "carthage",
+    "region": "africa",
+    "civ": "carthage",
+    "start": -814,
+    "end": -146,
+    "name": { "zh": "迦太基", "en": "Carthage", "fr": "Carthage" },
+    "desc": {
+      "zh": "腓尼基人建立的地中海海洋帝国，与罗马争霸。",
+      "en": "Phoenician maritime empire; Rome's great rival in the Punic Wars.",
+      "fr": "Empire maritime phénicien ; grand rival de Rome lors des guerres puniques."
+    },
+    "lat": 36.85,
+    "lng": 10.32,
+    "tags": ["empire", "city-state"],
+    "peak": -300
+  },
+  {
+    "id": "numidia",
+    "region": "africa",
+    "civ": "north-africa",
+    "start": -202,
+    "end": -46,
+    "name": { "zh": "努米底亚", "en": "Numidia", "fr": "Numidie" },
+    "desc": {
+      "zh": "北非柏柏尔人王国，马西尼萨统一东西努米底亚。",
+      "en": "Berber kingdom of North Africa unified under Masinissa.",
+      "fr": "Royaume berbère d'Afrique du Nord unifié sous Massinissa."
+    },
+    "lat": 36.36,
+    "lng": 6.61,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "fatimid-caliphate",
+    "region": "africa",
+    "civ": "north-africa",
+    "start": 909,
+    "end": 1171,
+    "name": { "zh": "法蒂玛王朝", "en": "Fatimid Caliphate", "fr": "Califat fatimide" },
+    "desc": {
+      "zh": "什叶派哈里发国，建开罗、创爱资哈尔。",
+      "en": "Shia caliphate that founded Cairo and al-Azhar.",
+      "fr": "Califat chiite fondateur du Caire et d'al-Azhar."
+    },
+    "lat": 30.04,
+    "lng": 31.24,
+    "tags": ["caliphate", "dynasty"],
+    "peak": 1000
+  },
+  {
+    "id": "ayyubid-dynasty",
+    "region": "africa",
+    "civ": "north-africa",
+    "start": 1171,
+    "end": 1250,
+    "name": { "zh": "阿尤布王朝", "en": "Ayyubid Dynasty", "fr": "Dynastie ayyoubide" },
+    "desc": {
+      "zh": "萨拉丁创建的逊尼派王朝，抗击十字军收复耶路撒冷。",
+      "en": "Sunni dynasty of Saladin that retook Jerusalem from the Crusaders.",
+      "fr": "Dynastie sunnite de Saladin qui reprit Jérusalem aux croisés."
+    },
+    "lat": 30.04,
+    "lng": 31.24,
+    "tags": ["sultanate", "dynasty"]
+  },
+  {
+    "id": "mamluk-sultanate",
+    "region": "africa",
+    "civ": "north-africa",
+    "start": 1250,
+    "end": 1517,
+    "name": { "zh": "马穆鲁克苏丹国", "en": "Mamluk Sultanate", "fr": "Sultanat mamelouk" },
+    "desc": {
+      "zh": "奴隶军人建立的苏丹国，击退蒙古与十字军。",
+      "en": "Sultanate of slave-soldiers that repelled Mongols and Crusaders.",
+      "fr": "Sultanat de soldats-esclaves ayant repoussé Mongols et croisés."
+    },
+    "lat": 30.04,
+    "lng": 31.24,
+    "tags": ["sultanate"],
+    "peak": 1300
+  },
+  {
+    "id": "almoravid-dynasty",
+    "region": "africa",
+    "civ": "north-africa",
+    "start": 1040,
+    "end": 1147,
+    "name": { "zh": "阿尔摩拉维王朝", "en": "Almoravid Dynasty", "fr": "Dynastie almoravide" },
+    "desc": {
+      "zh": "柏柏尔人宗教军事运动，统治马格里布与安达卢斯。",
+      "en": "Berber religious-military movement ruling the Maghreb and al-Andalus.",
+      "fr": "Mouvement religio-militaire berbère régnant sur le Maghreb et al-Andalus."
+    },
+    "lat": 31.63,
+    "lng": -7.99,
+    "tags": ["empire", "dynasty"]
+  },
+  {
+    "id": "almohad-caliphate",
+    "region": "africa",
+    "civ": "north-africa",
+    "start": 1121,
+    "end": 1269,
+    "name": { "zh": "阿尔摩哈德王朝", "en": "Almohad Caliphate", "fr": "Califat almohade" },
+    "desc": {
+      "zh": "继阿尔摩拉维之后的柏柏尔帝国，横跨北非与西班牙。",
+      "en": "Berber empire succeeding the Almoravids across North Africa and Spain.",
+      "fr": "Empire berbère succédant aux Almoravides, du Maghreb à l'Espagne."
+    },
+    "lat": 31.63,
+    "lng": -7.99,
+    "tags": ["caliphate", "empire"],
+    "peak": 1180
+  },
+  {
+    "id": "kingdom-of-aksum",
+    "region": "africa",
+    "civ": "aksum-ethiopia",
+    "start": 100,
+    "end": 940,
+    "name": { "zh": "阿克苏姆帝国", "en": "Kingdom of Aksum", "fr": "Royaume d'Aksoum" },
+    "desc": {
+      "zh": "红海贸易帝国，早期基督教国家，自铸货币。",
+      "en": "Red Sea trading empire; early Christian state that minted its own coins.",
+      "fr": "Empire commerçant de la mer Rouge ; État chrétien précoce battant monnaie."
+    },
+    "lat": 14.13,
+    "lng": 38.72,
+    "tags": ["empire", "kingdom"],
+    "peak": 350
+  },
+  {
+    "id": "zagwe-dynasty",
+    "region": "africa",
+    "civ": "aksum-ethiopia",
+    "start": 1137,
+    "end": 1270,
+    "name": { "zh": "扎格维王朝", "en": "Zagwe Dynasty", "fr": "Dynastie Zagwé" },
+    "desc": {
+      "zh": "埃塞俄比亚王朝，以拉利贝拉岩凿教堂闻名。",
+      "en": "Ethiopian dynasty famed for the rock-hewn churches of Lalibela.",
+      "fr": "Dynastie éthiopienne célèbre pour les églises rupestres de Lalibela."
+    },
+    "lat": 12.03,
+    "lng": 39.04,
+    "tags": ["kingdom", "dynasty"]
+  },
+  {
+    "id": "ethiopian-empire",
+    "region": "africa",
+    "civ": "aksum-ethiopia",
+    "start": 1270,
+    "end": 1974,
+    "name": { "zh": "埃塞俄比亚帝国", "en": "Ethiopian Empire", "fr": "Empire d'Éthiopie" },
+    "desc": {
+      "zh": "所罗门王朝统治的帝国，长期抵御外侮直至1974年。",
+      "en": "Solomonic empire that resisted foreign conquest until 1974.",
+      "fr": "Empire salomonien qui résista aux conquêtes étrangères jusqu'en 1974."
+    },
+    "lat": 12.6,
+    "lng": 37.47,
+    "tags": ["empire", "dynasty"],
+    "peak": 1450
+  },
+  {
+    "id": "ghana-empire",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 300,
+    "end": 1240,
+    "name": { "zh": "加纳帝国", "en": "Ghana Empire", "fr": "Empire du Ghana" },
+    "desc": {
+      "zh": "西非最早的黄金贸易帝国（瓦加杜）。",
+      "en": "West Africa's earliest gold-trading empire (Wagadou).",
+      "fr": "Premier empire aurifère d'Afrique de l'Ouest (Wagadou)."
+    },
+    "lat": 15.77,
+    "lng": -7.98,
+    "tags": ["empire", "kingdom"],
+    "peak": 1000
+  },
+  {
+    "id": "mali-empire",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 1235,
+    "end": 1670,
+    "name": { "zh": "马里帝国", "en": "Mali Empire", "fr": "Empire du Mali" },
+    "desc": {
+      "zh": "西非黄金帝国，曼萨·穆萨的朝觐名震四方。",
+      "en": "West African gold empire; famed for Mansa Musa's pilgrimage.",
+      "fr": "Empire aurifère ouest-africain ; célèbre pèlerinage de Mansa Moussa."
+    },
+    "lat": 11.4,
+    "lng": -8.7,
+    "tags": ["empire"],
+    "peak": 1337
+  },
+  {
+    "id": "songhai-empire",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 1464,
+    "end": 1591,
+    "name": { "zh": "桑海帝国", "en": "Songhai Empire", "fr": "Empire songhaï" },
+    "desc": {
+      "zh": "西非最大帝国，加奥与廷巴克图为学术中心。",
+      "en": "Largest West African empire; Gao and Timbuktu as centers of learning.",
+      "fr": "Plus vaste empire ouest-africain ; Gao et Tombouctou, foyers de savoir."
+    },
+    "lat": 16.27,
+    "lng": -0.04,
+    "tags": ["empire"],
+    "peak": 1520
+  },
+  {
+    "id": "kanem-bornu-empire",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 700,
+    "end": 1900,
+    "name": { "zh": "卡内姆-博尔努帝国", "en": "Kanem–Bornu Empire", "fr": "Empire du Kanem-Bornou" },
+    "desc": {
+      "zh": "环乍得湖的长命贸易帝国，跨撒哈拉商路枢纽。",
+      "en": "Long-lived trading empire around Lake Chad on trans-Saharan routes.",
+      "fr": "Empire commerçant durable autour du lac Tchad, sur les routes transsahariennes."
+    },
+    "lat": 13.0,
+    "lng": 14.5,
+    "tags": ["empire", "sultanate"],
+    "peak": 1600
+  },
+  {
+    "id": "kingdom-of-benin",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 1180,
+    "end": 1897,
+    "name": { "zh": "贝宁王国", "en": "Kingdom of Benin", "fr": "Royaume du Bénin" },
+    "desc": {
+      "zh": "西非森林王国，以青铜与象牙艺术闻名。",
+      "en": "West African forest kingdom renowned for its bronze and ivory art.",
+      "fr": "Royaume forestier ouest-africain réputé pour son art du bronze et de l'ivoire."
+    },
+    "lat": 6.34,
+    "lng": 5.62,
+    "tags": ["kingdom"],
+    "peak": 1600
+  },
+  {
+    "id": "oyo-empire",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 1300,
+    "end": 1896,
+    "name": { "zh": "奥约帝国", "en": "Oyo Empire", "fr": "Empire d'Oyo" },
+    "desc": {
+      "zh": "约鲁巴人骑兵帝国，主宰西非奴隶贸易。",
+      "en": "Yoruba cavalry empire dominant in the West African slave trade.",
+      "fr": "Empire yorouba de cavalerie dominant la traite ouest-africaine."
+    },
+    "lat": 8.9,
+    "lng": 4.4,
+    "tags": ["empire", "kingdom"],
+    "peak": 1750
+  },
+  {
+    "id": "ashanti-empire",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 1701,
+    "end": 1901,
+    "name": { "zh": "阿散蒂帝国", "en": "Ashanti Empire", "fr": "Empire ashanti" },
+    "desc": {
+      "zh": "阿坎人黄金联邦，多次抵抗英国殖民。",
+      "en": "Akan gold confederacy that repeatedly resisted British rule.",
+      "fr": "Confédération aurifère akan ayant résisté à plusieurs reprises aux Britanniques."
+    },
+    "lat": 6.69,
+    "lng": -1.62,
+    "tags": ["confederation", "kingdom"],
+    "peak": 1820
+  },
+  {
+    "id": "sokoto-caliphate",
+    "region": "africa",
+    "civ": "west-africa",
+    "start": 1804,
+    "end": 1903,
+    "name": { "zh": "索科托哈里发国", "en": "Sokoto Caliphate", "fr": "Califat de Sokoto" },
+    "desc": {
+      "zh": "富拉尼圣战建立的哈里发国，19世纪西非最大国家。",
+      "en": "Fulani jihad caliphate; the largest West African state of the 19th century.",
+      "fr": "Califat né du djihad peul ; plus grand État ouest-africain du XIXe siècle."
+    },
+    "lat": 13.06,
+    "lng": 5.24,
+    "tags": ["caliphate", "empire"],
+    "peak": 1850
+  },
+  {
+    "id": "great-zimbabwe",
+    "region": "africa",
+    "civ": "bantu",
+    "start": 1100,
+    "end": 1450,
+    "name": { "zh": "大津巴布韦王国", "en": "Kingdom of Great Zimbabwe", "fr": "Royaume du Grand Zimbabwe" },
+    "desc": {
+      "zh": "绍纳人石城王国，撒哈拉以南非洲最大石构遗址。",
+      "en": "Shona stone-city kingdom; largest stone ruins in sub-Saharan Africa.",
+      "fr": "Royaume shona à cité de pierre ; plus grandes ruines de pierre d'Afrique subsaharienne."
+    },
+    "lat": -20.27,
+    "lng": 30.93,
+    "tags": ["kingdom", "city-state"],
+    "peak": 1300
+  },
+  {
+    "id": "mutapa-empire",
+    "region": "africa",
+    "civ": "bantu",
+    "start": 1430,
+    "end": 1760,
+    "name": { "zh": "穆塔帕帝国", "en": "Kingdom of Mutapa", "fr": "Royaume du Mutapa" },
+    "desc": {
+      "zh": "继大津巴布韦的绍纳帝国，掌控黄金与象牙贸易。",
+      "en": "Shona empire succeeding Great Zimbabwe; controlled the gold and ivory trade.",
+      "fr": "Empire shona successeur du Grand Zimbabwe ; maître du commerce de l'or et de l'ivoire."
+    },
+    "lat": -16.5,
+    "lng": 31.0,
+    "tags": ["empire", "kingdom"],
+    "peak": 1500
+  },
+  {
+    "id": "kingdom-of-kongo",
+    "region": "africa",
+    "civ": "bantu",
+    "start": 1390,
+    "end": 1914,
+    "name": { "zh": "刚果王国", "en": "Kingdom of Kongo", "fr": "Royaume du Kongo" },
+    "desc": {
+      "zh": "中非班图王国，最早与欧洲通使的非洲强国之一。",
+      "en": "Central African Bantu kingdom; among the first to engage diplomatically with Europe.",
+      "fr": "Royaume bantou d'Afrique centrale ; l'un des premiers à traiter avec l'Europe."
+    },
+    "lat": -6.27,
+    "lng": 14.24,
+    "tags": ["kingdom"],
+    "peak": 1550
+  },
+  {
+    "id": "zulu-kingdom",
+    "region": "africa",
+    "civ": "bantu",
+    "start": 1816,
+    "end": 1897,
+    "name": { "zh": "祖鲁王国", "en": "Zulu Kingdom", "fr": "Royaume zoulou" },
+    "desc": {
+      "zh": "沙卡建立的军事王国，重创英军于伊桑德尔瓦纳。",
+      "en": "Militarized kingdom of Shaka; crushed the British at Isandlwana.",
+      "fr": "Royaume militarisé de Chaka ; écrasa les Britanniques à Isandhlwana."
+    },
+    "lat": -28.5,
+    "lng": 31.4,
+    "tags": ["kingdom"],
+    "peak": 1828
+  },
+  {
+    "id": "scramble-for-africa",
+    "region": "africa",
+    "civ": "colonial-africa",
+    "start": 1881,
+    "end": 1960,
+    "name": { "zh": "欧洲瓜分非洲", "en": "Colonial Africa", "fr": "Afrique coloniale" },
+    "desc": {
+      "zh": "欧洲列强瓜分非洲，殖民统治延续至20世纪独立浪潮。",
+      "en": "European powers partition Africa; colonial rule until the mid-20th-century independence wave.",
+      "fr": "Les puissances européennes se partagent l'Afrique ; domination coloniale jusqu'aux indépendances."
+    },
+    "lat": 0.0,
+    "lng": 20.0,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "republic-of-south-africa",
+    "region": "africa",
+    "civ": "modern-africa",
+    "start": 1910,
+    "end": 2026,
+    "name": { "zh": "南非", "en": "South Africa", "fr": "Afrique du Sud" },
+    "desc": {
+      "zh": "1910年成立的联邦，历经种族隔离至1994年民主转型。",
+      "en": "Union formed in 1910; an apartheid state until the 1994 democratic transition.",
+      "fr": "Union formée en 1910 ; régime d'apartheid jusqu'à la transition démocratique de 1994."
+    },
+    "lat": -25.75,
+    "lng": 28.19,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "nigeria",
+    "region": "africa",
+    "civ": "modern-africa",
+    "start": 1960,
+    "end": 2026,
+    "name": { "zh": "尼日利亚", "en": "Nigeria", "fr": "Nigéria" },
+    "desc": {
+      "zh": "非洲人口最多的国家，1960年脱离英国独立。",
+      "en": "Africa's most populous nation; independent from Britain in 1960.",
+      "fr": "Pays le plus peuplé d'Afrique ; indépendant du Royaume-Uni en 1960."
+    },
+    "lat": 9.08,
+    "lng": 7.4,
+    "tags": ["modern-state", "federation"]
+  },
+  {
+    "id": "republic-of-ghana",
+    "region": "africa",
+    "civ": "modern-africa",
+    "start": 1957,
+    "end": 2026,
+    "name": { "zh": "加纳共和国", "en": "Republic of Ghana", "fr": "République du Ghana" },
+    "desc": {
+      "zh": "撒哈拉以南非洲首个独立的殖民地（1957）。",
+      "en": "First sub-Saharan colony to gain independence (1957).",
+      "fr": "Première colonie d'Afrique subsaharienne à devenir indépendante (1957)."
+    },
+    "lat": 5.6,
+    "lng": -0.19,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "algeria",
+    "region": "africa",
+    "civ": "modern-africa",
+    "start": 1962,
+    "end": 2026,
+    "name": { "zh": "阿尔及利亚", "en": "Algeria", "fr": "Algérie" },
+    "desc": {
+      "zh": "经八年独立战争于1962年脱离法国。",
+      "en": "Independent from France in 1962 after an eight-year war.",
+      "fr": "Indépendante de la France en 1962 après huit ans de guerre."
+    },
+    "lat": 36.75,
+    "lng": 3.06,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "kenya",
+    "region": "africa",
+    "civ": "modern-africa",
+    "start": 1963,
+    "end": 2026,
+    "name": { "zh": "肯尼亚", "en": "Kenya", "fr": "Kenya" },
+    "desc": {
+      "zh": "东非国家，经茅茅起义后于1963年独立。",
+      "en": "East African nation independent in 1963 after the Mau Mau uprising.",
+      "fr": "Nation d'Afrique de l'Est indépendante en 1963 après la révolte des Mau-Mau."
+    },
+    "lat": -1.29,
+    "lng": 36.82,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "dr-congo",
+    "region": "africa",
+    "civ": "modern-africa",
+    "start": 1960,
+    "end": 2026,
+    "name": { "zh": "刚果民主共和国", "en": "Democratic Republic of the Congo", "fr": "République démocratique du Congo" },
+    "desc": {
+      "zh": "中部非洲大国，1960年脱离比利时独立。",
+      "en": "Vast Central African state independent from Belgium in 1960.",
+      "fr": "Vaste État d'Afrique centrale indépendant de la Belgique en 1960."
+    },
+    "lat": -4.32,
+    "lng": 15.31,
+    "tags": ["modern-state", "republic"]
+  }
+]

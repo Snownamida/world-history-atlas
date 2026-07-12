@@ -1,0 +1,1017 @@
+[
+  {
+    "id": "xia",
+    "region": "east-asia",
+    "civ": "china",
+    "start": -2070,
+    "end": -1600,
+    "name": { "zh": "夏朝", "en": "Xia Dynasty", "fr": "Dynastie Xia" },
+    "desc": {
+      "zh": "传说中的中国第一个王朝，青铜萌芽与二里头文化。",
+      "en": "China's legendary first dynasty; early bronze and Erlitou culture.",
+      "fr": "Première dynastie légendaire de Chine ; bronze et culture d'Erlitou."
+    },
+    "lat": 34.7,
+    "lng": 112.5,
+    "tags": ["dynasty"],
+    "peak": -1800
+  },
+  {
+    "id": "shang",
+    "region": "east-asia",
+    "civ": "china",
+    "start": -1600,
+    "end": -1046,
+    "name": { "zh": "商朝", "en": "Shang Dynasty", "fr": "Dynastie Shang" },
+    "desc": {
+      "zh": "已证实的最早王朝，甲骨文与青铜器高度发达。",
+      "en": "Earliest attested dynasty; oracle-bone script and fine bronzes.",
+      "fr": "Plus ancienne dynastie attestée ; écriture oraculaire et bronzes."
+    },
+    "lat": 36.1,
+    "lng": 114.35,
+    "tags": ["dynasty"],
+    "peak": -1200
+  },
+  {
+    "id": "western-zhou",
+    "region": "east-asia",
+    "civ": "china",
+    "start": -1046,
+    "end": -771,
+    "name": { "zh": "西周", "en": "Western Zhou", "fr": "Zhou occidentaux" },
+    "desc": {
+      "zh": "建立分封制与天命观，礼乐制度奠基。",
+      "en": "Founded feudal fiefs and the Mandate of Heaven; ritual order.",
+      "fr": "Fonde les fiefs féodaux et le Mandat du Ciel ; ordre rituel."
+    },
+    "lat": 34.27,
+    "lng": 108.9,
+    "tags": ["dynasty"],
+    "peak": -1000
+  },
+  {
+    "id": "eastern-zhou",
+    "region": "east-asia",
+    "civ": "china",
+    "start": -770,
+    "end": -221,
+    "name": { "zh": "东周（春秋战国）", "en": "Eastern Zhou", "fr": "Zhou orientaux" },
+    "desc": {
+      "zh": "春秋战国时期，诸侯争霸、百家争鸣。",
+      "en": "Spring–Autumn and Warring States; contending states and philosophies.",
+      "fr": "Printemps-Automne et Royaumes combattants ; rivalités et philosophies."
+    },
+    "lat": 34.62,
+    "lng": 112.45,
+    "tags": ["dynasty"],
+    "peak": -350
+  },
+  {
+    "id": "qin",
+    "region": "east-asia",
+    "civ": "china",
+    "start": -221,
+    "end": -206,
+    "name": { "zh": "秦朝", "en": "Qin Dynasty", "fr": "Dynastie Qin" },
+    "desc": {
+      "zh": "中国第一个中央集权帝国，统一文字度量衡。",
+      "en": "First centralized Chinese empire; unified script and measures.",
+      "fr": "Premier empire centralisé chinois ; unifie écriture et mesures."
+    },
+    "lat": 34.35,
+    "lng": 108.7,
+    "tags": ["empire", "dynasty"],
+    "peak": -214
+  },
+  {
+    "id": "western-han",
+    "region": "east-asia",
+    "civ": "china",
+    "start": -206,
+    "end": 9,
+    "name": { "zh": "西汉", "en": "Western Han", "fr": "Han occidentaux" },
+    "desc": {
+      "zh": "巩固帝制、开辟丝绸之路，塑造汉民族。",
+      "en": "Consolidated empire, opened the Silk Road, forged Han identity.",
+      "fr": "Consolide l'empire, ouvre la route de la soie, forge l'identité han."
+    },
+    "lat": 34.27,
+    "lng": 108.9,
+    "tags": ["empire", "dynasty"],
+    "peak": -100
+  },
+  {
+    "id": "xin-dynasty",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 9,
+    "end": 23,
+    "name": { "zh": "新莽", "en": "Xin Dynasty", "fr": "Dynastie Xin" },
+    "desc": {
+      "zh": "王莽篡汉建立的短命王朝，推行复古改制。",
+      "en": "Wang Mang's short-lived usurping dynasty and radical reforms.",
+      "fr": "Éphémère dynastie usurpatrice de Wang Mang et ses réformes."
+    },
+    "lat": 34.27,
+    "lng": 108.9,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "eastern-han",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 25,
+    "end": 220,
+    "name": { "zh": "东汉", "en": "Eastern Han", "fr": "Han orientaux" },
+    "desc": {
+      "zh": "重建汉室，造纸术兴，末年黄巾乱起。",
+      "en": "Restored Han rule; papermaking rose; ended in Yellow Turban chaos.",
+      "fr": "Restaure les Han ; essor du papier ; chute dans le chaos des Turbans."
+    },
+    "lat": 34.62,
+    "lng": 112.45,
+    "tags": ["empire", "dynasty"],
+    "peak": 90
+  },
+  {
+    "id": "three-kingdoms",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 220,
+    "end": 280,
+    "name": { "zh": "三国", "en": "Three Kingdoms", "fr": "Trois Royaumes" },
+    "desc": {
+      "zh": "魏、蜀、吴三国鼎立，群雄逐鹿。",
+      "en": "Wei, Shu and Wu contend in a fabled age of war.",
+      "fr": "Wei, Shu et Wu se disputent le pouvoir, âge légendaire de guerre."
+    },
+    "lat": 32.0,
+    "lng": 112.0,
+    "tags": ["kingdom"],
+    "peak": 250
+  },
+  {
+    "id": "western-jin",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 266,
+    "end": 316,
+    "name": { "zh": "西晋", "en": "Western Jin", "fr": "Jin occidentaux" },
+    "desc": {
+      "zh": "短暂统一后陷入八王之乱与永嘉之乱。",
+      "en": "Briefly reunified China before civil war and northern invasions.",
+      "fr": "Réunifie brièvement avant guerres civiles et invasions du nord."
+    },
+    "lat": 34.62,
+    "lng": 112.45,
+    "tags": ["empire", "dynasty"],
+    "peak": 280
+  },
+  {
+    "id": "eastern-jin",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 317,
+    "end": 420,
+    "name": { "zh": "东晋", "en": "Eastern Jin", "fr": "Jin orientaux" },
+    "desc": {
+      "zh": "晋室南渡建康，与北方十六国并立。",
+      "en": "Jin court fled south to Jiankang, facing the Sixteen Kingdoms.",
+      "fr": "La cour Jin se réfugie au sud, face aux Seize Royaumes."
+    },
+    "lat": 32.06,
+    "lng": 118.8,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "northern-southern-dynasties",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 420,
+    "end": 589,
+    "name": { "zh": "南北朝", "en": "Northern and Southern Dynasties", "fr": "Dynasties du Nord et du Sud" },
+    "desc": {
+      "zh": "南北分裂对峙，佛教兴盛、民族融合。",
+      "en": "North–South division; Buddhism flourished amid ethnic mixing.",
+      "fr": "Division nord-sud ; essor du bouddhisme et brassage ethnique."
+    },
+    "lat": 33.0,
+    "lng": 115.0,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "sui",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 581,
+    "end": 618,
+    "name": { "zh": "隋朝", "en": "Sui Dynasty", "fr": "Dynastie Sui" },
+    "desc": {
+      "zh": "重新统一中国，开凿大运河与科举萌芽。",
+      "en": "Reunified China; built the Grand Canal and early exams.",
+      "fr": "Réunifie la Chine ; Grand Canal et premiers examens impériaux."
+    },
+    "lat": 34.27,
+    "lng": 108.9,
+    "tags": ["empire", "dynasty"],
+    "peak": 610
+  },
+  {
+    "id": "tang",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 618,
+    "end": 907,
+    "name": { "zh": "唐朝", "en": "Tang Dynasty", "fr": "Dynastie Tang" },
+    "desc": {
+      "zh": "中华文明鼎盛，长安为世界都会，诗歌辉煌。",
+      "en": "Golden age; cosmopolitan Chang'an and a flowering of poetry.",
+      "fr": "Âge d'or ; Chang'an cosmopolite et apogée de la poésie."
+    },
+    "lat": 34.27,
+    "lng": 108.9,
+    "tags": ["empire", "dynasty"],
+    "peak": 750
+  },
+  {
+    "id": "five-dynasties-ten-kingdoms",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 907,
+    "end": 960,
+    "name": { "zh": "五代十国", "en": "Five Dynasties and Ten Kingdoms", "fr": "Cinq Dynasties et Dix Royaumes" },
+    "desc": {
+      "zh": "唐亡后北方五代更替、南方十国割据。",
+      "en": "Post-Tang fragmentation: five northern dynasties, ten southern states.",
+      "fr": "Après les Tang : cinq dynasties au nord, dix royaumes au sud."
+    },
+    "lat": 34.8,
+    "lng": 114.3,
+    "tags": ["kingdom", "dynasty"]
+  },
+  {
+    "id": "northern-song",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 960,
+    "end": 1127,
+    "name": { "zh": "北宋", "en": "Northern Song", "fr": "Song du Nord" },
+    "desc": {
+      "zh": "经济文化繁荣，活字印刷、火药、纸币问世。",
+      "en": "Economic and cultural boom; printing, gunpowder, paper money.",
+      "fr": "Essor économique et culturel ; imprimerie, poudre, papier-monnaie."
+    },
+    "lat": 34.8,
+    "lng": 114.3,
+    "tags": ["empire", "dynasty"],
+    "peak": 1100
+  },
+  {
+    "id": "southern-song",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1127,
+    "end": 1279,
+    "name": { "zh": "南宋", "en": "Southern Song", "fr": "Song du Sud" },
+    "desc": {
+      "zh": "南渡临安，海上贸易与理学昌盛，终亡于元。",
+      "en": "Court at Lin'an; maritime trade and Neo-Confucianism, felled by Yuan.",
+      "fr": "Cour à Lin'an ; commerce maritime et néo-confucianisme, vaincue par les Yuan."
+    },
+    "lat": 30.25,
+    "lng": 120.15,
+    "tags": ["dynasty"],
+    "peak": 1200
+  },
+  {
+    "id": "liao",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 916,
+    "end": 1125,
+    "name": { "zh": "辽朝（契丹）", "en": "Liao Dynasty", "fr": "Dynastie Liao" },
+    "desc": {
+      "zh": "契丹人所建北方王朝，行南北面官制。",
+      "en": "Khitan-founded northern empire with dual Han–steppe administration.",
+      "fr": "Empire khitan du nord, à double administration han et steppique."
+    },
+    "lat": 43.96,
+    "lng": 119.4,
+    "tags": ["empire", "dynasty"],
+    "peak": 1000
+  },
+  {
+    "id": "jin-jurchen",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1115,
+    "end": 1234,
+    "name": { "zh": "金朝（女真）", "en": "Jin Dynasty (Jurchen)", "fr": "Dynastie Jin (Jurchen)" },
+    "desc": {
+      "zh": "女真人所建，灭辽与北宋，据有华北。",
+      "en": "Jurchen empire; destroyed Liao and Northern Song, ruled north China.",
+      "fr": "Empire jurchen ; détruit les Liao et Song du nord, règne au nord."
+    },
+    "lat": 39.9,
+    "lng": 116.4,
+    "tags": ["empire", "dynasty"],
+    "peak": 1200
+  },
+  {
+    "id": "western-xia",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1038,
+    "end": 1227,
+    "name": { "zh": "西夏", "en": "Western Xia", "fr": "Xia occidentaux" },
+    "desc": {
+      "zh": "党项人建于西北，创西夏文，控丝路要道。",
+      "en": "Tangut kingdom in the northwest; own script, controlled the Silk Road.",
+      "fr": "Royaume tangoute du nord-ouest ; écriture propre, route de la soie."
+    },
+    "lat": 38.5,
+    "lng": 106.2,
+    "tags": ["kingdom", "dynasty"],
+    "peak": 1100
+  },
+  {
+    "id": "yuan",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1271,
+    "end": 1368,
+    "name": { "zh": "元朝", "en": "Yuan Dynasty", "fr": "Dynastie Yuan" },
+    "desc": {
+      "zh": "蒙古人建立的大一统王朝，首次由游牧民族统一全国。",
+      "en": "Mongol-founded dynasty; first nomad conquest of all China.",
+      "fr": "Dynastie mongole ; première conquête nomade de toute la Chine."
+    },
+    "lat": 39.9,
+    "lng": 116.4,
+    "tags": ["empire", "dynasty"],
+    "peak": 1300
+  },
+  {
+    "id": "ming",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1368,
+    "end": 1644,
+    "name": { "zh": "明朝", "en": "Ming Dynasty", "fr": "Dynastie Ming" },
+    "desc": {
+      "zh": "恢复汉统，郑和下西洋，营建长城与紫禁城。",
+      "en": "Restored Han rule; Zheng He's voyages, Great Wall and Forbidden City.",
+      "fr": "Restaure les Han ; voyages de Zheng He, Grande Muraille, Cité interdite."
+    },
+    "lat": 39.9,
+    "lng": 116.4,
+    "tags": ["empire", "dynasty"],
+    "peak": 1450
+  },
+  {
+    "id": "qing",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1636,
+    "end": 1912,
+    "name": { "zh": "清朝", "en": "Qing Dynasty", "fr": "Dynastie Qing" },
+    "desc": {
+      "zh": "满洲人建立的末代王朝，疆域鼎盛后衰于列强。",
+      "en": "Manchu-founded last dynasty; vast at its height, then declined.",
+      "fr": "Dernière dynastie mandchoue ; vaste à son apogée puis déclin."
+    },
+    "lat": 39.9,
+    "lng": 116.4,
+    "tags": ["empire", "dynasty"],
+    "peak": 1790
+  },
+  {
+    "id": "republic-of-china",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1912,
+    "end": 1949,
+    "name": { "zh": "中华民国", "en": "Republic of China", "fr": "République de Chine" },
+    "desc": {
+      "zh": "推翻帝制建立的共和国，历经军阀与抗战。",
+      "en": "Republic that ended imperial rule; warlords and war with Japan.",
+      "fr": "République qui met fin à l'empire ; seigneurs de guerre et guerre."
+    },
+    "lat": 32.06,
+    "lng": 118.8,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "prc",
+    "region": "east-asia",
+    "civ": "china",
+    "start": 1949,
+    "end": 2025,
+    "name": { "zh": "中华人民共和国", "en": "People's Republic of China", "fr": "République populaire de Chine" },
+    "desc": {
+      "zh": "中国共产党建立的社会主义国家，现代化崛起。",
+      "en": "Socialist state under the Communist Party; a modern rising power.",
+      "fr": "État socialiste dirigé par le Parti communiste ; puissance montante."
+    },
+    "lat": 39.9,
+    "lng": 116.4,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "gojoseon",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": -2333,
+    "end": -108,
+    "name": { "zh": "古朝鲜", "en": "Gojoseon", "fr": "Gojoseon" },
+    "desc": {
+      "zh": "朝鲜半岛首个国家，含箕子与卫满朝鲜。",
+      "en": "Korea's first state, including the Gija and Wiman phases.",
+      "fr": "Premier État coréen, incluant les phases Gija et Wiman."
+    },
+    "lat": 39.0,
+    "lng": 125.75,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "goguryeo",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": -37,
+    "end": 668,
+    "name": { "zh": "高句丽", "en": "Goguryeo", "fr": "Goguryeo" },
+    "desc": {
+      "zh": "三国之一，据有满洲与半岛北部，武力强盛。",
+      "en": "Northern Three-Kingdoms power spanning Manchuria and the peninsula.",
+      "fr": "Puissance des Trois Royaumes, sur la Mandchourie et le nord."
+    },
+    "lat": 40.0,
+    "lng": 125.5,
+    "tags": ["kingdom"],
+    "peak": 500
+  },
+  {
+    "id": "baekje",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": -18,
+    "end": 660,
+    "name": { "zh": "百济", "en": "Baekje", "fr": "Baekje" },
+    "desc": {
+      "zh": "西南王国，海上交流频繁，文化传入日本。",
+      "en": "Southwestern kingdom; maritime ties that seeded culture in Japan.",
+      "fr": "Royaume du sud-ouest ; liens maritimes, culture transmise au Japon."
+    },
+    "lat": 36.3,
+    "lng": 127.1,
+    "tags": ["kingdom"],
+    "peak": 375
+  },
+  {
+    "id": "silla",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": -57,
+    "end": 668,
+    "name": { "zh": "新罗", "en": "Silla", "fr": "Silla" },
+    "desc": {
+      "zh": "东南王国，骨品制与佛教，后统一半岛。",
+      "en": "Southeastern kingdom; bone-rank system, later unified Korea.",
+      "fr": "Royaume du sud-est ; système de rangs, puis unifie la Corée."
+    },
+    "lat": 35.85,
+    "lng": 129.2,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "unified-silla",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": 668,
+    "end": 935,
+    "name": { "zh": "统一新罗", "en": "Unified Silla", "fr": "Silla unifié" },
+    "desc": {
+      "zh": "首次统一朝鲜半岛，佛教艺术鼎盛。",
+      "en": "First unification of Korea; peak of Buddhist art.",
+      "fr": "Première unification de la Corée ; apogée de l'art bouddhique."
+    },
+    "lat": 35.85,
+    "lng": 129.2,
+    "tags": ["kingdom"],
+    "peak": 750
+  },
+  {
+    "id": "goryeo",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": 918,
+    "end": 1392,
+    "name": { "zh": "高丽", "en": "Goryeo", "fr": "Goryeo" },
+    "desc": {
+      "zh": "国名 Korea 之源，金属活字与高丽青瓷。",
+      "en": "Source of the name \"Korea\"; metal type and celadon ware.",
+      "fr": "Origine du nom « Corée » ; caractères métalliques et céladon."
+    },
+    "lat": 37.97,
+    "lng": 126.55,
+    "tags": ["kingdom", "dynasty"],
+    "peak": 1100
+  },
+  {
+    "id": "joseon",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": 1392,
+    "end": 1897,
+    "name": { "zh": "朝鲜王朝", "en": "Joseon Dynasty", "fr": "Dynastie Joseon" },
+    "desc": {
+      "zh": "儒教立国，创制谚文，绵延五百余年。",
+      "en": "Confucian state that created Hangul and lasted five centuries.",
+      "fr": "État confucéen, créateur du hangul, cinq siècles de règne."
+    },
+    "lat": 37.57,
+    "lng": 126.98,
+    "tags": ["kingdom", "dynasty"],
+    "peak": 1450
+  },
+  {
+    "id": "korean-empire",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": 1897,
+    "end": 1910,
+    "name": { "zh": "大韩帝国", "en": "Korean Empire", "fr": "Empire coréen" },
+    "desc": {
+      "zh": "高宗称帝推行光武改革，力图近代化。",
+      "en": "Short-lived empire pursuing modernizing Gwangmu reforms.",
+      "fr": "Éphémère empire menant les réformes modernisatrices Gwangmu."
+    },
+    "lat": 37.57,
+    "lng": 126.98,
+    "tags": ["empire", "modern-state"]
+  },
+  {
+    "id": "japanese-colonial-korea",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": 1910,
+    "end": 1945,
+    "name": { "zh": "日据朝鲜", "en": "Japanese Colonial Korea", "fr": "Corée sous domination japonaise" },
+    "desc": {
+      "zh": "日本吞并朝鲜，实行殖民统治与同化。",
+      "en": "Japan's annexation and colonial rule of Korea.",
+      "fr": "Annexion japonaise et domination coloniale de la Corée."
+    },
+    "lat": 37.57,
+    "lng": 126.98,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "south-korea",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": 1948,
+    "end": 2025,
+    "name": { "zh": "大韩民国", "en": "South Korea", "fr": "Corée du Sud" },
+    "desc": {
+      "zh": "半岛南部共和国，经济腾飞的发达国家。",
+      "en": "Southern republic; a developed economy that rose rapidly.",
+      "fr": "République du sud ; économie développée à essor rapide."
+    },
+    "lat": 37.57,
+    "lng": 126.98,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "north-korea",
+    "region": "east-asia",
+    "civ": "korea",
+    "start": 1948,
+    "end": 2025,
+    "name": { "zh": "朝鲜民主主义人民共和国", "en": "North Korea", "fr": "Corée du Nord" },
+    "desc": {
+      "zh": "半岛北部社会主义国家，金氏世袭领导。",
+      "en": "Northern socialist state under hereditary Kim leadership.",
+      "fr": "État socialiste du nord sous la dynastie héréditaire Kim."
+    },
+    "lat": 39.02,
+    "lng": 125.75,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "yayoi",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": -300,
+    "end": 250,
+    "name": { "zh": "弥生文化", "en": "Yayoi Culture", "fr": "Culture Yayoi" },
+    "desc": {
+      "zh": "引入水稻与冶金的弥生文化，奠定日本农业社会。",
+      "en": "Yayoi culture brought wet-rice farming and metallurgy to Japan.",
+      "fr": "La culture Yayoi apporte la riziculture et la métallurgie."
+    },
+    "lat": 34.0,
+    "lng": 133.0,
+    "tags": ["culture"]
+  },
+  {
+    "id": "yamato",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 250,
+    "end": 538,
+    "name": { "zh": "大和政权", "en": "Yamato State", "fr": "État Yamato" },
+    "desc": {
+      "zh": "古坟时代大和王权崛起，统合列岛。",
+      "en": "Kofun-era Yamato polity that unified the Japanese islands.",
+      "fr": "Pouvoir Yamato de l'époque Kofun unifiant l'archipel."
+    },
+    "lat": 34.5,
+    "lng": 135.8,
+    "tags": ["kingdom"],
+    "peak": 450
+  },
+  {
+    "id": "asuka",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 538,
+    "end": 710,
+    "name": { "zh": "飞鸟时代", "en": "Asuka Period", "fr": "Époque Asuka" },
+    "desc": {
+      "zh": "佛教传入、大化改新，建立律令国家。",
+      "en": "Buddhism arrived; Taika Reforms built a law-based state.",
+      "fr": "Arrivée du bouddhisme ; réformes Taika et État de droit."
+    },
+    "lat": 34.47,
+    "lng": 135.82,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "nara",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 710,
+    "end": 794,
+    "name": { "zh": "奈良时代", "en": "Nara Period", "fr": "Époque Nara" },
+    "desc": {
+      "zh": "定都平城京，律令制盛，编纂记纪。",
+      "en": "Capital at Heijō-kyō; ritsuryō state and early chronicles.",
+      "fr": "Capitale à Heijō-kyō ; État ritsuryō et premières chroniques."
+    },
+    "lat": 34.68,
+    "lng": 135.8,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "heian",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 794,
+    "end": 1185,
+    "name": { "zh": "平安时代", "en": "Heian Period", "fr": "Époque Heian" },
+    "desc": {
+      "zh": "平安京贵族文化鼎盛，假名与《源氏物语》。",
+      "en": "Aristocratic golden age; kana script and The Tale of Genji.",
+      "fr": "Âge d'or aristocratique ; le kana et le Dit du Genji."
+    },
+    "lat": 35.0,
+    "lng": 135.77,
+    "tags": ["dynasty"],
+    "peak": 1000
+  },
+  {
+    "id": "kamakura-shogunate",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 1185,
+    "end": 1333,
+    "name": { "zh": "镰仓幕府", "en": "Kamakura Shogunate", "fr": "Shogunat de Kamakura" },
+    "desc": {
+      "zh": "首个武家政权，武士主政，抗击蒙古。",
+      "en": "First samurai government; warrior rule that repelled the Mongols.",
+      "fr": "Premier gouvernement samouraï ; repousse les Mongols."
+    },
+    "lat": 35.32,
+    "lng": 139.55,
+    "tags": ["dynasty"],
+    "peak": 1250
+  },
+  {
+    "id": "muromachi-shogunate",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 1336,
+    "end": 1573,
+    "name": { "zh": "室町幕府", "en": "Muromachi Shogunate", "fr": "Shogunat de Muromachi" },
+    "desc": {
+      "zh": "足利幕府治世，禅宗与能乐兴，后陷战国。",
+      "en": "Ashikaga rule; Zen and Noh flourished before the Warring States.",
+      "fr": "Régime Ashikaga ; essor du zen et du nô, puis guerres civiles."
+    },
+    "lat": 35.0,
+    "lng": 135.77,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "sengoku-azuchi-momoyama",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 1467,
+    "end": 1603,
+    "name": { "zh": "战国·安土桃山时代", "en": "Sengoku & Azuchi–Momoyama", "fr": "Sengoku et Azuchi-Momoyama" },
+    "desc": {
+      "zh": "群雄割据的战国乱世，织田丰臣走向统一。",
+      "en": "Warring-States chaos, then Oda–Toyotomi reunification.",
+      "fr": "Chaos des provinces en guerre, puis réunification Oda-Toyotomi."
+    },
+    "lat": 35.2,
+    "lng": 136.9,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "edo-shogunate",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 1603,
+    "end": 1868,
+    "name": { "zh": "江户幕府", "en": "Edo (Tokugawa) Shogunate", "fr": "Shogunat d'Edo (Tokugawa)" },
+    "desc": {
+      "zh": "德川长期和平锁国，町人文化繁荣。",
+      "en": "Tokugawa peace and seclusion; thriving townsman culture.",
+      "fr": "Paix Tokugawa et fermeture ; essor de la culture urbaine."
+    },
+    "lat": 35.68,
+    "lng": 139.75,
+    "tags": ["dynasty"],
+    "peak": 1700
+  },
+  {
+    "id": "empire-of-japan",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 1868,
+    "end": 1947,
+    "name": { "zh": "大日本帝国", "en": "Empire of Japan", "fr": "Empire du Japon" },
+    "desc": {
+      "zh": "明治维新后迅速近代化，扩张至二战战败。",
+      "en": "Meiji modernization and expansion, until defeat in WWII.",
+      "fr": "Modernisation Meiji et expansion, jusqu'à la défaite de 1945."
+    },
+    "lat": 35.68,
+    "lng": 139.75,
+    "tags": ["empire", "modern-state"],
+    "peak": 1942
+  },
+  {
+    "id": "japan",
+    "region": "east-asia",
+    "civ": "japan",
+    "start": 1947,
+    "end": 2025,
+    "name": { "zh": "日本国", "en": "Japan", "fr": "Japon" },
+    "desc": {
+      "zh": "战后和平宪法下的经济强国与民主国家。",
+      "en": "Post-war democracy and economic power under a pacifist charter.",
+      "fr": "Démocratie d'après-guerre, puissance économique pacifiste."
+    },
+    "lat": 35.68,
+    "lng": 139.75,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "van-lang-au-lac",
+    "region": "east-asia",
+    "civ": "vietnam",
+    "start": -700,
+    "end": -179,
+    "name": { "zh": "文郎·瓯雒", "en": "Văn Lang – Âu Lạc", "fr": "Văn Lang – Âu Lạc" },
+    "desc": {
+      "zh": "越南传说中的最早政权，红河流域的雒越先民。",
+      "en": "Vietnam's legendary first states in the Red River delta.",
+      "fr": "Premiers États légendaires du Vietnam, delta du fleuve Rouge."
+    },
+    "lat": 21.3,
+    "lng": 105.4,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "chinese-domination-vietnam",
+    "region": "east-asia",
+    "civ": "vietnam",
+    "start": -111,
+    "end": 938,
+    "name": { "zh": "北属时期", "en": "Chinese Domination", "fr": "Domination chinoise" },
+    "desc": {
+      "zh": "越南长期由中原王朝直辖，938 年白藤江独立。",
+      "en": "A millennium of Chinese rule, ending with independence in 938.",
+      "fr": "Millénaire de domination chinoise, indépendance en 938."
+    },
+    "lat": 21.03,
+    "lng": 105.85,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "ly-dynasty",
+    "region": "east-asia",
+    "civ": "vietnam",
+    "start": 1009,
+    "end": 1225,
+    "name": { "zh": "李朝", "en": "Lý Dynasty", "fr": "Dynastie Lý" },
+    "desc": {
+      "zh": "首个长期本土王朝，定都升龙，尊儒兴佛。",
+      "en": "First lasting native dynasty; capital Thăng Long, Confucian-Buddhist.",
+      "fr": "Première dynastie nationale durable ; capitale Thăng Long."
+    },
+    "lat": 21.03,
+    "lng": 105.85,
+    "tags": ["dynasty"],
+    "peak": 1100
+  },
+  {
+    "id": "tran-dynasty",
+    "region": "east-asia",
+    "civ": "vietnam",
+    "start": 1225,
+    "end": 1400,
+    "name": { "zh": "陈朝", "en": "Trần Dynasty", "fr": "Dynastie Trần" },
+    "desc": {
+      "zh": "三度击退蒙元入侵，创字喃文学。",
+      "en": "Repelled three Mongol invasions; developed chữ Nôm writing.",
+      "fr": "Repousse trois invasions mongoles ; essor du chữ Nôm."
+    },
+    "lat": 21.03,
+    "lng": 105.85,
+    "tags": ["dynasty"],
+    "peak": 1288
+  },
+  {
+    "id": "le-dynasty",
+    "region": "east-asia",
+    "civ": "vietnam",
+    "start": 1428,
+    "end": 1789,
+    "name": { "zh": "黎朝", "en": "Lê Dynasty", "fr": "Dynastie Lê" },
+    "desc": {
+      "zh": "黎利抗明复国，洪德律例与南进拓土。",
+      "en": "Lê Lợi expelled the Ming; Hồng Đức code and southward expansion.",
+      "fr": "Lê Lợi chasse les Ming ; code Hồng Đức et expansion au sud."
+    },
+    "lat": 21.03,
+    "lng": 105.85,
+    "tags": ["dynasty"],
+    "peak": 1470
+  },
+  {
+    "id": "nguyen-dynasty",
+    "region": "east-asia",
+    "civ": "vietnam",
+    "start": 1802,
+    "end": 1945,
+    "name": { "zh": "阮朝", "en": "Nguyễn Dynasty", "fr": "Dynastie Nguyễn" },
+    "desc": {
+      "zh": "越南末代王朝，定都顺化，后沦为法国保护国。",
+      "en": "Vietnam's last dynasty at Huế, later a French protectorate.",
+      "fr": "Dernière dynastie vietnamienne à Huế, puis protectorat français."
+    },
+    "lat": 16.47,
+    "lng": 107.6,
+    "tags": ["empire", "dynasty"]
+  },
+  {
+    "id": "vietnam",
+    "region": "east-asia",
+    "civ": "vietnam",
+    "start": 1945,
+    "end": 2025,
+    "name": { "zh": "越南", "en": "Vietnam", "fr": "Viêt Nam" },
+    "desc": {
+      "zh": "历经独立战争与南北统一的社会主义共和国。",
+      "en": "Socialist republic forged by wars of independence and reunification.",
+      "fr": "République socialiste née des guerres d'indépendance et de réunification."
+    },
+    "lat": 21.03,
+    "lng": 105.85,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "xiongnu",
+    "region": "east-asia",
+    "civ": "steppe",
+    "start": -209,
+    "end": 155,
+    "name": { "zh": "匈奴", "en": "Xiongnu", "fr": "Xiongnu" },
+    "desc": {
+      "zh": "蒙古高原首个游牧帝国，长期与汉朝对抗。",
+      "en": "First steppe nomad empire; long rival of Han China.",
+      "fr": "Premier empire nomade des steppes ; rival des Han."
+    },
+    "lat": 47.9,
+    "lng": 106.9,
+    "tags": ["confederation", "empire"],
+    "peak": -176
+  },
+  {
+    "id": "xianbei",
+    "region": "east-asia",
+    "civ": "steppe",
+    "start": 93,
+    "end": 234,
+    "name": { "zh": "鲜卑", "en": "Xianbei", "fr": "Xianbei" },
+    "desc": {
+      "zh": "继匈奴而兴的游牧联盟，后裔建北朝诸国。",
+      "en": "Nomad confederation after the Xiongnu; ancestors of northern dynasties.",
+      "fr": "Confédération nomade après les Xiongnu ; ancêtres des dynasties du nord."
+    },
+    "lat": 45.0,
+    "lng": 116.0,
+    "tags": ["confederation"],
+    "peak": 180
+  },
+  {
+    "id": "rouran-khaganate",
+    "region": "east-asia",
+    "civ": "steppe",
+    "start": 330,
+    "end": 555,
+    "name": { "zh": "柔然", "en": "Rouran Khaganate", "fr": "Khaganat rouran" },
+    "desc": {
+      "zh": "首用「可汗」称号的草原霸权，压制北魏。",
+      "en": "Steppe power that first used the title \"khagan,\" pressing Northern Wei.",
+      "fr": "Puissance des steppes, première à porter le titre de « khagan »."
+    },
+    "lat": 47.9,
+    "lng": 106.9,
+    "tags": ["khanate", "confederation"],
+    "peak": 450
+  },
+  {
+    "id": "gokturk-khaganate",
+    "region": "east-asia",
+    "civ": "steppe",
+    "start": 552,
+    "end": 744,
+    "name": { "zh": "突厥汗国", "en": "Göktürk Khaganate", "fr": "Khaganat des Köktürks" },
+    "desc": {
+      "zh": "突厥汗国横跨欧亚，创突厥文，分东西两部。",
+      "en": "Türk empire across Eurasia; own runic script, split east and west.",
+      "fr": "Empire turc eurasien ; écriture runique, scindé en deux."
+    },
+    "lat": 47.5,
+    "lng": 102.5,
+    "tags": ["khanate", "empire"],
+    "peak": 580
+  },
+  {
+    "id": "uyghur-khaganate",
+    "region": "east-asia",
+    "civ": "steppe",
+    "start": 744,
+    "end": 840,
+    "name": { "zh": "回鹘汗国", "en": "Uyghur Khaganate", "fr": "Khaganat ouïghour" },
+    "desc": {
+      "zh": "回鹘汗国助唐平乱，摩尼教盛，后西迁。",
+      "en": "Uyghur khaganate; aided Tang, embraced Manichaeism, later migrated west.",
+      "fr": "Khaganat ouïghour ; allié des Tang, manichéen, migre vers l'ouest."
+    },
+    "lat": 47.4,
+    "lng": 102.65,
+    "tags": ["khanate"],
+    "peak": 800
+  },
+  {
+    "id": "mongol-empire",
+    "region": "east-asia",
+    "civ": "steppe",
+    "start": 1206,
+    "end": 1368,
+    "name": { "zh": "蒙古帝国", "en": "Mongol Empire", "fr": "Empire mongol" },
+    "desc": {
+      "zh": "成吉思汗所建，史上最大陆地帝国，横跨欧亚。",
+      "en": "Genghis Khan's realm; the largest contiguous land empire in history.",
+      "fr": "Empire de Gengis Khan ; plus vaste empire terrestre continu."
+    },
+    "lat": 47.2,
+    "lng": 102.83,
+    "tags": ["empire", "khanate"],
+    "peak": 1279
+  },
+  {
+    "id": "northern-yuan",
+    "region": "east-asia",
+    "civ": "steppe",
+    "start": 1368,
+    "end": 1635,
+    "name": { "zh": "北元", "en": "Northern Yuan", "fr": "Yuan du Nord" },
+    "desc": {
+      "zh": "元廷北退后延续的蒙古政权，终为清所并。",
+      "en": "Mongol regime after the Yuan retreat north, absorbed by the Qing.",
+      "fr": "Régime mongol après le repli des Yuan, absorbé par les Qing."
+    },
+    "lat": 47.9,
+    "lng": 106.9,
+    "tags": ["khanate", "dynasty"],
+    "peak": 1400
+  }
+]

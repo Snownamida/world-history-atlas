@@ -1,0 +1,718 @@
+[
+  {
+    "id": "sumerian-city-states",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -3500,
+    "end": -2334,
+    "name": { "zh": "苏美尔城邦", "en": "Sumerian City-States", "fr": "Cités-États sumériennes" },
+    "desc": {
+      "zh": "人类最早文明之一，发明楔形文字与城市。",
+      "en": "One of humanity's earliest civilizations; invented cuneiform and cities.",
+      "fr": "L'une des premières civilisations ; invente l'écriture cunéiforme et la cité."
+    },
+    "lat": 31.32,
+    "lng": 45.64,
+    "tags": ["city-state", "culture"],
+    "peak": -2600
+  },
+  {
+    "id": "akkadian-empire",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -2334,
+    "end": -2154,
+    "name": { "zh": "阿卡德帝国", "en": "Akkadian Empire", "fr": "Empire d'Akkad" },
+    "desc": {
+      "zh": "萨尔贡建立，史上第一个多民族帝国。",
+      "en": "Founded by Sargon; the first multi-ethnic empire in history.",
+      "fr": "Fondé par Sargon ; premier empire multiethnique de l'histoire."
+    },
+    "lat": 33.1,
+    "lng": 44.1,
+    "tags": ["empire"],
+    "peak": -2300
+  },
+  {
+    "id": "ur-third-dynasty",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -2112,
+    "end": -2004,
+    "name": { "zh": "乌尔第三王朝", "en": "Third Dynasty of Ur", "fr": "Troisième dynastie d'Ur" },
+    "desc": {
+      "zh": "苏美尔文明复兴，官僚制与法典的雏形。",
+      "en": "Sumerian revival; early bureaucracy and law codes.",
+      "fr": "Renaissance sumérienne ; bureaucratie et premiers codes de lois."
+    },
+    "lat": 30.96,
+    "lng": 46.1,
+    "tags": ["dynasty", "kingdom"]
+  },
+  {
+    "id": "old-babylonian-empire",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -1894,
+    "end": -1595,
+    "name": { "zh": "古巴比伦王国", "en": "Old Babylonian Empire", "fr": "Empire paléo-babylonien" },
+    "desc": {
+      "zh": "汉谟拉比统一两河，颁布著名法典。",
+      "en": "Hammurabi united Mesopotamia and issued his famous law code.",
+      "fr": "Hammurabi unifie la Mésopotamie et promulgue son célèbre code."
+    },
+    "lat": 32.54,
+    "lng": 44.42,
+    "tags": ["kingdom", "empire"],
+    "peak": -1750
+  },
+  {
+    "id": "old-assyrian-period",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -2025,
+    "end": -1363,
+    "name": { "zh": "古亚述时期", "en": "Old Assyrian Period", "fr": "Période paléo-assyrienne" },
+    "desc": {
+      "zh": "以阿舒尔为中心的早期亚述城邦与商网。",
+      "en": "Early Assyrian city-state of Assur and its trade network.",
+      "fr": "Cité-État assyrienne d'Assur et son réseau commercial primitif."
+    },
+    "lat": 35.46,
+    "lng": 43.26,
+    "tags": ["city-state", "kingdom"]
+  },
+  {
+    "id": "middle-assyrian-kingdom",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -1363,
+    "end": -912,
+    "name": { "zh": "中亚述王国", "en": "Middle Assyrian Kingdom", "fr": "Royaume médio-assyrien" },
+    "desc": {
+      "zh": "亚述崛起为地区强国，扩张至两河北部。",
+      "en": "Assyria rises as a regional power across northern Mesopotamia.",
+      "fr": "L'Assyrie devient une puissance régionale en Haute-Mésopotamie."
+    },
+    "lat": 35.46,
+    "lng": 43.26,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "neo-assyrian-empire",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -911,
+    "end": -609,
+    "name": { "zh": "新亚述帝国", "en": "Neo-Assyrian Empire", "fr": "Empire néo-assyrien" },
+    "desc": {
+      "zh": "古代最强军事帝国，横跨西亚至埃及。",
+      "en": "Antiquity's mightiest military empire, from West Asia to Egypt.",
+      "fr": "Le plus puissant empire militaire antique, de l'Asie à l'Égypte."
+    },
+    "lat": 36.36,
+    "lng": 43.15,
+    "tags": ["empire"],
+    "peak": -670
+  },
+  {
+    "id": "neo-babylonian-empire",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": -626,
+    "end": -539,
+    "name": { "zh": "新巴比伦王国", "en": "Neo-Babylonian Empire", "fr": "Empire néo-babylonien" },
+    "desc": {
+      "zh": "尼布甲尼撒二世重建巴比伦，灭犹大王国。",
+      "en": "Nebuchadnezzar II rebuilt Babylon and destroyed Judah.",
+      "fr": "Nabuchodonosor II rebâtit Babylone et détruit le royaume de Juda."
+    },
+    "lat": 32.54,
+    "lng": 44.42,
+    "tags": ["empire", "kingdom"],
+    "peak": -570
+  },
+  {
+    "id": "modern-iraq",
+    "region": "middle-east",
+    "civ": "mesopotamia",
+    "start": 1932,
+    "end": 2026,
+    "name": { "zh": "伊拉克", "en": "Iraq", "fr": "Irak" },
+    "desc": {
+      "zh": "两河流域的现代民族国家，首都巴格达。",
+      "en": "Modern nation-state of the Tigris-Euphrates, capital Baghdad.",
+      "fr": "État-nation moderne du Tigre et de l'Euphrate, capitale Bagdad."
+    },
+    "lat": 33.31,
+    "lng": 44.36,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "elam",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": -2700,
+    "end": -539,
+    "name": { "zh": "埃兰", "en": "Elam", "fr": "Élam" },
+    "desc": {
+      "zh": "伊朗西南的古老文明，与两河长期并立。",
+      "en": "Ancient civilization of southwest Iran, long rival of Mesopotamia.",
+      "fr": "Civilisation antique du sud-ouest iranien, longtemps rivale de Sumer."
+    },
+    "lat": 32.19,
+    "lng": 48.25,
+    "tags": ["kingdom", "culture"]
+  },
+  {
+    "id": "median-empire",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": -678,
+    "end": -550,
+    "name": { "zh": "米底王国", "en": "Median Empire", "fr": "Empire mède" },
+    "desc": {
+      "zh": "首个统一伊朗高原的王国，助灭亚述。",
+      "en": "First Iranian kingdom to unify the plateau; helped topple Assyria.",
+      "fr": "Premier royaume iranien unifié ; contribue à la chute de l'Assyrie."
+    },
+    "lat": 34.8,
+    "lng": 48.5,
+    "tags": ["kingdom", "empire"]
+  },
+  {
+    "id": "achaemenid-empire",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": -550,
+    "end": -330,
+    "name": { "zh": "阿契美尼德波斯帝国", "en": "Achaemenid Empire", "fr": "Empire achéménide" },
+    "desc": {
+      "zh": "居鲁士创建，古代最大帝国横跨三洲。",
+      "en": "Founded by Cyrus; antiquity's largest empire across three continents.",
+      "fr": "Fondé par Cyrus ; plus vaste empire antique sur trois continents."
+    },
+    "lat": 29.94,
+    "lng": 52.89,
+    "tags": ["empire"],
+    "peak": -500
+  },
+  {
+    "id": "seleucid-empire",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": -312,
+    "end": -63,
+    "name": { "zh": "塞琉古帝国", "en": "Seleucid Empire", "fr": "Empire séleucide" },
+    "desc": {
+      "zh": "亚历山大帝国东部继承者，希腊化波斯。",
+      "en": "Hellenistic successor to Alexander in the east; ruled Persia.",
+      "fr": "Successeur hellénistique d'Alexandre en Orient ; règne sur la Perse."
+    },
+    "lat": 33.09,
+    "lng": 44.58,
+    "tags": ["empire"]
+  },
+  {
+    "id": "parthian-empire",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": -247,
+    "end": 224,
+    "name": { "zh": "帕提亚帝国", "en": "Parthian Empire", "fr": "Empire parthe" },
+    "desc": {
+      "zh": "安息帝国，长期与罗马争霸的伊朗政权。",
+      "en": "Parthian Iran; long-time rival of Rome for the East.",
+      "fr": "Empire parthe ; rival durable de Rome en Orient."
+    },
+    "lat": 33.09,
+    "lng": 44.58,
+    "tags": ["empire"]
+  },
+  {
+    "id": "sasanian-empire",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 224,
+    "end": 651,
+    "name": { "zh": "萨珊波斯帝国", "en": "Sasanian Empire", "fr": "Empire sassanide" },
+    "desc": {
+      "zh": "最后的前伊斯兰波斯帝国，罗马劲敌。",
+      "en": "Last pre-Islamic Persian empire and Rome's great rival.",
+      "fr": "Dernier empire perse préislamique et grand rival de Rome."
+    },
+    "lat": 33.09,
+    "lng": 44.58,
+    "tags": ["empire"],
+    "peak": 550
+  },
+  {
+    "id": "buyid-dynasty",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 934,
+    "end": 1062,
+    "name": { "zh": "白益王朝", "en": "Buyid Dynasty", "fr": "Dynastie bouyide" },
+    "desc": {
+      "zh": "什叶派伊朗王朝，挟持阿拔斯哈里发。",
+      "en": "Shia Iranian dynasty that dominated the Abbasid caliphs.",
+      "fr": "Dynastie iranienne chiite qui domine les califes abbassides."
+    },
+    "lat": 29.6,
+    "lng": 52.53,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "great-seljuk-empire",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1037,
+    "end": 1194,
+    "name": { "zh": "塞尔柱帝国", "en": "Great Seljuk Empire", "fr": "Empire seldjoukide" },
+    "desc": {
+      "zh": "突厥人建立的大帝国，复兴逊尼派伊朗。",
+      "en": "Turkic empire that revived Sunni power across Iran.",
+      "fr": "Empire turc qui restaure la puissance sunnite en Perse."
+    },
+    "lat": 32.65,
+    "lng": 51.67,
+    "tags": ["empire", "sultanate"]
+  },
+  {
+    "id": "ilkhanate",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1256,
+    "end": 1335,
+    "name": { "zh": "伊儿汗国", "en": "Ilkhanate", "fr": "Ilkhanat" },
+    "desc": {
+      "zh": "蒙古四大汗国之一，统治伊朗后皈依伊斯兰。",
+      "en": "Mongol khanate ruling Iran; later converted to Islam.",
+      "fr": "Khanat mongol régnant sur la Perse ; converti plus tard à l'islam."
+    },
+    "lat": 38.08,
+    "lng": 46.29,
+    "tags": ["khanate"]
+  },
+  {
+    "id": "safavid-empire",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1501,
+    "end": 1736,
+    "name": { "zh": "萨法维王朝", "en": "Safavid Empire", "fr": "Empire safavide" },
+    "desc": {
+      "zh": "确立什叶派为国教，奠定现代伊朗。",
+      "en": "Made Shia Islam the state faith and shaped modern Iran.",
+      "fr": "Impose le chiisme comme religion d'État et façonne l'Iran moderne."
+    },
+    "lat": 32.65,
+    "lng": 51.67,
+    "tags": ["empire", "dynasty"],
+    "peak": 1600
+  },
+  {
+    "id": "afsharid-dynasty",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1736,
+    "end": 1796,
+    "name": { "zh": "阿夫沙尔王朝", "en": "Afsharid Dynasty", "fr": "Dynastie afsharide" },
+    "desc": {
+      "zh": "纳迪尔沙建立的短暂军事王朝，远征印度。",
+      "en": "Short-lived military dynasty of Nader Shah; raided India.",
+      "fr": "Éphémère dynastie militaire de Nader Shah ; pille l'Inde."
+    },
+    "lat": 36.3,
+    "lng": 59.6,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "zand-dynasty",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1751,
+    "end": 1794,
+    "name": { "zh": "赞德王朝", "en": "Zand Dynasty", "fr": "Dynastie zand" },
+    "desc": {
+      "zh": "统治伊朗南部的短暂王朝，以设拉子为都。",
+      "en": "Brief dynasty ruling southern Iran from Shiraz.",
+      "fr": "Brève dynastie régnant sur le sud de l'Iran depuis Chiraz."
+    },
+    "lat": 29.6,
+    "lng": 52.53,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "qajar-dynasty",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1789,
+    "end": 1925,
+    "name": { "zh": "恺加王朝", "en": "Qajar Dynasty", "fr": "Dynastie qajare" },
+    "desc": {
+      "zh": "统治伊朗的突厥系王朝，遭列强蚕食。",
+      "en": "Turkic dynasty ruling Iran; eroded by European powers.",
+      "fr": "Dynastie turque de l'Iran, grignotée par les puissances."
+    },
+    "lat": 35.69,
+    "lng": 51.39,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "pahlavi-dynasty",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1925,
+    "end": 1979,
+    "name": { "zh": "巴列维王朝", "en": "Pahlavi Dynasty", "fr": "Dynastie Pahlavi" },
+    "desc": {
+      "zh": "伊朗末代王朝，推行现代化与西化。",
+      "en": "Iran's last dynasty; pursued modernization and Westernization.",
+      "fr": "Dernière dynastie iranienne ; modernisation et occidentalisation."
+    },
+    "lat": 35.69,
+    "lng": 51.39,
+    "tags": ["dynasty", "modern-state"]
+  },
+  {
+    "id": "islamic-republic-iran",
+    "region": "middle-east",
+    "civ": "persia",
+    "start": 1979,
+    "end": 2026,
+    "name": { "zh": "伊朗伊斯兰共和国", "en": "Islamic Republic of Iran", "fr": "République islamique d'Iran" },
+    "desc": {
+      "zh": "1979年革命后建立的什叶派神权共和国。",
+      "en": "Shia theocratic republic founded after the 1979 revolution.",
+      "fr": "République théocratique chiite née de la révolution de 1979."
+    },
+    "lat": 35.69,
+    "lng": 51.39,
+    "tags": ["republic", "theocracy", "modern-state"]
+  },
+  {
+    "id": "hittite-empire",
+    "region": "middle-east",
+    "civ": "anatolia",
+    "start": -1650,
+    "end": -1178,
+    "name": { "zh": "赫梯帝国", "en": "Hittite Empire", "fr": "Empire hittite" },
+    "desc": {
+      "zh": "安纳托利亚强国，最早大规模用铁。",
+      "en": "Anatolian power; early large-scale users of iron.",
+      "fr": "Puissance anatolienne ; pionniers de l'usage du fer."
+    },
+    "lat": 40.02,
+    "lng": 34.62,
+    "tags": ["empire"],
+    "peak": -1300
+  },
+  {
+    "id": "phrygia",
+    "region": "middle-east",
+    "civ": "anatolia",
+    "start": -1200,
+    "end": -675,
+    "name": { "zh": "弗里吉亚", "en": "Phrygia", "fr": "Phrygie" },
+    "desc": {
+      "zh": "赫梯之后的安纳托利亚王国，传说迈达斯王。",
+      "en": "Post-Hittite Anatolian kingdom of the legendary King Midas.",
+      "fr": "Royaume anatolien post-hittite du légendaire roi Midas."
+    },
+    "lat": 39.65,
+    "lng": 31.99,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "urartu",
+    "region": "middle-east",
+    "civ": "anatolia",
+    "start": -860,
+    "end": -590,
+    "name": { "zh": "乌拉尔图", "en": "Urartu", "fr": "Ourartou" },
+    "desc": {
+      "zh": "凡湖周边的山地王国，亚述劲敌。",
+      "en": "Highland kingdom around Lake Van, rival of Assyria.",
+      "fr": "Royaume montagnard du lac de Van, rival de l'Assyrie."
+    },
+    "lat": 38.5,
+    "lng": 43.4,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "lydia",
+    "region": "middle-east",
+    "civ": "anatolia",
+    "start": -685,
+    "end": -546,
+    "name": { "zh": "吕底亚", "en": "Lydia", "fr": "Lydie" },
+    "desc": {
+      "zh": "以富庶著称，最早铸造金属货币。",
+      "en": "Wealthy kingdom credited with the first coined money.",
+      "fr": "Royaume prospère, inventeur de la monnaie métallique."
+    },
+    "lat": 38.49,
+    "lng": 28.04,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "sultanate-of-rum",
+    "region": "middle-east",
+    "civ": "anatolia",
+    "start": 1077,
+    "end": 1308,
+    "name": { "zh": "罗姆苏丹国", "en": "Sultanate of Rum", "fr": "Sultanat de Roum" },
+    "desc": {
+      "zh": "塞尔柱突厥在安纳托利亚建立的苏丹国。",
+      "en": "Seljuk Turkish sultanate established in Anatolia.",
+      "fr": "Sultanat turc seldjoukide établi en Anatolie."
+    },
+    "lat": 37.87,
+    "lng": 32.49,
+    "tags": ["sultanate"]
+  },
+  {
+    "id": "ottoman-empire",
+    "region": "middle-east",
+    "civ": "anatolia",
+    "start": 1299,
+    "end": 1922,
+    "name": { "zh": "奥斯曼帝国", "en": "Ottoman Empire", "fr": "Empire ottoman" },
+    "desc": {
+      "zh": "横跨欧亚非的伊斯兰帝国，1453年灭拜占庭。",
+      "en": "Islamic empire spanning three continents; took Constantinople 1453.",
+      "fr": "Empire islamique sur trois continents ; prend Constantinople en 1453."
+    },
+    "lat": 41.01,
+    "lng": 28.98,
+    "tags": ["empire", "sultanate"],
+    "peak": 1600
+  },
+  {
+    "id": "republic-of-turkey",
+    "region": "middle-east",
+    "civ": "anatolia",
+    "start": 1923,
+    "end": 2026,
+    "name": { "zh": "土耳其共和国", "en": "Republic of Turkey", "fr": "République de Turquie" },
+    "desc": {
+      "zh": "凯末尔建立的世俗共和国，奥斯曼继承者。",
+      "en": "Secular republic founded by Atatürk; successor to the Ottomans.",
+      "fr": "République laïque fondée par Atatürk, héritière des Ottomans."
+    },
+    "lat": 39.93,
+    "lng": 32.86,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "rashidun-caliphate",
+    "region": "middle-east",
+    "civ": "islamic-caliphate",
+    "start": 632,
+    "end": 661,
+    "name": { "zh": "拉希顿哈里发国", "en": "Rashidun Caliphate", "fr": "Califat des Rachidoun" },
+    "desc": {
+      "zh": "穆罕默德之后的正统哈里发，大征服时代。",
+      "en": "The 'rightly-guided' caliphs after Muhammad; era of conquests.",
+      "fr": "Califes « bien guidés » après Mahomet ; ère des grandes conquêtes."
+    },
+    "lat": 24.47,
+    "lng": 39.61,
+    "tags": ["caliphate", "theocracy"]
+  },
+  {
+    "id": "umayyad-caliphate",
+    "region": "middle-east",
+    "civ": "islamic-caliphate",
+    "start": 661,
+    "end": 750,
+    "name": { "zh": "倭马亚王朝", "en": "Umayyad Caliphate", "fr": "Califat omeyyade" },
+    "desc": {
+      "zh": "首个世袭哈里发王朝，疆域达西班牙。",
+      "en": "First hereditary caliphate; stretched to Spain.",
+      "fr": "Premier califat héréditaire ; s'étend jusqu'à l'Espagne."
+    },
+    "lat": 33.51,
+    "lng": 36.29,
+    "tags": ["caliphate"],
+    "peak": 720
+  },
+  {
+    "id": "abbasid-caliphate",
+    "region": "middle-east",
+    "civ": "islamic-caliphate",
+    "start": 750,
+    "end": 1258,
+    "name": { "zh": "阿拔斯王朝", "en": "Abbasid Caliphate", "fr": "Califat abbasside" },
+    "desc": {
+      "zh": "伊斯兰黄金时代，定都巴格达。",
+      "en": "Golden age of Islam, centered on Baghdad.",
+      "fr": "Âge d'or de l'islam, centré sur Bagdad."
+    },
+    "lat": 33.31,
+    "lng": 44.36,
+    "tags": ["caliphate"],
+    "peak": 800
+  },
+  {
+    "id": "phoenician-city-states",
+    "region": "middle-east",
+    "civ": "levant",
+    "start": -1200,
+    "end": -539,
+    "name": { "zh": "腓尼基城邦", "en": "Phoenician City-States", "fr": "Cités-États phéniciennes" },
+    "desc": {
+      "zh": "航海商业民族，向地中海传播字母表。",
+      "en": "Seafaring merchant people who spread the alphabet.",
+      "fr": "Peuple marchand et marin qui diffuse l'alphabet."
+    },
+    "lat": 33.27,
+    "lng": 35.2,
+    "tags": ["city-state", "culture"]
+  },
+  {
+    "id": "united-kingdom-israel",
+    "region": "middle-east",
+    "civ": "levant",
+    "start": -1047,
+    "end": -930,
+    "name": { "zh": "以色列联合王国", "en": "United Kingdom of Israel", "fr": "Royaume uni d'Israël" },
+    "desc": {
+      "zh": "扫罗、大卫、所罗门时期的以色列联合王国。",
+      "en": "United Israelite monarchy under Saul, David and Solomon.",
+      "fr": "Royaume d'Israël uni sous Saül, David et Salomon."
+    },
+    "lat": 31.78,
+    "lng": 35.22,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "kingdom-of-israel",
+    "region": "middle-east",
+    "civ": "levant",
+    "start": -930,
+    "end": -722,
+    "name": { "zh": "以色列王国", "en": "Kingdom of Israel", "fr": "Royaume d'Israël" },
+    "desc": {
+      "zh": "分裂后的北国，都撒玛利亚，亡于亚述。",
+      "en": "Northern kingdom at Samaria, destroyed by Assyria.",
+      "fr": "Royaume du Nord à Samarie, détruit par l'Assyrie."
+    },
+    "lat": 32.28,
+    "lng": 35.19,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "kingdom-of-judah",
+    "region": "middle-east",
+    "civ": "levant",
+    "start": -930,
+    "end": -586,
+    "name": { "zh": "犹大王国", "en": "Kingdom of Judah", "fr": "Royaume de Juda" },
+    "desc": {
+      "zh": "分裂后的南国，都耶路撒冷，亡于新巴比伦。",
+      "en": "Southern kingdom at Jerusalem, fell to Babylon.",
+      "fr": "Royaume du Sud à Jérusalem, tombe face à Babylone."
+    },
+    "lat": 31.78,
+    "lng": 35.22,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "state-of-israel",
+    "region": "middle-east",
+    "civ": "levant",
+    "start": 1948,
+    "end": 2026,
+    "name": { "zh": "以色列国", "en": "State of Israel", "fr": "État d'Israël" },
+    "desc": {
+      "zh": "1948年建立的现代犹太国家。",
+      "en": "Modern Jewish state established in 1948.",
+      "fr": "État juif moderne fondé en 1948."
+    },
+    "lat": 31.78,
+    "lng": 35.22,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "syrian-arab-republic",
+    "region": "middle-east",
+    "civ": "levant",
+    "start": 1946,
+    "end": 2026,
+    "name": { "zh": "叙利亚", "en": "Syria", "fr": "Syrie" },
+    "desc": {
+      "zh": "叙利亚阿拉伯共和国，首都大马士革。",
+      "en": "Syrian Arab Republic, capital Damascus.",
+      "fr": "République arabe syrienne, capitale Damas."
+    },
+    "lat": 33.51,
+    "lng": 36.29,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "nabataean-kingdom",
+    "region": "middle-east",
+    "civ": "arabia",
+    "start": -168,
+    "end": 106,
+    "name": { "zh": "纳巴泰王国", "en": "Nabataean Kingdom", "fr": "Royaume nabatéen" },
+    "desc": {
+      "zh": "阿拉伯商队王国，凿建岩城佩特拉。",
+      "en": "Arab caravan kingdom that carved the city of Petra.",
+      "fr": "Royaume caravanier arabe, bâtisseur de Pétra."
+    },
+    "lat": 30.32,
+    "lng": 35.44,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "sabaean-kingdom",
+    "region": "middle-east",
+    "civ": "arabia",
+    "start": -1000,
+    "end": 275,
+    "name": { "zh": "萨巴王国", "en": "Sabaean Kingdom", "fr": "Royaume de Saba" },
+    "desc": {
+      "zh": "南阿拉伯乳香贸易王国，传说示巴女王。",
+      "en": "South Arabian incense kingdom of the fabled Queen of Sheba.",
+      "fr": "Royaume sud-arabique de l'encens, patrie de la reine de Saba."
+    },
+    "lat": 15.42,
+    "lng": 45.33,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "saudi-arabia",
+    "region": "middle-east",
+    "civ": "arabia",
+    "start": 1932,
+    "end": 2026,
+    "name": { "zh": "沙特阿拉伯", "en": "Saudi Arabia", "fr": "Arabie saoudite" },
+    "desc": {
+      "zh": "统一阿拉伯半岛的现代王国，伊斯兰圣地所在。",
+      "en": "Modern kingdom unifying Arabia; home of Islam's holy cities.",
+      "fr": "Royaume moderne unifiant l'Arabie ; berceau des villes saintes."
+    },
+    "lat": 24.71,
+    "lng": 46.68,
+    "tags": ["kingdom", "modern-state"]
+  },
+  {
+    "id": "yemen",
+    "region": "middle-east",
+    "civ": "arabia",
+    "start": 1990,
+    "end": 2026,
+    "name": { "zh": "也门", "en": "Yemen", "fr": "Yémen" },
+    "desc": {
+      "zh": "阿拉伯半岛西南的现代共和国。",
+      "en": "Modern republic in the southwest of the Arabian Peninsula.",
+      "fr": "République moderne au sud-ouest de la péninsule Arabique."
+    },
+    "lat": 15.35,
+    "lng": 44.21,
+    "tags": ["modern-state", "republic"]
+  }
+]

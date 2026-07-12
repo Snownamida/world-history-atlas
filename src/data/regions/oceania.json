@@ -1,0 +1,308 @@
+[
+  {
+    "id": "aboriginal-australians",
+    "region": "oceania",
+    "civ": "aboriginal",
+    "start": -50000,
+    "end": 1788,
+    "name": { "zh": "澳大利亚原住民文化", "en": "Aboriginal Australian Cultures", "fr": "Cultures aborigènes australiennes" },
+    "desc": {
+      "zh": "世界最古老的连续文化之一，狩猎采集与梦创传统。",
+      "en": "One of the world's oldest continuous cultures; hunter-gatherer Dreaming traditions.",
+      "fr": "L'une des plus anciennes cultures continues au monde ; traditions du Temps du rêve."
+    },
+    "lat": -25.0,
+    "lng": 133.0,
+    "tags": ["culture"]
+  },
+  {
+    "id": "torres-strait-islanders",
+    "region": "oceania",
+    "civ": "aboriginal",
+    "start": -2500,
+    "end": 1879,
+    "name": { "zh": "托雷斯海峡岛民", "en": "Torres Strait Islanders", "fr": "Insulaires du détroit de Torrès" },
+    "desc": {
+      "zh": "澳大利亚北端的美拉尼西亚航海与园艺文化。",
+      "en": "Melanesian seafaring and horticultural culture off northern Australia.",
+      "fr": "Culture mélanésienne maritime et horticole au nord de l'Australie."
+    },
+    "lat": -10.0,
+    "lng": 142.5,
+    "tags": ["culture"]
+  },
+  {
+    "id": "lapita-culture",
+    "region": "oceania",
+    "civ": "polynesia",
+    "start": -1500,
+    "end": -500,
+    "name": { "zh": "拉皮塔文化", "en": "Lapita Culture", "fr": "Culture Lapita" },
+    "desc": {
+      "zh": "美拉尼西亚至西波利尼西亚的航海陶器文化，波利尼西亚人祖先。",
+      "en": "Seafaring pottery culture from Melanesia to western Polynesia; Polynesian ancestors.",
+      "fr": "Culture potière et maritime, de la Mélanésie à la Polynésie, ancêtre des Polynésiens."
+    },
+    "lat": -17.7,
+    "lng": 178.0,
+    "tags": ["culture"]
+  },
+  {
+    "id": "polynesian-expansion",
+    "region": "oceania",
+    "civ": "polynesia",
+    "start": -1000,
+    "end": 1300,
+    "name": { "zh": "波利尼西亚大扩张", "en": "Polynesian Expansion", "fr": "Expansion polynésienne" },
+    "desc": {
+      "zh": "史上最伟大的航海迁徙，殖民太平洋大三角诸岛。",
+      "en": "One of history's greatest maritime migrations across the Pacific triangle.",
+      "fr": "L'une des plus grandes migrations maritimes, colonisant le triangle polynésien."
+    },
+    "lat": -13.8,
+    "lng": -172.0,
+    "tags": ["culture"]
+  },
+  {
+    "id": "tui-tonga-empire",
+    "region": "oceania",
+    "civ": "polynesia",
+    "start": 950,
+    "end": 1865,
+    "name": { "zh": "图伊汤加帝国", "en": "Tuʻi Tonga Empire", "fr": "Empire Tuʻi Tonga" },
+    "desc": {
+      "zh": "以汤加为中心的海洋帝国，影响遍及西波利尼西亚。",
+      "en": "Tonga-centered maritime empire spanning much of western Polynesia.",
+      "fr": "Empire maritime centré sur les Tonga, rayonnant sur la Polynésie occidentale."
+    },
+    "lat": -21.13,
+    "lng": -175.2,
+    "tags": ["empire"],
+    "peak": 1300
+  },
+  {
+    "id": "rapa-nui",
+    "region": "oceania",
+    "civ": "polynesia",
+    "start": 1200,
+    "end": 1888,
+    "name": { "zh": "拉帕努伊（复活节岛）", "en": "Rapa Nui (Easter Island)", "fr": "Rapa Nui (île de Pâques)" },
+    "desc": {
+      "zh": "以摩艾巨石像闻名的孤立波利尼西亚社会。",
+      "en": "Isolated Polynesian society famed for its monumental moai statues.",
+      "fr": "Société polynésienne isolée, célèbre pour ses statues moaï monumentales."
+    },
+    "lat": -27.12,
+    "lng": -109.35,
+    "tags": ["culture"]
+  },
+  {
+    "id": "kingdom-of-tahiti",
+    "region": "oceania",
+    "civ": "polynesia",
+    "start": 1788,
+    "end": 1880,
+    "name": { "zh": "塔希提王国（波马雷）", "en": "Kingdom of Tahiti (Pōmare)", "fr": "Royaume de Tahiti (Pōmare)" },
+    "desc": {
+      "zh": "波马雷王朝统一塔希提，后被法国吞并。",
+      "en": "Pōmare dynasty that unified Tahiti before French annexation.",
+      "fr": "Dynastie Pōmare unifiant Tahiti, avant l'annexion française."
+    },
+    "lat": -17.65,
+    "lng": -149.42,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "hawaiian-kingdom",
+    "region": "oceania",
+    "civ": "polynesia",
+    "start": 1795,
+    "end": 1893,
+    "name": { "zh": "夏威夷王国", "en": "Kingdom of Hawaii", "fr": "Royaume d'Hawaï" },
+    "desc": {
+      "zh": "卡美哈梅哈统一群岛后建立的波利尼西亚君主国。",
+      "en": "Polynesian monarchy founded after Kamehameha unified the islands.",
+      "fr": "Monarchie polynésienne fondée après l'unification par Kamehameha."
+    },
+    "lat": 21.3,
+    "lng": -157.85,
+    "tags": ["kingdom"],
+    "peak": 1810
+  },
+  {
+    "id": "maori-culture",
+    "region": "oceania",
+    "civ": "maori",
+    "start": 1300,
+    "end": 1840,
+    "name": { "zh": "毛利文化", "en": "Māori Culture", "fr": "Culture māorie" },
+    "desc": {
+      "zh": "定居新西兰的东波利尼西亚人，以部落（iwi）著称。",
+      "en": "East Polynesian settlers of New Zealand, organized into tribes (iwi).",
+      "fr": "Colons polynésiens de Nouvelle-Zélande, organisés en tribus (iwi)."
+    },
+    "lat": -38.0,
+    "lng": 176.0,
+    "tags": ["culture"]
+  },
+  {
+    "id": "maori-kingitanga",
+    "region": "oceania",
+    "civ": "maori",
+    "start": 1858,
+    "end": 1885,
+    "name": { "zh": "毛利国王运动（金吉塔纳）", "en": "Māori King Movement (Kīngitanga)", "fr": "Mouvement du Roi māori (Kīngitanga)" },
+    "desc": {
+      "zh": "毛利各部拥立国王以抗殖民、护土地的联盟运动。",
+      "en": "Māori tribes uniting under a king to resist colonization and land loss.",
+      "fr": "Tribus māories unies sous un roi pour résister à la colonisation."
+    },
+    "lat": -37.8,
+    "lng": 175.15,
+    "tags": ["confederation", "kingdom"]
+  },
+  {
+    "id": "colonial-new-south-wales",
+    "region": "oceania",
+    "civ": "oceania-colonial",
+    "start": 1788,
+    "end": 1901,
+    "name": { "zh": "新南威尔士殖民地", "en": "Colony of New South Wales", "fr": "Colonie de Nouvelle-Galles du Sud" },
+    "desc": {
+      "zh": "英国在澳大利亚建立的首个流放殖民地。",
+      "en": "Britain's first penal colony in Australia.",
+      "fr": "Première colonie pénitentiaire britannique en Australie."
+    },
+    "lat": -33.87,
+    "lng": 151.21,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "colonial-new-zealand",
+    "region": "oceania",
+    "civ": "oceania-colonial",
+    "start": 1840,
+    "end": 1907,
+    "name": { "zh": "新西兰殖民地", "en": "Colony of New Zealand", "fr": "Colonie de Nouvelle-Zélande" },
+    "desc": {
+      "zh": "《怀唐伊条约》后英国治下的新西兰殖民地。",
+      "en": "British colony of New Zealand set up after the Treaty of Waitangi.",
+      "fr": "Colonie britannique établie après le traité de Waitangi."
+    },
+    "lat": -41.29,
+    "lng": 174.78,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "colony-of-fiji",
+    "region": "oceania",
+    "civ": "oceania-colonial",
+    "start": 1874,
+    "end": 1970,
+    "name": { "zh": "斐济殖民地", "en": "Colony of Fiji", "fr": "Colonie des Fidji" },
+    "desc": {
+      "zh": "英国在美拉尼西亚的甘蔗种植殖民地。",
+      "en": "British sugar-plantation colony in Melanesia.",
+      "fr": "Colonie sucrière britannique en Mélanésie."
+    },
+    "lat": -18.14,
+    "lng": 178.44,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "commonwealth-of-australia",
+    "region": "oceania",
+    "civ": "oceania-modern",
+    "start": 1901,
+    "end": 2025,
+    "name": { "zh": "澳大利亚联邦", "en": "Commonwealth of Australia", "fr": "Commonwealth d'Australie" },
+    "desc": {
+      "zh": "六个殖民地联合而成的联邦国家。",
+      "en": "Federation formed by the union of six British colonies.",
+      "fr": "Fédération née de l'union de six colonies britanniques."
+    },
+    "lat": -35.28,
+    "lng": 149.13,
+    "tags": ["federation", "modern-state"]
+  },
+  {
+    "id": "new-zealand",
+    "region": "oceania",
+    "civ": "oceania-modern",
+    "start": 1907,
+    "end": 2025,
+    "name": { "zh": "新西兰", "en": "New Zealand", "fr": "Nouvelle-Zélande" },
+    "desc": {
+      "zh": "1907年获自治领地位的南太平洋议会制国家。",
+      "en": "South Pacific parliamentary state, a Dominion from 1907.",
+      "fr": "État parlementaire du Pacifique Sud, dominion dès 1907."
+    },
+    "lat": -41.29,
+    "lng": 174.78,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "independent-samoa",
+    "region": "oceania",
+    "civ": "oceania-modern",
+    "start": 1962,
+    "end": 2025,
+    "name": { "zh": "萨摩亚", "en": "Samoa", "fr": "Samoa" },
+    "desc": {
+      "zh": "波利尼西亚首个摆脱殖民独立的国家。",
+      "en": "First Polynesian nation to gain independence from colonial rule.",
+      "fr": "Première nation polynésienne à accéder à l'indépendance."
+    },
+    "lat": -13.83,
+    "lng": -171.77,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "kingdom-of-tonga-modern",
+    "region": "oceania",
+    "civ": "oceania-modern",
+    "start": 1970,
+    "end": 2025,
+    "name": { "zh": "汤加王国", "en": "Kingdom of Tonga", "fr": "Royaume des Tonga" },
+    "desc": {
+      "zh": "1970年完全独立，太平洋唯一延续至今的君主国。",
+      "en": "Fully independent from 1970; the Pacific's only surviving monarchy.",
+      "fr": "Pleinement indépendant en 1970 ; seule monarchie subsistante du Pacifique."
+    },
+    "lat": -21.13,
+    "lng": -175.2,
+    "tags": ["kingdom", "modern-state"]
+  },
+  {
+    "id": "republic-of-fiji",
+    "region": "oceania",
+    "civ": "oceania-modern",
+    "start": 1970,
+    "end": 2025,
+    "name": { "zh": "斐济", "en": "Fiji", "fr": "Fidji" },
+    "desc": {
+      "zh": "1970年独立的美拉尼西亚岛国。",
+      "en": "Melanesian island nation independent since 1970.",
+      "fr": "Nation insulaire mélanésienne indépendante depuis 1970."
+    },
+    "lat": -18.14,
+    "lng": 178.44,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "papua-new-guinea",
+    "region": "oceania",
+    "civ": "oceania-modern",
+    "start": 1975,
+    "end": 2025,
+    "name": { "zh": "巴布亚新几内亚", "en": "Papua New Guinea", "fr": "Papouasie-Nouvelle-Guinée" },
+    "desc": {
+      "zh": "1975年脱离澳大利亚独立的美拉尼西亚国家。",
+      "en": "Melanesian nation that gained independence from Australia in 1975.",
+      "fr": "Nation mélanésienne indépendante de l'Australie en 1975."
+    },
+    "lat": -9.44,
+    "lng": 147.18,
+    "tags": ["modern-state"]
+  }
+]

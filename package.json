@@ -1,0 +1,44 @@
+{
+    "name": "world-history-atlas",
+    "version": "0.1.0",
+    "description": "世界历史长卷 — 可缩放、可搜索、可横切、可上地图的交互式世界历史时间线（马赛克 + 河流双模式，中/英/法三语）。",
+    "type": "module",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview"
+    },
+    "keywords": [
+        "world-history",
+        "timeline",
+        "histomap",
+        "data-visualization",
+        "d3",
+        "interactive-map",
+        "世界历史",
+        "时间线"
+    ],
+    "author": "Snownamida",
+    "license": "MIT",
+    "homepage": "https://history.snownamida.top",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Snownamida/world-history-atlas.git"
+    },
+    "dependencies": {
+        "react": "^18.3.1",
+        "react-dom": "^18.3.1",
+        "d3-geo": "^3.1.1",
+        "d3-scale": "^4.0.2",
+        "d3-selection": "^3.0.0",
+        "d3-shape": "^3.2.0",
+        "d3-zoom": "^3.0.0",
+        "topojson-client": "^3.1.0"
+    },
+    "devDependencies": {
+        "@tailwindcss/vite": "^4.1.0",
+        "@vitejs/plugin-react": "^4.3.0",
+        "tailwindcss": "^4.1.0",
+        "vite": "^6.4.1"
+    }
+}

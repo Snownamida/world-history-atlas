@@ -1,0 +1,543 @@
+[
+  {
+    "id": "olmec",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": -1500,
+    "end": -400,
+    "name": { "zh": "奥尔梅克文明", "en": "Olmec Civilization", "fr": "Civilisation olmèque" },
+    "desc": {
+      "zh": "中美洲最早的主要文明，被称'母文化'，以巨石头像闻名。",
+      "en": "Mesoamerica's first major civilization; a 'mother culture' famed for colossal stone heads.",
+      "fr": "Première grande civilisation mésoaméricaine, 'culture mère', célèbre pour ses têtes colossales."
+    },
+    "lat": 17.9,
+    "lng": -94.6,
+    "tags": ["culture"],
+    "peak": -900
+  },
+  {
+    "id": "maya-preclassic",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": -1000,
+    "end": 250,
+    "name": { "zh": "玛雅文明（前古典期）", "en": "Maya (Preclassic)", "fr": "Mayas (préclassique)" },
+    "desc": {
+      "zh": "玛雅早期城邦兴起，出现文字、历法与金字塔雏形。",
+      "en": "Rise of early Maya cities; emergence of writing, the calendar and pyramids.",
+      "fr": "Essor des premières cités mayas ; naissance de l'écriture, du calendrier et des pyramides."
+    },
+    "lat": 17.6,
+    "lng": -89.8,
+    "tags": ["culture", "city-state"]
+  },
+  {
+    "id": "maya-classic",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": 250,
+    "end": 900,
+    "name": { "zh": "玛雅文明（古典期）", "en": "Maya (Classic Period)", "fr": "Mayas (période classique)" },
+    "desc": {
+      "zh": "玛雅城邦鼎盛，蒂卡尔、帕伦克林立，天文数学高度发达。",
+      "en": "Peak of Maya city-states (Tikal, Palenque); advanced astronomy and mathematics.",
+      "fr": "Apogée des cités-États mayas (Tikal, Palenque) ; astronomie et mathématiques avancées."
+    },
+    "lat": 17.22,
+    "lng": -89.62,
+    "tags": ["culture", "city-state"],
+    "peak": 700
+  },
+  {
+    "id": "maya-postclassic",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": 900,
+    "end": 1539,
+    "name": { "zh": "玛雅文明（后古典期）", "en": "Maya (Postclassic)", "fr": "Mayas (postclassique)" },
+    "desc": {
+      "zh": "重心北移尤卡坦，奇琴伊察、玛雅潘兴起，直至西班牙征服。",
+      "en": "Focus shifts to Yucatán (Chichén Itzá, Mayapán) until the Spanish conquest.",
+      "fr": "Le centre se déplace au Yucatán (Chichén Itzá, Mayapán) jusqu'à la conquête espagnole."
+    },
+    "lat": 20.68,
+    "lng": -88.57,
+    "tags": ["culture", "city-state"]
+  },
+  {
+    "id": "teotihuacan",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": -100,
+    "end": 550,
+    "name": { "zh": "特奥蒂瓦坎", "en": "Teotihuacan", "fr": "Teotihuacan" },
+    "desc": {
+      "zh": "中美洲最大古城，'太阳金字塔'所在，影响力遍及全区。",
+      "en": "Mesoamerica's largest ancient city; home of the Pyramid of the Sun, with wide influence.",
+      "fr": "La plus grande cité antique de Mésoamérique ; pyramide du Soleil, influence régionale."
+    },
+    "lat": 19.69,
+    "lng": -98.84,
+    "tags": ["city-state", "culture"],
+    "peak": 400
+  },
+  {
+    "id": "zapotec-monte-alban",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": -500,
+    "end": 900,
+    "name": { "zh": "萨波特克文明（阿尔班山）", "en": "Zapotec (Monte Albán)", "fr": "Zapotèques (Monte Albán)" },
+    "desc": {
+      "zh": "瓦哈卡河谷文明，以阿尔班山为都，创中美洲最早文字之一。",
+      "en": "Oaxaca Valley civilization centred on Monte Albán; one of Mesoamerica's earliest scripts.",
+      "fr": "Civilisation de la vallée d'Oaxaca centrée sur Monte Albán ; écriture parmi les plus anciennes."
+    },
+    "lat": 17.04,
+    "lng": -96.77,
+    "tags": ["culture", "city-state"]
+  },
+  {
+    "id": "toltec",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": 900,
+    "end": 1168,
+    "name": { "zh": "托尔特克文明", "en": "Toltec Civilization", "fr": "Civilisation toltèque" },
+    "desc": {
+      "zh": "以图拉为都的军事强权，被阿兹特克人奉为文明典范。",
+      "en": "Militaristic power centred at Tula; revered by the Aztecs as a golden age.",
+      "fr": "Puissance militaire centrée à Tula ; idéalisée par les Aztèques comme un âge d'or."
+    },
+    "lat": 20.06,
+    "lng": -99.34,
+    "tags": ["kingdom", "culture"],
+    "peak": 1050
+  },
+  {
+    "id": "tarascan-empire",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": 1300,
+    "end": 1530,
+    "name": { "zh": "塔拉斯坎帝国（普雷佩查）", "en": "Tarascan (Purépecha) Empire", "fr": "Empire tarasque (Purépecha)" },
+    "desc": {
+      "zh": "墨西哥西部帝国，阿兹特克劲敌，冶金技术领先。",
+      "en": "Western Mexican empire; rival of the Aztecs, advanced in metallurgy.",
+      "fr": "Empire de l'ouest mexicain ; rival des Aztèques, maître de la métallurgie."
+    },
+    "lat": 19.62,
+    "lng": -101.58,
+    "tags": ["empire"]
+  },
+  {
+    "id": "aztec-empire",
+    "region": "americas",
+    "civ": "mesoamerica",
+    "start": 1428,
+    "end": 1521,
+    "name": { "zh": "阿兹特克帝国", "en": "Aztec Empire", "fr": "Empire aztèque" },
+    "desc": {
+      "zh": "以特诺奇蒂特兰为中心的三方同盟，中美洲最后霸主。",
+      "en": "Triple Alliance centred on Tenochtitlan; the last great Mesoamerican power.",
+      "fr": "Triple Alliance centrée sur Tenochtitlan ; dernière grande puissance mésoaméricaine."
+    },
+    "lat": 19.43,
+    "lng": -99.13,
+    "tags": ["empire"],
+    "peak": 1500
+  },
+  {
+    "id": "caral-supe",
+    "region": "americas",
+    "civ": "andes",
+    "start": -3500,
+    "end": -1800,
+    "name": { "zh": "卡拉尔文明（诺特奇科）", "en": "Caral-Supe (Norte Chico)", "fr": "Caral-Supe (Norte Chico)" },
+    "desc": {
+      "zh": "美洲最古老的文明，秘鲁沿海，已建金字塔与城市。",
+      "en": "The Americas' oldest civilization; coastal Peru, with pyramids and planned cities.",
+      "fr": "La plus ancienne civilisation des Amériques ; côte péruvienne, pyramides et cités."
+    },
+    "lat": -10.89,
+    "lng": -77.52,
+    "tags": ["culture"],
+    "peak": -2600
+  },
+  {
+    "id": "chavin",
+    "region": "americas",
+    "civ": "andes",
+    "start": -900,
+    "end": -200,
+    "name": { "zh": "查文文化", "en": "Chavín Culture", "fr": "Culture de Chavín" },
+    "desc": {
+      "zh": "安第斯早期宗教文化，查文德万塔尔为圣地，艺术影响广泛。",
+      "en": "Early Andean religious culture centred on Chavín de Huántar; wide stylistic influence.",
+      "fr": "Culture religieuse andine ancienne centrée sur Chavín de Huántar ; large influence."
+    },
+    "lat": -9.59,
+    "lng": -77.18,
+    "tags": ["culture"]
+  },
+  {
+    "id": "nazca",
+    "region": "americas",
+    "civ": "andes",
+    "start": -100,
+    "end": 800,
+    "name": { "zh": "纳斯卡文化", "en": "Nazca Culture", "fr": "Culture Nazca" },
+    "desc": {
+      "zh": "秘鲁南岸文化，以巨型'纳斯卡线条'地画闻名。",
+      "en": "South-coast Peruvian culture famed for the giant Nazca Lines geoglyphs.",
+      "fr": "Culture de la côte sud du Pérou, célèbre pour les géoglyphes de Nazca."
+    },
+    "lat": -14.82,
+    "lng": -75.12,
+    "tags": ["culture"]
+  },
+  {
+    "id": "moche",
+    "region": "americas",
+    "civ": "andes",
+    "start": 100,
+    "end": 800,
+    "name": { "zh": "莫切文化", "en": "Moche Culture", "fr": "Culture Moche" },
+    "desc": {
+      "zh": "秘鲁北岸文化，建太阳与月亮神庙，陶艺与冶金精湛。",
+      "en": "North-coast Peruvian culture; Huacas del Sol y Luna, fine ceramics and metalwork.",
+      "fr": "Culture de la côte nord du Pérou ; huacas du Soleil et de la Lune, céramique raffinée."
+    },
+    "lat": -8.13,
+    "lng": -79.03,
+    "tags": ["culture"],
+    "peak": 500
+  },
+  {
+    "id": "tiwanaku",
+    "region": "americas",
+    "civ": "andes",
+    "start": 300,
+    "end": 1000,
+    "name": { "zh": "蒂瓦纳库文明", "en": "Tiwanaku", "fr": "Tiwanaku" },
+    "desc": {
+      "zh": "的的喀喀湖畔的高原政权，以太阳门等巨石建筑闻名。",
+      "en": "Altiplano state by Lake Titicaca; famed for the megalithic Gate of the Sun.",
+      "fr": "État de l'altiplano près du lac Titicaca ; célèbre Porte du Soleil mégalithique."
+    },
+    "lat": -16.55,
+    "lng": -68.67,
+    "tags": ["culture", "empire"],
+    "peak": 800
+  },
+  {
+    "id": "wari",
+    "region": "americas",
+    "civ": "andes",
+    "start": 600,
+    "end": 1000,
+    "name": { "zh": "瓦里帝国", "en": "Wari Empire", "fr": "Empire Wari" },
+    "desc": {
+      "zh": "秘鲁高原第一个安第斯帝国，路网与行政制度预示印加。",
+      "en": "First Andean highland empire; roads and administration foreshadowed the Inca.",
+      "fr": "Premier empire des hautes terres andines ; routes et administration préfigurant les Incas."
+    },
+    "lat": -13.05,
+    "lng": -74.22,
+    "tags": ["empire"],
+    "peak": 800
+  },
+  {
+    "id": "chimu",
+    "region": "americas",
+    "civ": "andes",
+    "start": 900,
+    "end": 1470,
+    "name": { "zh": "奇穆王国", "en": "Chimú (Chimor)", "fr": "Royaume Chimú" },
+    "desc": {
+      "zh": "秘鲁北岸大国，都城昌昌为美洲最大土坯城，后被印加所灭。",
+      "en": "Great north-coast kingdom; capital Chan Chan, the largest adobe city, conquered by the Inca.",
+      "fr": "Grand royaume de la côte nord ; capitale Chan Chan, plus grande cité en adobe, soumis par les Incas."
+    },
+    "lat": -8.11,
+    "lng": -79.07,
+    "tags": ["kingdom"],
+    "peak": 1350
+  },
+  {
+    "id": "inca-empire",
+    "region": "americas",
+    "civ": "andes",
+    "start": 1438,
+    "end": 1533,
+    "name": { "zh": "印加帝国", "en": "Inca Empire", "fr": "Empire inca" },
+    "desc": {
+      "zh": "前哥伦布时代美洲最大帝国，都库斯科，安第斯路网纵横。",
+      "en": "Largest pre-Columbian American empire; capital Cusco, with a vast Andean road network.",
+      "fr": "Plus grand empire précolombien des Amériques ; capitale Cuzco, vaste réseau routier andin."
+    },
+    "lat": -13.52,
+    "lng": -71.98,
+    "tags": ["empire"],
+    "peak": 1500
+  },
+  {
+    "id": "ancestral-puebloan",
+    "region": "americas",
+    "civ": "north-america",
+    "start": 100,
+    "end": 1300,
+    "name": { "zh": "古普韦布洛文化（阿纳萨齐）", "en": "Ancestral Puebloan (Anasazi)", "fr": "Anasazis (Pueblos ancestraux)" },
+    "desc": {
+      "zh": "美国西南部文化，以查科峡谷与悬崖石屋闻名。",
+      "en": "US Southwest culture famed for Chaco Canyon and cliff dwellings.",
+      "fr": "Culture du Sud-Ouest américain, célèbre pour Chaco Canyon et les habitations troglodytes."
+    },
+    "lat": 36.06,
+    "lng": -107.96,
+    "tags": ["culture"]
+  },
+  {
+    "id": "mississippian-cahokia",
+    "region": "americas",
+    "civ": "north-america",
+    "start": 800,
+    "end": 1600,
+    "name": { "zh": "密西西比文化（卡霍基亚）", "en": "Mississippian Culture (Cahokia)", "fr": "Culture du Mississippi (Cahokia)" },
+    "desc": {
+      "zh": "北美最大土墩城市卡霍基亚，玉米农业支撑的酋邦社会。",
+      "en": "Mound-building chiefdoms; Cahokia was North America's largest pre-Columbian city.",
+      "fr": "Chefferies bâtisseuses de tumulus ; Cahokia, plus grande cité précolombienne d'Amérique du Nord."
+    },
+    "lat": 38.66,
+    "lng": -90.06,
+    "tags": ["culture"],
+    "peak": 1100
+  },
+  {
+    "id": "iroquois-confederacy",
+    "region": "americas",
+    "civ": "north-america",
+    "start": 1450,
+    "end": 1779,
+    "name": { "zh": "易洛魁联盟（豪迪诺索尼）", "en": "Iroquois Confederacy (Haudenosaunee)", "fr": "Confédération iroquoise (Haudenosaunee)" },
+    "desc": {
+      "zh": "北美东北五(后六)族联盟，成熟的原住民联邦制。",
+      "en": "Northeastern league of five (later six) nations; a sophisticated Indigenous confederation.",
+      "fr": "Ligue des cinq (puis six) nations du nord-est ; confédération autochtone élaborée."
+    },
+    "lat": 43.0,
+    "lng": -76.2,
+    "tags": ["confederation"]
+  },
+  {
+    "id": "united-states",
+    "region": "americas",
+    "civ": "north-america",
+    "start": 1776,
+    "end": 2025,
+    "name": { "zh": "美利坚合众国", "en": "United States of America", "fr": "États-Unis d'Amérique" },
+    "desc": {
+      "zh": "1776年独立的联邦共和国，当今世界头号强国。",
+      "en": "Federal republic independent from 1776; today's foremost world power.",
+      "fr": "République fédérale indépendante depuis 1776 ; première puissance mondiale actuelle."
+    },
+    "lat": 38.9,
+    "lng": -77.04,
+    "tags": ["federation", "republic", "modern-state"],
+    "peak": 2000
+  },
+  {
+    "id": "canada",
+    "region": "americas",
+    "civ": "north-america",
+    "start": 1867,
+    "end": 2025,
+    "name": { "zh": "加拿大", "en": "Canada", "fr": "Canada" },
+    "desc": {
+      "zh": "1867年联邦成立的君主立宪制国家，面积世界第二。",
+      "en": "Confederation formed in 1867; constitutional monarchy, world's second-largest country.",
+      "fr": "Confédération créée en 1867 ; monarchie constitutionnelle, deuxième plus vaste pays."
+    },
+    "lat": 45.42,
+    "lng": -75.7,
+    "tags": ["federation", "modern-state"]
+  },
+  {
+    "id": "spanish-america",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1521,
+    "end": 1825,
+    "name": { "zh": "西属美洲", "en": "Spanish America", "fr": "Amérique espagnole" },
+    "desc": {
+      "zh": "西班牙在美洲的殖民帝国，含新西班牙与秘鲁总督区。",
+      "en": "Spain's American colonial empire; viceroyalties of New Spain and Peru.",
+      "fr": "Empire colonial espagnol d'Amérique ; vice-royautés de Nouvelle-Espagne et du Pérou."
+    },
+    "lat": 19.43,
+    "lng": -99.13,
+    "tags": ["colonial", "empire"]
+  },
+  {
+    "id": "colonial-brazil",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1500,
+    "end": 1822,
+    "name": { "zh": "葡属巴西（殖民地）", "en": "Colonial Brazil (Portuguese)", "fr": "Brésil colonial (portugais)" },
+    "desc": {
+      "zh": "葡萄牙在美洲的殖民地，甘蔗与黄金经济，1822年独立。",
+      "en": "Portugal's American colony; sugar and gold economy, independent in 1822.",
+      "fr": "Colonie américaine du Portugal ; économie du sucre et de l'or, indépendante en 1822."
+    },
+    "lat": -12.97,
+    "lng": -38.5,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "mexico",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1821,
+    "end": 2025,
+    "name": { "zh": "墨西哥", "en": "Mexico", "fr": "Mexique" },
+    "desc": {
+      "zh": "1821年脱西班牙独立的联邦共和国，拉美人口大国。",
+      "en": "Federal republic independent from Spain in 1821; a major Latin American nation.",
+      "fr": "République fédérale indépendante de l'Espagne en 1821 ; grande nation latino-américaine."
+    },
+    "lat": 19.43,
+    "lng": -99.13,
+    "tags": ["federation", "republic", "modern-state"]
+  },
+  {
+    "id": "brazil",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1822,
+    "end": 2025,
+    "name": { "zh": "巴西", "en": "Brazil", "fr": "Brésil" },
+    "desc": {
+      "zh": "1822年独立，先帝国后共和，拉美最大国家。",
+      "en": "Independent from 1822; an empire then a republic, Latin America's largest country.",
+      "fr": "Indépendant depuis 1822 ; empire puis république, plus grand pays d'Amérique latine."
+    },
+    "lat": -15.79,
+    "lng": -47.88,
+    "tags": ["federation", "republic", "modern-state"]
+  },
+  {
+    "id": "gran-colombia",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1819,
+    "end": 1831,
+    "name": { "zh": "大哥伦比亚", "en": "Gran Colombia", "fr": "Grande Colombie" },
+    "desc": {
+      "zh": "玻利瓦尔创建的短命共和国，含今哥委厄巴四国。",
+      "en": "Bolívar's short-lived republic uniting Colombia, Venezuela, Ecuador and Panama.",
+      "fr": "République éphémère de Bolívar unissant Colombie, Venezuela, Équateur et Panama."
+    },
+    "lat": 4.71,
+    "lng": -74.07,
+    "tags": ["republic"]
+  },
+  {
+    "id": "argentina",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1816,
+    "end": 2025,
+    "name": { "zh": "阿根廷", "en": "Argentina", "fr": "Argentine" },
+    "desc": {
+      "zh": "1816年宣布独立的南美联邦共和国。",
+      "en": "South American federal republic; independence declared in 1816.",
+      "fr": "République fédérale sud-américaine ; indépendance déclarée en 1816."
+    },
+    "lat": -34.6,
+    "lng": -58.38,
+    "tags": ["federation", "republic", "modern-state"]
+  },
+  {
+    "id": "peru",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1821,
+    "end": 2025,
+    "name": { "zh": "秘鲁", "en": "Peru", "fr": "Pérou" },
+    "desc": {
+      "zh": "1821年独立的安第斯共和国，昔日西属美洲核心。",
+      "en": "Andean republic independent from 1821; former core of Spanish America.",
+      "fr": "République andine indépendante depuis 1821 ; ancien cœur de l'Amérique espagnole."
+    },
+    "lat": -12.05,
+    "lng": -77.04,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "chile",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1818,
+    "end": 2025,
+    "name": { "zh": "智利", "en": "Chile", "fr": "Chili" },
+    "desc": {
+      "zh": "1818年独立的南美太平洋沿岸共和国。",
+      "en": "South American Pacific-coast republic independent from 1818.",
+      "fr": "République sud-américaine de la côte pacifique indépendante depuis 1818."
+    },
+    "lat": -33.45,
+    "lng": -70.67,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "colombia",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1831,
+    "end": 2025,
+    "name": { "zh": "哥伦比亚", "en": "Colombia", "fr": "Colombie" },
+    "desc": {
+      "zh": "大哥伦比亚解体后成立的安第斯共和国。",
+      "en": "Andean republic formed after the breakup of Gran Colombia.",
+      "fr": "République andine née de la dissolution de la Grande Colombie."
+    },
+    "lat": 4.71,
+    "lng": -74.07,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "venezuela",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1830,
+    "end": 2025,
+    "name": { "zh": "委内瑞拉", "en": "Venezuela", "fr": "Venezuela" },
+    "desc": {
+      "zh": "1830年脱离大哥伦比亚独立的加勒比沿岸共和国。",
+      "en": "Caribbean-coast republic that seceded from Gran Colombia in 1830.",
+      "fr": "République de la côte caraïbe issue de la Grande Colombie en 1830."
+    },
+    "lat": 10.49,
+    "lng": -66.88,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "cuba",
+    "region": "americas",
+    "civ": "latin-america",
+    "start": 1902,
+    "end": 2025,
+    "name": { "zh": "古巴", "en": "Cuba", "fr": "Cuba" },
+    "desc": {
+      "zh": "1902年独立的加勒比岛国，1959年革命后走向社会主义。",
+      "en": "Caribbean island nation independent from 1902; socialist after the 1959 revolution.",
+      "fr": "Nation insulaire caraïbe indépendante depuis 1902 ; socialiste après la révolution de 1959."
+    },
+    "lat": 23.11,
+    "lng": -82.37,
+    "tags": ["republic", "modern-state"]
+  }
+]

@@ -1,0 +1,991 @@
+[
+  {
+    "id": "minoan-civilization",
+    "region": "europe",
+    "civ": "greece",
+    "start": -2700,
+    "end": -1450,
+    "name": { "zh": "米诺斯文明", "en": "Minoan Civilization", "fr": "Civilisation minoenne" },
+    "desc": {
+      "zh": "欧洲最早的先进文明，克里特岛青铜时代宫殿文化的中心。",
+      "en": "Europe's first advanced civilization; Bronze Age palace culture of Crete.",
+      "fr": "Première civilisation avancée d'Europe ; culture palatiale de Crète."
+    },
+    "lat": 35.3,
+    "lng": 25.16,
+    "tags": ["culture"],
+    "peak": -1700
+  },
+  {
+    "id": "mycenaean-civilization",
+    "region": "europe",
+    "civ": "greece",
+    "start": -1600,
+    "end": -1100,
+    "name": { "zh": "迈锡尼文明", "en": "Mycenaean Civilization", "fr": "Civilisation mycénienne" },
+    "desc": {
+      "zh": "希腊青铜时代文明，荷马史诗与希腊神话的源头。",
+      "en": "Bronze Age Greek civilization behind Homer's epics and myths.",
+      "fr": "Civilisation grecque de l'âge du bronze, source des épopées d'Homère."
+    },
+    "lat": 37.73,
+    "lng": 22.76,
+    "tags": ["culture"],
+    "peak": -1300
+  },
+  {
+    "id": "greek-city-states",
+    "region": "europe",
+    "civ": "greece",
+    "start": -508,
+    "end": -322,
+    "name": { "zh": "古希腊城邦（雅典与斯巴达）", "en": "Greek City-States (Athens & Sparta)", "fr": "Cités grecques (Athènes et Sparte)" },
+    "desc": {
+      "zh": "雅典、斯巴达等城邦，孕育民主政治与西方哲学。",
+      "en": "Athens, Sparta and other poleis; cradle of democracy and philosophy.",
+      "fr": "Athènes, Sparte et autres cités ; berceau de la démocratie et de la philosophie."
+    },
+    "lat": 37.98,
+    "lng": 23.73,
+    "tags": ["city-state"],
+    "peak": -430
+  },
+  {
+    "id": "kingdom-of-macedon",
+    "region": "europe",
+    "civ": "greece",
+    "start": -808,
+    "end": -168,
+    "name": { "zh": "马其顿王国", "en": "Kingdom of Macedon", "fr": "Royaume de Macédoine" },
+    "desc": {
+      "zh": "希腊北部王国，腓力二世统一希腊并崛起为强权。",
+      "en": "Northern Greek kingdom; under Philip II it unified Greece.",
+      "fr": "Royaume du nord de la Grèce ; Philippe II unifia la Grèce."
+    },
+    "lat": 40.76,
+    "lng": 22.52,
+    "tags": ["kingdom"],
+    "peak": -336
+  },
+  {
+    "id": "alexander-empire",
+    "region": "europe",
+    "civ": "greece",
+    "start": -336,
+    "end": -323,
+    "name": { "zh": "亚历山大帝国", "en": "Empire of Alexander the Great", "fr": "Empire d'Alexandre le Grand" },
+    "desc": {
+      "zh": "亚历山大大帝建立，横跨希腊、埃及至印度的大帝国。",
+      "en": "Alexander the Great's empire spanning Greece, Egypt and India.",
+      "fr": "Empire d'Alexandre le Grand, de la Grèce à l'Égypte et l'Inde."
+    },
+    "lat": 33.3,
+    "lng": 44.4,
+    "tags": ["empire"]
+  },
+  {
+    "id": "modern-greece",
+    "region": "europe",
+    "civ": "greece",
+    "start": 1830,
+    "end": 2100,
+    "name": { "zh": "现代希腊", "en": "Modern Greece", "fr": "Grèce moderne" },
+    "desc": {
+      "zh": "1830年脱离奥斯曼独立，现代希腊民族国家。",
+      "en": "Independent from the Ottomans in 1830; the modern Greek state.",
+      "fr": "Indépendante des Ottomans en 1830 ; l'État grec moderne."
+    },
+    "lat": 37.98,
+    "lng": 23.73,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "roman-kingdom",
+    "region": "europe",
+    "civ": "rome",
+    "start": -753,
+    "end": -509,
+    "name": { "zh": "罗马王政时代", "en": "Roman Kingdom", "fr": "Royauté romaine" },
+    "desc": {
+      "zh": "罗马早期王政时代，传说由罗慕路斯建城。",
+      "en": "Rome's early monarchy, traditionally founded by Romulus.",
+      "fr": "La monarchie romaine primitive, fondée selon la légende par Romulus."
+    },
+    "lat": 41.9,
+    "lng": 12.5,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "roman-republic",
+    "region": "europe",
+    "civ": "rome",
+    "start": -509,
+    "end": -27,
+    "name": { "zh": "罗马共和国", "en": "Roman Republic", "fr": "République romaine" },
+    "desc": {
+      "zh": "元老院主导的共和国，征服地中海世界。",
+      "en": "Senate-led republic that conquered the Mediterranean world.",
+      "fr": "République dirigée par le Sénat, qui conquit le monde méditerranéen."
+    },
+    "lat": 41.9,
+    "lng": 12.5,
+    "tags": ["republic"],
+    "peak": -50
+  },
+  {
+    "id": "roman-empire",
+    "region": "europe",
+    "civ": "rome",
+    "start": -27,
+    "end": 395,
+    "name": { "zh": "罗马帝国", "en": "Roman Empire", "fr": "Empire romain" },
+    "desc": {
+      "zh": "奥古斯都开创的帝国，环地中海的古典霸权。",
+      "en": "Empire founded by Augustus; classical power around the Mediterranean.",
+      "fr": "Empire fondé par Auguste ; puissance antique autour de la Méditerranée."
+    },
+    "lat": 41.9,
+    "lng": 12.5,
+    "tags": ["empire"],
+    "peak": 117
+  },
+  {
+    "id": "western-roman-empire",
+    "region": "europe",
+    "civ": "rome",
+    "start": 395,
+    "end": 476,
+    "name": { "zh": "西罗马帝国", "en": "Western Roman Empire", "fr": "Empire romain d'Occident" },
+    "desc": {
+      "zh": "罗马帝国西部，476年灭亡标志古典时代终结。",
+      "en": "Western half of Rome; its 476 fall ended antiquity.",
+      "fr": "Moitié occidentale de Rome ; sa chute en 476 clôt l'Antiquité."
+    },
+    "lat": 44.42,
+    "lng": 12.2,
+    "tags": ["empire"]
+  },
+  {
+    "id": "byzantine-empire",
+    "region": "europe",
+    "civ": "byzantine",
+    "start": 395,
+    "end": 1453,
+    "name": { "zh": "拜占庭帝国", "en": "Byzantine Empire", "fr": "Empire byzantin" },
+    "desc": {
+      "zh": "东罗马帝国，延续罗马千年，守护正教文明。",
+      "en": "Eastern Roman Empire; carried Rome on for a millennium.",
+      "fr": "Empire romain d'Orient ; prolongea Rome pendant un millénaire."
+    },
+    "lat": 41.01,
+    "lng": 28.98,
+    "tags": ["empire"],
+    "peak": 555
+  },
+  {
+    "id": "frankish-kingdom",
+    "region": "europe",
+    "civ": "frankish",
+    "start": 481,
+    "end": 751,
+    "name": { "zh": "法兰克王国（墨洛温）", "en": "Frankish Kingdom (Merovingian)", "fr": "Royaume franc (mérovingien)" },
+    "desc": {
+      "zh": "克洛维建立的法兰克王国，墨洛温王朝统一高卢。",
+      "en": "Frankish kingdom founded by Clovis; Merovingians unified Gaul.",
+      "fr": "Royaume franc fondé par Clovis ; les Mérovingiens unifièrent la Gaule."
+    },
+    "lat": 48.85,
+    "lng": 2.35,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "carolingian-empire",
+    "region": "europe",
+    "civ": "frankish",
+    "start": 800,
+    "end": 888,
+    "name": { "zh": "加洛林帝国", "en": "Carolingian Empire", "fr": "Empire carolingien" },
+    "desc": {
+      "zh": "查理曼加冕的帝国，西欧首次重现罗马式统一。",
+      "en": "Charlemagne's empire; first revival of Roman unity in the West.",
+      "fr": "Empire de Charlemagne ; première renaissance de l'unité romaine en Occident."
+    },
+    "lat": 50.78,
+    "lng": 6.08,
+    "tags": ["empire"],
+    "peak": 800
+  },
+  {
+    "id": "west-francia",
+    "region": "europe",
+    "civ": "frankish",
+    "start": 843,
+    "end": 987,
+    "name": { "zh": "西法兰克王国", "en": "West Francia", "fr": "Francie occidentale" },
+    "desc": {
+      "zh": "《凡尔登条约》分出的西部，法兰西王国的前身。",
+      "en": "Western realm from the Treaty of Verdun; forerunner of France.",
+      "fr": "Royaume occidental issu du traité de Verdun ; ancêtre de la France."
+    },
+    "lat": 48.85,
+    "lng": 2.35,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "holy-roman-empire",
+    "region": "europe",
+    "civ": "frankish",
+    "start": 962,
+    "end": 1806,
+    "name": { "zh": "神圣罗马帝国", "en": "Holy Roman Empire", "fr": "Saint-Empire romain germanique" },
+    "desc": {
+      "zh": "奥托一世创立，中欧德意志诸邦的松散帝国。",
+      "en": "Otto I's realm; a loose empire of German-Central European states.",
+      "fr": "Empire d'Otton Ier ; ensemble lâche d'États germaniques d'Europe centrale."
+    },
+    "lat": 50.11,
+    "lng": 8.68,
+    "tags": ["empire"],
+    "peak": 1200
+  },
+  {
+    "id": "capetian-france",
+    "region": "europe",
+    "civ": "france",
+    "start": 987,
+    "end": 1328,
+    "name": { "zh": "卡佩王朝", "en": "Capetian France", "fr": "France capétienne" },
+    "desc": {
+      "zh": "卡佩王朝，以巴黎为中心逐步集权的法兰西王国。",
+      "en": "Capetian France; a kingdom that centralized power around Paris.",
+      "fr": "France capétienne ; royaume centralisant le pouvoir autour de Paris."
+    },
+    "lat": 48.85,
+    "lng": 2.35,
+    "tags": ["kingdom", "dynasty"]
+  },
+  {
+    "id": "valois-france",
+    "region": "europe",
+    "civ": "france",
+    "start": 1328,
+    "end": 1589,
+    "name": { "zh": "瓦卢瓦王朝", "en": "Valois France", "fr": "France des Valois" },
+    "desc": {
+      "zh": "瓦卢瓦王朝，历经百年战争与文艺复兴。",
+      "en": "Valois dynasty; through the Hundred Years' War and Renaissance.",
+      "fr": "Dynastie des Valois ; de la guerre de Cent Ans à la Renaissance."
+    },
+    "lat": 48.85,
+    "lng": 2.35,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "bourbon-france",
+    "region": "europe",
+    "civ": "france",
+    "start": 1589,
+    "end": 1792,
+    "name": { "zh": "波旁王朝", "en": "Bourbon France", "fr": "France des Bourbons" },
+    "desc": {
+      "zh": "波旁王朝，路易十四治下绝对君主制的盛世。",
+      "en": "Bourbon dynasty; Louis XIV's age of absolute monarchy.",
+      "fr": "Dynastie des Bourbons ; l'apogée absolutiste de Louis XIV."
+    },
+    "lat": 48.85,
+    "lng": 2.35,
+    "tags": ["dynasty"],
+    "peak": 1700
+  },
+  {
+    "id": "first-french-empire",
+    "region": "europe",
+    "civ": "france",
+    "start": 1804,
+    "end": 1815,
+    "name": { "zh": "法兰西第一帝国", "en": "First French Empire", "fr": "Premier Empire français" },
+    "desc": {
+      "zh": "拿破仑建立的第一帝国，一度称霸欧洲大陆。",
+      "en": "Napoleon's First Empire, briefly dominant over continental Europe.",
+      "fr": "Premier Empire de Napoléon, un temps maître du continent européen."
+    },
+    "lat": 48.85,
+    "lng": 2.35,
+    "tags": ["empire"],
+    "peak": 1812
+  },
+  {
+    "id": "french-republic",
+    "region": "europe",
+    "civ": "france",
+    "start": 1870,
+    "end": 2100,
+    "name": { "zh": "法兰西共和国", "en": "French Republic", "fr": "République française" },
+    "desc": {
+      "zh": "法兰西共和国，历经第三至第五共和的现代法国。",
+      "en": "The French Republic; modern France from the Third to Fifth Republic.",
+      "fr": "La République française ; la France moderne, de la IIIe à la Ve République."
+    },
+    "lat": 48.85,
+    "lng": 2.35,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "roman-britain",
+    "region": "europe",
+    "civ": "britain",
+    "start": 43,
+    "end": 410,
+    "name": { "zh": "罗马不列颠", "en": "Roman Britain", "fr": "Bretagne romaine" },
+    "desc": {
+      "zh": "罗马帝国的不列颠尼亚行省，罗马化的岛屿南部。",
+      "en": "Roman province of Britannia; the Romanized southern isle.",
+      "fr": "Province romaine de Bretagne ; le sud romanisé de l'île."
+    },
+    "lat": 51.51,
+    "lng": -0.09,
+    "tags": ["empire"]
+  },
+  {
+    "id": "anglo-saxon-england",
+    "region": "europe",
+    "civ": "britain",
+    "start": 500,
+    "end": 1066,
+    "name": { "zh": "盎格鲁-撒克逊英格兰", "en": "Anglo-Saxon England", "fr": "Angleterre anglo-saxonne" },
+    "desc": {
+      "zh": "盎格鲁-撒克逊七国，最终统一为英格兰王国。",
+      "en": "Anglo-Saxon kingdoms that merged into the Kingdom of England.",
+      "fr": "Royaumes anglo-saxons réunis en royaume d'Angleterre."
+    },
+    "lat": 51.06,
+    "lng": -1.31,
+    "tags": ["kingdom", "confederation"]
+  },
+  {
+    "id": "norman-plantagenet-england",
+    "region": "europe",
+    "civ": "britain",
+    "start": 1066,
+    "end": 1485,
+    "name": { "zh": "诺曼与金雀花英格兰", "en": "Norman & Plantagenet England", "fr": "Angleterre normande et Plantagenêt" },
+    "desc": {
+      "zh": "诺曼征服后的英格兰，金雀花王朝与大宪章时代。",
+      "en": "Norman and Plantagenet England; era of the Magna Carta.",
+      "fr": "Angleterre normande et Plantagenêt ; l'ère de la Magna Carta."
+    },
+    "lat": 51.51,
+    "lng": -0.13,
+    "tags": ["dynasty"]
+  },
+  {
+    "id": "tudor-stuart-england",
+    "region": "europe",
+    "civ": "britain",
+    "start": 1485,
+    "end": 1707,
+    "name": { "zh": "都铎与斯图亚特英格兰", "en": "Tudor & Stuart England", "fr": "Angleterre des Tudors et Stuarts" },
+    "desc": {
+      "zh": "都铎与斯图亚特王朝，宗教改革与英国革命的年代。",
+      "en": "Tudor and Stuart England; the Reformation and the Civil War.",
+      "fr": "Angleterre des Tudors et Stuarts ; Réforme et révolution anglaise."
+    },
+    "lat": 51.51,
+    "lng": -0.13,
+    "tags": ["dynasty"],
+    "peak": 1600
+  },
+  {
+    "id": "kingdom-of-great-britain",
+    "region": "europe",
+    "civ": "britain",
+    "start": 1707,
+    "end": 1801,
+    "name": { "zh": "大不列颠王国", "en": "Kingdom of Great Britain", "fr": "Royaume de Grande-Bretagne" },
+    "desc": {
+      "zh": "英格兰与苏格兰合并，1707年成立大不列颠王国。",
+      "en": "Union of England and Scotland into Great Britain in 1707.",
+      "fr": "Union de l'Angleterre et de l'Écosse en Grande-Bretagne en 1707."
+    },
+    "lat": 51.51,
+    "lng": -0.13,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "british-empire",
+    "region": "europe",
+    "civ": "britain",
+    "start": 1801,
+    "end": 1947,
+    "name": { "zh": "大英帝国", "en": "British Empire", "fr": "Empire britannique" },
+    "desc": {
+      "zh": "日不落帝国，19世纪全球最大的殖民帝国。",
+      "en": "The empire on which the sun never set; largest of the 19th century.",
+      "fr": "L'empire où le soleil ne se couchait jamais ; le plus vaste du XIXe siècle."
+    },
+    "lat": 51.51,
+    "lng": -0.13,
+    "tags": ["empire", "colonial"],
+    "peak": 1920
+  },
+  {
+    "id": "united-kingdom",
+    "region": "europe",
+    "civ": "britain",
+    "start": 1947,
+    "end": 2100,
+    "name": { "zh": "英国", "en": "United Kingdom", "fr": "Royaume-Uni" },
+    "desc": {
+      "zh": "现代英国，二战后去殖民化的联合王国。",
+      "en": "The modern United Kingdom after post-war decolonization.",
+      "fr": "Le Royaume-Uni moderne après la décolonisation d'après-guerre."
+    },
+    "lat": 51.51,
+    "lng": -0.13,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "visigothic-kingdom",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 418,
+    "end": 711,
+    "name": { "zh": "西哥特王国", "en": "Visigothic Kingdom", "fr": "Royaume wisigoth" },
+    "desc": {
+      "zh": "西哥特王国，统治伊比利亚直至阿拉伯征服。",
+      "en": "Visigothic kingdom ruling Iberia until the Arab conquest.",
+      "fr": "Royaume wisigoth régnant sur l'Ibérie jusqu'à la conquête arabe."
+    },
+    "lat": 39.86,
+    "lng": -4.02,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "caliphate-of-cordoba",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 756,
+    "end": 1031,
+    "name": { "zh": "科尔多瓦哈里发国", "en": "Caliphate of Córdoba", "fr": "Califat de Cordoue" },
+    "desc": {
+      "zh": "后倭马亚政权，伊斯兰西班牙的黄金时代。",
+      "en": "Umayyad realm; the golden age of Islamic Spain.",
+      "fr": "Émirat puis califat omeyyade ; âge d'or de l'Espagne musulmane."
+    },
+    "lat": 37.88,
+    "lng": -4.78,
+    "tags": ["caliphate"],
+    "peak": 950
+  },
+  {
+    "id": "crown-of-castile",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 1035,
+    "end": 1516,
+    "name": { "zh": "卡斯蒂利亚王国", "en": "Crown of Castile", "fr": "Couronne de Castille" },
+    "desc": {
+      "zh": "卡斯蒂利亚王国，收复失地运动的核心力量。",
+      "en": "Crown of Castile; driving force of the Reconquista.",
+      "fr": "Couronne de Castille ; force motrice de la Reconquista."
+    },
+    "lat": 42.34,
+    "lng": -3.70,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "crown-of-aragon",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 1035,
+    "end": 1516,
+    "name": { "zh": "阿拉贡王国", "en": "Crown of Aragon", "fr": "Couronne d'Aragon" },
+    "desc": {
+      "zh": "阿拉贡王国，称霸西地中海的贸易强权。",
+      "en": "Crown of Aragon; a trading power across the western Mediterranean.",
+      "fr": "Couronne d'Aragon ; puissance commerciale de la Méditerranée occidentale."
+    },
+    "lat": 41.38,
+    "lng": 2.17,
+    "tags": ["kingdom"],
+    "peak": 1400
+  },
+  {
+    "id": "spanish-empire",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 1492,
+    "end": 1898,
+    "name": { "zh": "西班牙帝国", "en": "Spanish Empire", "fr": "Empire espagnol" },
+    "desc": {
+      "zh": "西班牙帝国，首个全球殖民帝国，白银与航海霸权。",
+      "en": "Spanish Empire; the first global empire, built on silver and sail.",
+      "fr": "Empire espagnol ; premier empire mondial, fondé sur l'argent et la marine."
+    },
+    "lat": 40.42,
+    "lng": -3.70,
+    "tags": ["empire", "colonial"],
+    "peak": 1580
+  },
+  {
+    "id": "kingdom-of-portugal",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 1139,
+    "end": 1910,
+    "name": { "zh": "葡萄牙王国", "en": "Kingdom of Portugal", "fr": "Royaume du Portugal" },
+    "desc": {
+      "zh": "葡萄牙王国，开创大航海时代的海上帝国。",
+      "en": "Kingdom of Portugal; seafaring empire that opened the Age of Discovery.",
+      "fr": "Royaume du Portugal ; empire maritime ouvrant l'ère des découvertes."
+    },
+    "lat": 38.72,
+    "lng": -9.14,
+    "tags": ["kingdom", "colonial"],
+    "peak": 1500
+  },
+  {
+    "id": "spain",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 1975,
+    "end": 2100,
+    "name": { "zh": "西班牙", "en": "Spain", "fr": "Espagne" },
+    "desc": {
+      "zh": "现代西班牙王国，1975年后转型的民主君主制国家。",
+      "en": "Modern Kingdom of Spain; a democracy since 1975.",
+      "fr": "Royaume d'Espagne moderne ; une démocratie depuis 1975."
+    },
+    "lat": 40.42,
+    "lng": -3.70,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "portugal",
+    "region": "europe",
+    "civ": "iberia",
+    "start": 1910,
+    "end": 2100,
+    "name": { "zh": "葡萄牙", "en": "Portugal", "fr": "Portugal" },
+    "desc": {
+      "zh": "葡萄牙共和国，1910年推翻君主制后的现代国家。",
+      "en": "Portuguese Republic; the modern state since the 1910 revolution.",
+      "fr": "République portugaise ; l'État moderne depuis la révolution de 1910."
+    },
+    "lat": 38.72,
+    "lng": -9.14,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "ostrogothic-kingdom",
+    "region": "europe",
+    "civ": "italy",
+    "start": 493,
+    "end": 553,
+    "name": { "zh": "东哥特王国", "en": "Ostrogothic Kingdom", "fr": "Royaume ostrogoth" },
+    "desc": {
+      "zh": "东哥特王国，狄奥多里克大帝治下的意大利。",
+      "en": "Ostrogothic Kingdom; Italy under Theodoric the Great.",
+      "fr": "Royaume ostrogoth ; l'Italie sous Théodoric le Grand."
+    },
+    "lat": 44.42,
+    "lng": 12.2,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "lombard-kingdom",
+    "region": "europe",
+    "civ": "italy",
+    "start": 568,
+    "end": 774,
+    "name": { "zh": "伦巴第王国", "en": "Lombard Kingdom", "fr": "Royaume lombard" },
+    "desc": {
+      "zh": "伦巴第王国，统治意大利北部直至查理曼征服。",
+      "en": "Lombard Kingdom of northern Italy until Charlemagne's conquest.",
+      "fr": "Royaume lombard d'Italie du Nord jusqu'à la conquête de Charlemagne."
+    },
+    "lat": 45.19,
+    "lng": 9.16,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "republic-of-venice",
+    "region": "europe",
+    "civ": "italy",
+    "start": 697,
+    "end": 1797,
+    "name": { "zh": "威尼斯共和国", "en": "Republic of Venice", "fr": "République de Venise" },
+    "desc": {
+      "zh": "威尼斯共和国，地中海贸易与海军强权延续千年。",
+      "en": "Republic of Venice; a millennium of Mediterranean trade and naval power.",
+      "fr": "République de Venise ; mille ans de commerce et de puissance navale."
+    },
+    "lat": 45.44,
+    "lng": 12.34,
+    "tags": ["republic"],
+    "peak": 1450
+  },
+  {
+    "id": "papal-states",
+    "region": "europe",
+    "civ": "italy",
+    "start": 754,
+    "end": 1870,
+    "name": { "zh": "教皇国", "en": "Papal States", "fr": "États pontificaux" },
+    "desc": {
+      "zh": "教皇国，教宗直辖的中意大利世俗领地。",
+      "en": "Papal States; central Italy ruled directly by the Pope.",
+      "fr": "États pontificaux ; l'Italie centrale gouvernée par le pape."
+    },
+    "lat": 41.9,
+    "lng": 12.45,
+    "tags": ["theocracy"],
+    "peak": 1600
+  },
+  {
+    "id": "kingdom-of-italy",
+    "region": "europe",
+    "civ": "italy",
+    "start": 1861,
+    "end": 1946,
+    "name": { "zh": "意大利王国", "en": "Kingdom of Italy", "fr": "Royaume d'Italie" },
+    "desc": {
+      "zh": "意大利王国，1861年统一半岛的民族国家。",
+      "en": "Kingdom of Italy; unified the peninsula in 1861.",
+      "fr": "Royaume d'Italie ; unifia la péninsule en 1861."
+    },
+    "lat": 41.9,
+    "lng": 12.5,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "italian-republic",
+    "region": "europe",
+    "civ": "italy",
+    "start": 1946,
+    "end": 2100,
+    "name": { "zh": "意大利共和国", "en": "Italian Republic", "fr": "République italienne" },
+    "desc": {
+      "zh": "意大利共和国，二战后建立的现代共和国。",
+      "en": "Italian Republic; the modern republic founded after World War II.",
+      "fr": "République italienne ; la république moderne fondée après la guerre."
+    },
+    "lat": 41.9,
+    "lng": 12.5,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "kingdom-of-prussia",
+    "region": "europe",
+    "civ": "germany",
+    "start": 1701,
+    "end": 1918,
+    "name": { "zh": "普鲁士王国", "en": "Kingdom of Prussia", "fr": "Royaume de Prusse" },
+    "desc": {
+      "zh": "普鲁士王国，军事强邦，主导德意志统一。",
+      "en": "Kingdom of Prussia; a militarized state that led German unification.",
+      "fr": "Royaume de Prusse ; État militarisé qui mena l'unification allemande."
+    },
+    "lat": 52.52,
+    "lng": 13.40,
+    "tags": ["kingdom"],
+    "peak": 1870
+  },
+  {
+    "id": "german-empire",
+    "region": "europe",
+    "civ": "germany",
+    "start": 1871,
+    "end": 1918,
+    "name": { "zh": "德意志帝国", "en": "German Empire", "fr": "Empire allemand" },
+    "desc": {
+      "zh": "德意志帝国，俾斯麦统一后的工业强权。",
+      "en": "German Empire; industrial great power after Bismarck's unification.",
+      "fr": "Empire allemand ; grande puissance industrielle après l'unification de Bismarck."
+    },
+    "lat": 52.52,
+    "lng": 13.40,
+    "tags": ["empire"]
+  },
+  {
+    "id": "weimar-republic",
+    "region": "europe",
+    "civ": "germany",
+    "start": 1919,
+    "end": 1933,
+    "name": { "zh": "魏玛共和国", "en": "Weimar Republic", "fr": "République de Weimar" },
+    "desc": {
+      "zh": "魏玛共和国，一战后德国的民主实验。",
+      "en": "Weimar Republic; Germany's democratic experiment after WWI.",
+      "fr": "République de Weimar ; l'expérience démocratique allemande après 1918."
+    },
+    "lat": 52.52,
+    "lng": 13.40,
+    "tags": ["republic"]
+  },
+  {
+    "id": "nazi-germany",
+    "region": "europe",
+    "civ": "germany",
+    "start": 1933,
+    "end": 1945,
+    "name": { "zh": "纳粹德国", "en": "Nazi Germany", "fr": "Allemagne nazie" },
+    "desc": {
+      "zh": "纳粹德国，希特勒的极权政权，发动第二次世界大战。",
+      "en": "Nazi Germany; Hitler's totalitarian regime that launched WWII.",
+      "fr": "Allemagne nazie ; régime totalitaire d'Hitler, à l'origine de la guerre."
+    },
+    "lat": 52.52,
+    "lng": 13.40,
+    "tags": ["modern-state"],
+    "peak": 1942
+  },
+  {
+    "id": "federal-republic-of-germany",
+    "region": "europe",
+    "civ": "germany",
+    "start": 1949,
+    "end": 2100,
+    "name": { "zh": "德意志联邦共和国", "en": "Federal Republic of Germany", "fr": "République fédérale d'Allemagne" },
+    "desc": {
+      "zh": "德意志联邦共和国，1990年两德统一后的现代德国。",
+      "en": "Federal Republic of Germany; modern Germany, reunified in 1990.",
+      "fr": "République fédérale d'Allemagne ; l'Allemagne moderne, réunifiée en 1990."
+    },
+    "lat": 52.52,
+    "lng": 13.40,
+    "tags": ["federation", "modern-state"]
+  },
+  {
+    "id": "kievan-rus",
+    "region": "europe",
+    "civ": "russia",
+    "start": 882,
+    "end": 1240,
+    "name": { "zh": "基辅罗斯", "en": "Kievan Rus'", "fr": "Rus' de Kiev" },
+    "desc": {
+      "zh": "基辅罗斯，东斯拉夫首个国家，俄乌白共同源头。",
+      "en": "Kievan Rus'; first East Slavic state and shared origin of Russia.",
+      "fr": "Rus' de Kiev ; premier État slave oriental, berceau commun russe."
+    },
+    "lat": 50.45,
+    "lng": 30.52,
+    "tags": ["kingdom"],
+    "peak": 1000
+  },
+  {
+    "id": "grand-duchy-of-moscow",
+    "region": "europe",
+    "civ": "russia",
+    "start": 1283,
+    "end": 1547,
+    "name": { "zh": "莫斯科大公国", "en": "Grand Duchy of Moscow", "fr": "Grand-duché de Moscou" },
+    "desc": {
+      "zh": "莫斯科大公国，摆脱蒙古统治，聚合罗斯诸地。",
+      "en": "Grand Duchy of Moscow; threw off Mongol rule and gathered the Rus'.",
+      "fr": "Grand-duché de Moscou ; se libéra des Mongols et rassembla la Rus'."
+    },
+    "lat": 55.75,
+    "lng": 37.62,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "tsardom-of-russia",
+    "region": "europe",
+    "civ": "russia",
+    "start": 1547,
+    "end": 1721,
+    "name": { "zh": "俄罗斯沙皇国", "en": "Tsardom of Russia", "fr": "Tsarat de Russie" },
+    "desc": {
+      "zh": "俄罗斯沙皇国，伊凡四世称沙皇，向东扩张至西伯利亚。",
+      "en": "Tsardom of Russia; Ivan IV's realm expanding east into Siberia.",
+      "fr": "Tsarat de Russie ; le règne d'Ivan IV s'étendant vers la Sibérie."
+    },
+    "lat": 55.75,
+    "lng": 37.62,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "russian-empire",
+    "region": "europe",
+    "civ": "russia",
+    "start": 1721,
+    "end": 1917,
+    "name": { "zh": "俄罗斯帝国", "en": "Russian Empire", "fr": "Empire russe" },
+    "desc": {
+      "zh": "俄罗斯帝国，彼得大帝欧化，横跨欧亚的大国。",
+      "en": "Russian Empire; Peter the Great's Europeanized Eurasian power.",
+      "fr": "Empire russe ; puissance eurasienne européanisée par Pierre le Grand."
+    },
+    "lat": 59.94,
+    "lng": 30.31,
+    "tags": ["empire"],
+    "peak": 1866
+  },
+  {
+    "id": "soviet-union",
+    "region": "europe",
+    "civ": "russia",
+    "start": 1922,
+    "end": 1991,
+    "name": { "zh": "苏联", "en": "Soviet Union", "fr": "Union soviétique" },
+    "desc": {
+      "zh": "苏联，世界首个社会主义国家，冷战超级大国。",
+      "en": "The Soviet Union; first socialist state and Cold War superpower.",
+      "fr": "L'Union soviétique ; premier État socialiste et superpuissance de la guerre froide."
+    },
+    "lat": 55.75,
+    "lng": 37.62,
+    "tags": ["federation", "modern-state"],
+    "peak": 1960
+  },
+  {
+    "id": "russian-federation",
+    "region": "europe",
+    "civ": "russia",
+    "start": 1991,
+    "end": 2100,
+    "name": { "zh": "俄罗斯联邦", "en": "Russian Federation", "fr": "Fédération de Russie" },
+    "desc": {
+      "zh": "俄罗斯联邦，苏联解体后的现代俄罗斯。",
+      "en": "The Russian Federation; modern Russia after the USSR's collapse.",
+      "fr": "La Fédération de Russie ; la Russie moderne après la chute de l'URSS."
+    },
+    "lat": 55.75,
+    "lng": 37.62,
+    "tags": ["federation", "modern-state"]
+  },
+  {
+    "id": "viking-age",
+    "region": "europe",
+    "civ": "norse",
+    "start": 793,
+    "end": 1066,
+    "name": { "zh": "维京时代", "en": "Viking Age", "fr": "Âge viking" },
+    "desc": {
+      "zh": "维京时代，北欧海盗与商人横扫欧洲海岸。",
+      "en": "The Viking Age; Norse raiders and traders swept Europe's coasts.",
+      "fr": "L'âge viking ; pillards et marchands nordiques déferlent sur l'Europe."
+    },
+    "lat": 59.91,
+    "lng": 10.75,
+    "tags": ["culture"],
+    "peak": 900
+  },
+  {
+    "id": "kingdom-of-denmark",
+    "region": "europe",
+    "civ": "norse",
+    "start": 936,
+    "end": 2100,
+    "name": { "zh": "丹麦王国", "en": "Kingdom of Denmark", "fr": "Royaume du Danemark" },
+    "desc": {
+      "zh": "丹麦王国，欧洲最古老君主国之一，曾主导卡尔马联盟。",
+      "en": "Kingdom of Denmark; one of Europe's oldest monarchies, led the Kalmar Union.",
+      "fr": "Royaume du Danemark ; l'une des plus anciennes monarchies, mena l'union de Kalmar."
+    },
+    "lat": 55.68,
+    "lng": 12.57,
+    "tags": ["kingdom"],
+    "peak": 1397
+  },
+  {
+    "id": "kingdom-of-sweden",
+    "region": "europe",
+    "civ": "norse",
+    "start": 970,
+    "end": 2100,
+    "name": { "zh": "瑞典王国", "en": "Kingdom of Sweden", "fr": "Royaume de Suède" },
+    "desc": {
+      "zh": "瑞典王国，17世纪一度称霸波罗的海。",
+      "en": "Kingdom of Sweden; a Baltic great power in the 17th century.",
+      "fr": "Royaume de Suède ; grande puissance baltique au XVIIe siècle."
+    },
+    "lat": 59.33,
+    "lng": 18.07,
+    "tags": ["kingdom"],
+    "peak": 1650
+  },
+  {
+    "id": "first-bulgarian-empire",
+    "region": "europe",
+    "civ": "balkan-slavic",
+    "start": 681,
+    "end": 1018,
+    "name": { "zh": "保加利亚第一帝国", "en": "First Bulgarian Empire", "fr": "Premier Empire bulgare" },
+    "desc": {
+      "zh": "保加利亚第一帝国，巴尔干强国，斯拉夫文字的摇篮。",
+      "en": "First Bulgarian Empire; a Balkan power and cradle of the Slavic script.",
+      "fr": "Premier Empire bulgare ; puissance balkanique, berceau de l'écriture slave."
+    },
+    "lat": 43.38,
+    "lng": 26.99,
+    "tags": ["empire"],
+    "peak": 900
+  },
+  {
+    "id": "second-bulgarian-empire",
+    "region": "europe",
+    "civ": "balkan-slavic",
+    "start": 1185,
+    "end": 1396,
+    "name": { "zh": "保加利亚第二帝国", "en": "Second Bulgarian Empire", "fr": "Second Empire bulgare" },
+    "desc": {
+      "zh": "保加利亚第二帝国，复兴的巴尔干强权。",
+      "en": "Second Bulgarian Empire; a revived Balkan power.",
+      "fr": "Second Empire bulgare ; puissance balkanique renaissante."
+    },
+    "lat": 43.08,
+    "lng": 25.63,
+    "tags": ["empire"]
+  },
+  {
+    "id": "serbian-empire",
+    "region": "europe",
+    "civ": "balkan-slavic",
+    "start": 1346,
+    "end": 1371,
+    "name": { "zh": "塞尔维亚帝国", "en": "Serbian Empire", "fr": "Empire serbe" },
+    "desc": {
+      "zh": "塞尔维亚帝国，杜尚大帝治下巴尔干最强国。",
+      "en": "Serbian Empire; the Balkans' strongest state under Stefan Dušan.",
+      "fr": "Empire serbe ; l'État le plus puissant des Balkans sous Étienne Dušan."
+    },
+    "lat": 42.21,
+    "lng": 20.74,
+    "tags": ["empire"]
+  },
+  {
+    "id": "kingdom-of-poland",
+    "region": "europe",
+    "civ": "poland",
+    "start": 1025,
+    "end": 1569,
+    "name": { "zh": "波兰王国", "en": "Kingdom of Poland", "fr": "Royaume de Pologne" },
+    "desc": {
+      "zh": "波兰王国，中欧天主教强国，皮亚斯特与雅盖隆王朝。",
+      "en": "Kingdom of Poland; a Central European Catholic power.",
+      "fr": "Royaume de Pologne ; puissance catholique d'Europe centrale."
+    },
+    "lat": 50.06,
+    "lng": 19.94,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "polish-lithuanian-commonwealth",
+    "region": "europe",
+    "civ": "poland",
+    "start": 1569,
+    "end": 1795,
+    "name": { "zh": "波兰立陶宛联邦", "en": "Polish-Lithuanian Commonwealth", "fr": "République des Deux Nations" },
+    "desc": {
+      "zh": "波兰立陶宛联邦，欧洲最大国家之一，贵族共和制。",
+      "en": "Polish-Lithuanian Commonwealth; a vast noble republic of Europe.",
+      "fr": "République des Deux Nations ; vaste république nobiliaire d'Europe."
+    },
+    "lat": 52.23,
+    "lng": 21.01,
+    "tags": ["federation", "republic"],
+    "peak": 1600
+  }
+]

@@ -1,0 +1,745 @@
+[
+  {
+    "id": "indus-valley-civilization",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": -3300,
+    "end": -1300,
+    "name": { "zh": "印度河流域文明", "en": "Indus Valley Civilization", "fr": "Civilisation de l'Indus" },
+    "desc": {
+      "zh": "南亚最早的青铜城市文明，规划市镇与统一度量。",
+      "en": "South Asia's earliest urban Bronze Age civilization; planned cities.",
+      "fr": "Première civilisation urbaine de l'âge du bronze en Asie du Sud."
+    },
+    "lat": 27.3,
+    "lng": 68.1,
+    "tags": ["culture"],
+    "peak": -2300
+  },
+  {
+    "id": "vedic-period",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": -1500,
+    "end": -500,
+    "name": { "zh": "吠陀时期", "en": "Vedic Period", "fr": "Période védique" },
+    "desc": {
+      "zh": "吠陀经典与种姓社会成形，塑造印度教根基。",
+      "en": "Era of the Vedas; shaped Hindu religion and caste society.",
+      "fr": "Époque des Védas ; façonne l'hindouisme et le système des castes."
+    },
+    "lat": 29.0,
+    "lng": 76.5,
+    "tags": ["culture"]
+  },
+  {
+    "id": "magadha-kingdom",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": -544,
+    "end": -322,
+    "name": { "zh": "摩揭陀国", "en": "Magadha Kingdom", "fr": "Royaume de Magadha" },
+    "desc": {
+      "zh": "恒河流域强国，孕育佛教兴起与孔雀帝国。",
+      "en": "Dominant Ganges kingdom; cradle of Buddhism and the Maurya Empire.",
+      "fr": "Royaume dominant du Gange ; berceau du bouddhisme et des Maurya."
+    },
+    "lat": 25.2,
+    "lng": 85.2,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "maurya-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": -322,
+    "end": -185,
+    "name": { "zh": "孔雀王朝", "en": "Maurya Empire", "fr": "Empire maurya" },
+    "desc": {
+      "zh": "印度首个大一统帝国，阿育王弘扬佛法。",
+      "en": "First empire to unify India; Ashoka spread Buddhism.",
+      "fr": "Premier empire à unifier l'Inde ; Ashoka diffuse le bouddhisme."
+    },
+    "lat": 25.6,
+    "lng": 85.1,
+    "tags": ["empire"],
+    "peak": -260
+  },
+  {
+    "id": "satavahana-dynasty",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": -230,
+    "end": 220,
+    "name": { "zh": "百乘王朝", "en": "Satavahana Dynasty", "fr": "Dynastie Satavahana" },
+    "desc": {
+      "zh": "德干高原强权，连接南北贸易与佛教艺术。",
+      "en": "Deccan power linking north–south trade and Buddhist art.",
+      "fr": "Puissance du Deccan reliant commerce et art bouddhiste."
+    },
+    "lat": 19.5,
+    "lng": 75.4,
+    "tags": ["dynasty", "kingdom"],
+    "peak": 150
+  },
+  {
+    "id": "gupta-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 320,
+    "end": 550,
+    "name": { "zh": "笈多王朝", "en": "Gupta Empire", "fr": "Empire gupta" },
+    "desc": {
+      "zh": "印度\"黄金时代\"，科学、数学与艺术鼎盛。",
+      "en": "India's \"Golden Age\"; flourishing science, maths and art.",
+      "fr": "« Âge d'or » de l'Inde ; apogée des sciences et des arts."
+    },
+    "lat": 25.6,
+    "lng": 85.1,
+    "tags": ["empire"],
+    "peak": 400
+  },
+  {
+    "id": "harsha-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 606,
+    "end": 647,
+    "name": { "zh": "戒日王朝", "en": "Harsha Empire", "fr": "Empire de Harsha" },
+    "desc": {
+      "zh": "戒日王统一北印度的最后古典帝国。",
+      "en": "Harsha's realm, the last great classical empire of North India.",
+      "fr": "Empire de Harsha, dernier grand empire classique du Nord."
+    },
+    "lat": 27.06,
+    "lng": 79.92,
+    "tags": ["empire"]
+  },
+  {
+    "id": "chola-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 848,
+    "end": 1279,
+    "name": { "zh": "朱罗王朝", "en": "Chola Empire", "fr": "Empire Chola" },
+    "desc": {
+      "zh": "南印度海上帝国，远征东南亚与斯里兰卡。",
+      "en": "South Indian maritime empire reaching Southeast Asia.",
+      "fr": "Empire maritime tamoul rayonnant jusqu'en Asie du Sud-Est."
+    },
+    "lat": 10.79,
+    "lng": 79.14,
+    "tags": ["empire"],
+    "peak": 1030
+  },
+  {
+    "id": "delhi-sultanate",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1206,
+    "end": 1526,
+    "name": { "zh": "德里苏丹国", "en": "Delhi Sultanate", "fr": "Sultanat de Delhi" },
+    "desc": {
+      "zh": "突厥-阿富汗穆斯林政权，统治北印度三百年。",
+      "en": "Turco-Afghan Muslim state ruling North India for centuries.",
+      "fr": "État musulman turco-afghan dominant le Nord de l'Inde."
+    },
+    "lat": 28.6,
+    "lng": 77.2,
+    "tags": ["sultanate"],
+    "peak": 1330
+  },
+  {
+    "id": "vijayanagara-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1336,
+    "end": 1646,
+    "name": { "zh": "维查耶那伽罗帝国", "en": "Vijayanagara Empire", "fr": "Empire de Vijayanagara" },
+    "desc": {
+      "zh": "南印度印度教帝国，抵御北方苏丹势力。",
+      "en": "Hindu empire of the south resisting northern sultanates.",
+      "fr": "Empire hindou du Sud résistant aux sultanats du Nord."
+    },
+    "lat": 15.34,
+    "lng": 76.46,
+    "tags": ["empire"],
+    "peak": 1520
+  },
+  {
+    "id": "mughal-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1526,
+    "end": 1857,
+    "name": { "zh": "莫卧儿帝国", "en": "Mughal Empire", "fr": "Empire moghol" },
+    "desc": {
+      "zh": "波斯-突厥伊斯兰帝国，泰姬陵与鼎盛文化。",
+      "en": "Perso-Turkic Islamic empire; builder of the Taj Mahal.",
+      "fr": "Empire islamique perso-turc ; bâtisseur du Taj Mahal."
+    },
+    "lat": 28.6,
+    "lng": 77.2,
+    "tags": ["empire"],
+    "peak": 1700
+  },
+  {
+    "id": "maratha-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1674,
+    "end": 1818,
+    "name": { "zh": "马拉塔帝国", "en": "Maratha Empire", "fr": "Empire marathe" },
+    "desc": {
+      "zh": "印度教军事联盟，终结莫卧儿霸权。",
+      "en": "Hindu military confederacy that ended Mughal supremacy.",
+      "fr": "Confédération hindoue qui mit fin à l'hégémonie moghole."
+    },
+    "lat": 18.5,
+    "lng": 73.9,
+    "tags": ["empire", "confederation"],
+    "peak": 1760
+  },
+  {
+    "id": "sikh-empire",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1799,
+    "end": 1849,
+    "name": { "zh": "锡克帝国", "en": "Sikh Empire", "fr": "Empire sikh" },
+    "desc": {
+      "zh": "兰吉特·辛格建立的旁遮普锡克强国。",
+      "en": "Ranjit Singh's Sikh state in Punjab.",
+      "fr": "État sikh du Pendjab fondé par Ranjit Singh."
+    },
+    "lat": 31.55,
+    "lng": 74.34,
+    "tags": ["empire", "kingdom"],
+    "peak": 1839
+  },
+  {
+    "id": "british-india",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1757,
+    "end": 1947,
+    "name": { "zh": "英属印度", "en": "British India", "fr": "Inde britannique" },
+    "desc": {
+      "zh": "东印度公司与英王直辖统治印度次大陆。",
+      "en": "East India Company then Crown rule over the subcontinent.",
+      "fr": "Domination de la Compagnie puis de la Couronne britannique."
+    },
+    "lat": 28.6,
+    "lng": 77.2,
+    "tags": ["colonial"]
+  },
+  {
+    "id": "republic-of-india",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1947,
+    "end": 2025,
+    "name": { "zh": "印度共和国", "en": "Republic of India", "fr": "République de l'Inde" },
+    "desc": {
+      "zh": "世界人口最多的民主共和国。",
+      "en": "The world's most populous democratic republic.",
+      "fr": "La république démocratique la plus peuplée du monde."
+    },
+    "lat": 28.6,
+    "lng": 77.2,
+    "tags": ["republic", "modern-state"]
+  },
+  {
+    "id": "pakistan",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1947,
+    "end": 2025,
+    "name": { "zh": "巴基斯坦", "en": "Pakistan", "fr": "Pakistan" },
+    "desc": {
+      "zh": "1947年分治建立的南亚伊斯兰共和国。",
+      "en": "Islamic republic created by the 1947 Partition.",
+      "fr": "République islamique née de la partition de 1947."
+    },
+    "lat": 33.68,
+    "lng": 73.05,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "bangladesh",
+    "region": "south-central-asia",
+    "civ": "india",
+    "start": 1971,
+    "end": 2025,
+    "name": { "zh": "孟加拉国", "en": "Bangladesh", "fr": "Bangladesh" },
+    "desc": {
+      "zh": "1971年脱离巴基斯坦独立的孟加拉国家。",
+      "en": "Bengali nation independent from Pakistan since 1971.",
+      "fr": "Nation bengalie indépendante du Pakistan depuis 1971."
+    },
+    "lat": 23.81,
+    "lng": 90.41,
+    "tags": ["modern-state", "republic"]
+  },
+  {
+    "id": "kushan-empire",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 30,
+    "end": 375,
+    "name": { "zh": "贵霜帝国", "en": "Kushan Empire", "fr": "Empire kouchan" },
+    "desc": {
+      "zh": "大月氏所建，横跨中亚与北印度，佛教东传枢纽。",
+      "en": "Yuezhi empire across Central Asia; spread Buddhism eastward.",
+      "fr": "Empire yuezhi d'Asie centrale ; diffuse le bouddhisme."
+    },
+    "lat": 34.0,
+    "lng": 71.5,
+    "tags": ["empire"],
+    "peak": 127
+  },
+  {
+    "id": "khwarazmian-empire",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 1077,
+    "end": 1231,
+    "name": { "zh": "花剌子模", "en": "Khwarazmian Empire", "fr": "Empire khwarezmien" },
+    "desc": {
+      "zh": "中亚花剌子模帝国，为蒙古所灭。",
+      "en": "Central Asian empire destroyed by the Mongols.",
+      "fr": "Empire d'Asie centrale anéanti par les Mongols."
+    },
+    "lat": 41.4,
+    "lng": 60.6,
+    "tags": ["empire"],
+    "peak": 1210
+  },
+  {
+    "id": "chagatai-khanate",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 1226,
+    "end": 1347,
+    "name": { "zh": "察合台汗国", "en": "Chagatai Khanate", "fr": "Khanat de Djaghataï" },
+    "desc": {
+      "zh": "蒙古四大汗国之一，统治河中地区。",
+      "en": "Mongol khanate ruling Transoxiana and Central Asia.",
+      "fr": "Khanat mongol régnant sur la Transoxiane."
+    },
+    "lat": 39.65,
+    "lng": 66.96,
+    "tags": ["khanate"]
+  },
+  {
+    "id": "timurid-empire",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 1370,
+    "end": 1507,
+    "name": { "zh": "帖木儿帝国", "en": "Timurid Empire", "fr": "Empire timouride" },
+    "desc": {
+      "zh": "帖木儿建立，撒马尔罕成为文艺中心。",
+      "en": "Timur's empire; Samarkand became a cultural jewel.",
+      "fr": "Empire de Tamerlan ; Samarcande, joyau culturel."
+    },
+    "lat": 39.65,
+    "lng": 66.96,
+    "tags": ["empire"],
+    "peak": 1405
+  },
+  {
+    "id": "moghulistan",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 1347,
+    "end": 1462,
+    "name": { "zh": "蒙兀儿斯坦", "en": "Moghulistan", "fr": "Moghoulistan" },
+    "desc": {
+      "zh": "东察合台汗国，蒙古势力在中亚东部的延续。",
+      "en": "Eastern Chagatai khanate in the Tarim and Ili regions.",
+      "fr": "Khanat tchaghataïde oriental du Tarim et de l'Ili."
+    },
+    "lat": 43.9,
+    "lng": 81.3,
+    "tags": ["khanate"]
+  },
+  {
+    "id": "khanate-of-bukhara",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 1501,
+    "end": 1920,
+    "name": { "zh": "布哈拉汗国", "en": "Khanate of Bukhara", "fr": "Khanat de Boukhara" },
+    "desc": {
+      "zh": "乌兹别克汗国，中亚绿洲政教中心。",
+      "en": "Uzbek khanate; oasis centre of Central Asian Islam.",
+      "fr": "Khanat ouzbek ; centre oasien de l'islam d'Asie centrale."
+    },
+    "lat": 39.77,
+    "lng": 64.42,
+    "tags": ["khanate"]
+  },
+  {
+    "id": "khanate-of-khiva",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 1511,
+    "end": 1920,
+    "name": { "zh": "希瓦汗国", "en": "Khanate of Khiva", "fr": "Khanat de Khiva" },
+    "desc": {
+      "zh": "阿姆河下游绿洲汗国。",
+      "en": "Oasis khanate on the lower Amu Darya.",
+      "fr": "Khanat oasien du bas Amou-Daria."
+    },
+    "lat": 41.38,
+    "lng": 60.36,
+    "tags": ["khanate"]
+  },
+  {
+    "id": "khanate-of-kokand",
+    "region": "south-central-asia",
+    "civ": "steppe",
+    "start": 1709,
+    "end": 1876,
+    "name": { "zh": "浩罕汗国", "en": "Khanate of Kokand", "fr": "Khanat de Kokand" },
+    "desc": {
+      "zh": "费尔干纳盆地绿洲汗国。",
+      "en": "Oasis khanate of the Fergana Valley.",
+      "fr": "Khanat oasien de la vallée de Ferghana."
+    },
+    "lat": 40.53,
+    "lng": 70.94,
+    "tags": ["khanate"]
+  },
+  {
+    "id": "ghaznavid-empire",
+    "region": "south-central-asia",
+    "civ": "afghan",
+    "start": 977,
+    "end": 1186,
+    "name": { "zh": "伽色尼王朝", "en": "Ghaznavid Empire", "fr": "Empire ghaznévide" },
+    "desc": {
+      "zh": "突厥奴隶将领所建，首度将伊斯兰带入印度。",
+      "en": "Turkic dynasty that first brought Islam into India.",
+      "fr": "Dynastie turque qui apporta l'islam en Inde."
+    },
+    "lat": 33.55,
+    "lng": 68.42,
+    "tags": ["empire", "sultanate"],
+    "peak": 1030
+  },
+  {
+    "id": "ghurid-sultanate",
+    "region": "south-central-asia",
+    "civ": "afghan",
+    "start": 1148,
+    "end": 1215,
+    "name": { "zh": "古尔王朝", "en": "Ghurid Sultanate", "fr": "Sultanat ghouride" },
+    "desc": {
+      "zh": "阿富汗山地王朝，征服北印度奠定德里苏丹国。",
+      "en": "Afghan dynasty whose conquests founded the Delhi Sultanate.",
+      "fr": "Dynastie afghane à l'origine du sultanat de Delhi."
+    },
+    "lat": 34.5,
+    "lng": 65.2,
+    "tags": ["sultanate"],
+    "peak": 1200
+  },
+  {
+    "id": "durrani-empire",
+    "region": "south-central-asia",
+    "civ": "afghan",
+    "start": 1747,
+    "end": 1823,
+    "name": { "zh": "杜兰尼帝国", "en": "Durrani Empire", "fr": "Empire durrani" },
+    "desc": {
+      "zh": "阿富汗现代国家的奠基帝国。",
+      "en": "Empire regarded as the founding of modern Afghanistan.",
+      "fr": "Empire considéré comme la fondation de l'Afghanistan moderne."
+    },
+    "lat": 31.61,
+    "lng": 65.71,
+    "tags": ["empire"],
+    "peak": 1760
+  },
+  {
+    "id": "afghanistan",
+    "region": "south-central-asia",
+    "civ": "afghan",
+    "start": 1823,
+    "end": 2025,
+    "name": { "zh": "阿富汗", "en": "Afghanistan", "fr": "Afghanistan" },
+    "desc": {
+      "zh": "中亚与南亚之间的山地国家。",
+      "en": "Mountainous state between Central and South Asia.",
+      "fr": "État montagneux entre Asie centrale et Asie du Sud."
+    },
+    "lat": 34.53,
+    "lng": 69.17,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "funan",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 68,
+    "end": 550,
+    "name": { "zh": "扶南", "en": "Funan", "fr": "Founan" },
+    "desc": {
+      "zh": "湄公河三角洲最早的印度化王国。",
+      "en": "Earliest Indianized kingdom of the Mekong delta.",
+      "fr": "Premier royaume indianisé du delta du Mékong."
+    },
+    "lat": 10.5,
+    "lng": 105.1,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "chenla",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 550,
+    "end": 802,
+    "name": { "zh": "真腊", "en": "Chenla", "fr": "Tchen-la" },
+    "desc": {
+      "zh": "继扶南而起的高棉先驱王国。",
+      "en": "Khmer predecessor kingdom succeeding Funan.",
+      "fr": "Royaume khmer précurseur, successeur du Founan."
+    },
+    "lat": 12.9,
+    "lng": 105.0,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "khmer-empire",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 802,
+    "end": 1431,
+    "name": { "zh": "高棉帝国", "en": "Khmer Empire", "fr": "Empire khmer" },
+    "desc": {
+      "zh": "吴哥帝国，兴建吴哥窟等宏伟神庙。",
+      "en": "Angkor empire; builder of Angkor Wat and vast temples.",
+      "fr": "Empire d'Angkor ; bâtisseur d'Angkor Vat."
+    },
+    "lat": 13.41,
+    "lng": 103.87,
+    "tags": ["empire"],
+    "peak": 1180
+  },
+  {
+    "id": "srivijaya",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 650,
+    "end": 1377,
+    "name": { "zh": "室利佛逝", "en": "Srivijaya", "fr": "Srivijaya" },
+    "desc": {
+      "zh": "苏门答腊海上佛教帝国，控马六甲海峡。",
+      "en": "Sumatran maritime Buddhist empire controlling the Malacca Strait.",
+      "fr": "Empire maritime bouddhiste de Sumatra, maître du détroit."
+    },
+    "lat": -2.99,
+    "lng": 104.76,
+    "tags": ["empire", "kingdom"],
+    "peak": 900
+  },
+  {
+    "id": "pagan-kingdom",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 849,
+    "end": 1297,
+    "name": { "zh": "蒲甘王朝", "en": "Pagan Kingdom", "fr": "Royaume de Pagan" },
+    "desc": {
+      "zh": "缅甸首个统一王国，上座部佛教中心。",
+      "en": "First unified Burmese kingdom; Theravada Buddhist centre.",
+      "fr": "Premier royaume birman unifié ; centre du bouddhisme theravada."
+    },
+    "lat": 21.17,
+    "lng": 94.86,
+    "tags": ["kingdom"],
+    "peak": 1100
+  },
+  {
+    "id": "champa",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 192,
+    "end": 1832,
+    "name": { "zh": "占婆", "en": "Champa", "fr": "Champā" },
+    "desc": {
+      "zh": "越南中部的印度化占族海洋王国。",
+      "en": "Indianized Cham maritime kingdom of central Vietnam.",
+      "fr": "Royaume maritime cham indianisé du centre du Vietnam."
+    },
+    "lat": 15.9,
+    "lng": 108.3,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "majapahit",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1293,
+    "end": 1527,
+    "name": { "zh": "满者伯夷", "en": "Majapahit", "fr": "Majapahit" },
+    "desc": {
+      "zh": "爪哇印度教-佛教帝国，海权鼎盛于南洋。",
+      "en": "Javanese Hindu-Buddhist empire dominating the archipelago.",
+      "fr": "Empire hindou-bouddhiste javanais maître de l'archipel."
+    },
+    "lat": -7.55,
+    "lng": 112.38,
+    "tags": ["empire"],
+    "peak": 1350
+  },
+  {
+    "id": "malacca-sultanate",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1400,
+    "end": 1511,
+    "name": { "zh": "马六甲苏丹国", "en": "Malacca Sultanate", "fr": "Sultanat de Malacca" },
+    "desc": {
+      "zh": "马来半岛穆斯林贸易强国，伊斯兰传播中心。",
+      "en": "Malay Muslim trading power; hub of Islam's spread.",
+      "fr": "Puissance commerçante malaise ; foyer de l'islam."
+    },
+    "lat": 2.19,
+    "lng": 102.25,
+    "tags": ["sultanate"]
+  },
+  {
+    "id": "sukhothai-kingdom",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1238,
+    "end": 1438,
+    "name": { "zh": "素可泰王朝", "en": "Sukhothai Kingdom", "fr": "Royaume de Sukhothaï" },
+    "desc": {
+      "zh": "首个泰人王国，泰文字与艺术发源。",
+      "en": "First Thai kingdom; origin of Thai script and art.",
+      "fr": "Premier royaume thaï ; berceau de l'écriture thaïe."
+    },
+    "lat": 17.02,
+    "lng": 99.70,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "ayutthaya-kingdom",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1351,
+    "end": 1767,
+    "name": { "zh": "阿瑜陀耶王朝", "en": "Ayutthaya Kingdom", "fr": "Royaume d'Ayutthaya" },
+    "desc": {
+      "zh": "强盛的暹罗王国，区域贸易与外交中心。",
+      "en": "Powerful Siamese kingdom and regional trade hub.",
+      "fr": "Puissant royaume siamois, carrefour commercial régional."
+    },
+    "lat": 14.35,
+    "lng": 100.58,
+    "tags": ["kingdom"],
+    "peak": 1600
+  },
+  {
+    "id": "toungoo-dynasty",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1510,
+    "end": 1752,
+    "name": { "zh": "东吁王朝", "en": "Toungoo Dynasty", "fr": "Dynastie Taungû" },
+    "desc": {
+      "zh": "缅甸王朝，一度建立东南亚最大帝国。",
+      "en": "Burmese dynasty that built Southeast Asia's largest empire.",
+      "fr": "Dynastie birmane au plus vaste empire d'Asie du Sud-Est."
+    },
+    "lat": 18.94,
+    "lng": 96.44,
+    "tags": ["dynasty"],
+    "peak": 1580
+  },
+  {
+    "id": "konbaung-dynasty",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1752,
+    "end": 1885,
+    "name": { "zh": "贡榜王朝", "en": "Konbaung Dynasty", "fr": "Dynastie Konbaung" },
+    "desc": {
+      "zh": "缅甸末代王朝，亡于英国殖民。",
+      "en": "Last Burmese dynasty, ended by British conquest.",
+      "fr": "Dernière dynastie birmane, vaincue par les Britanniques."
+    },
+    "lat": 21.9,
+    "lng": 96.0,
+    "tags": ["dynasty"],
+    "peak": 1780
+  },
+  {
+    "id": "rattanakosin-siam",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1782,
+    "end": 1932,
+    "name": { "zh": "曼谷王朝", "en": "Rattanakosin Kingdom", "fr": "Royaume de Rattanakosin" },
+    "desc": {
+      "zh": "曼谷王朝暹罗，抵御殖民保持独立。",
+      "en": "Chakri Siam at Bangkok; stayed independent amid colonialism.",
+      "fr": "Siam des Chakri à Bangkok ; resta indépendant."
+    },
+    "lat": 13.75,
+    "lng": 100.49,
+    "tags": ["kingdom"]
+  },
+  {
+    "id": "thailand",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1932,
+    "end": 2025,
+    "name": { "zh": "泰国", "en": "Thailand", "fr": "Thaïlande" },
+    "desc": {
+      "zh": "东南亚君主立宪制国家。",
+      "en": "Constitutional monarchy of mainland Southeast Asia.",
+      "fr": "Monarchie constitutionnelle d'Asie du Sud-Est."
+    },
+    "lat": 13.75,
+    "lng": 100.49,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "myanmar",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1948,
+    "end": 2025,
+    "name": { "zh": "缅甸", "en": "Myanmar", "fr": "Birmanie" },
+    "desc": {
+      "zh": "中南半岛西部的多民族国家。",
+      "en": "Multi-ethnic nation of western mainland Southeast Asia.",
+      "fr": "Nation multiethnique de l'ouest de l'Asie du Sud-Est."
+    },
+    "lat": 16.87,
+    "lng": 96.20,
+    "tags": ["modern-state"]
+  },
+  {
+    "id": "indonesia",
+    "region": "south-central-asia",
+    "civ": "southeast-asia",
+    "start": 1945,
+    "end": 2025,
+    "name": { "zh": "印度尼西亚", "en": "Indonesia", "fr": "Indonésie" },
+    "desc": {
+      "zh": "世界最大群岛国家与穆斯林人口国。",
+      "en": "World's largest archipelagic state and Muslim-majority nation.",
+      "fr": "Plus grand État archipel et pays musulman du monde."
+    },
+    "lat": -6.21,
+    "lng": 106.85,
+    "tags": ["modern-state", "republic"]
+  }
+]
