@@ -134,17 +134,18 @@ export default function Timeline({
                 onMouseMove={handleMove}
                 onMouseLeave={() => onHoverYear(null)}
             >
-                {/* Fond des bandes de région (dans le viewport, suit le zoom) */}
+                {/* Fond : couloir teinté par civilisation, sur sa durée réelle */}
                 <g ref={viewportRef}>
                     <rect x={0} y={0} width={worldWidth} height={WORLD_HEIGHT} fill="transparent" />
-                    {layout.bands.map((band, i) => (
+                    {(layout.civCols || []).map((c, i) => (
                         <rect
-                            key={band.key}
-                            x={band.x0 - 6}
-                            y={0}
-                            width={band.x1 - band.x0 + 12}
-                            height={WORLD_HEIGHT}
-                            fill={i % 2 ? "#00000008" : "transparent"}
+                            key={c.region + "-" + c.civ + "-" + i}
+                            x={c.x0}
+                            y={c.yTop}
+                            width={c.x1 - c.x0}
+                            height={Math.max(0, c.yBot - c.yTop)}
+                            fill={c.color}
+                            fillOpacity={0.09}
                         />
                     ))}
 
