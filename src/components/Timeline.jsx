@@ -23,6 +23,7 @@ export default function Timeline({
     events,
     showEvents,
     widthBy,
+    focusReq,
 }) {
     const wrapRef = useRef(null);
     const svgRef = useRef(null);
@@ -92,6 +93,22 @@ export default function Timeline({
     const resetView = () => {
         select(svgRef.current).transition().duration(450).call(zoomRef.current.transform, fitTransform());
     };
+
+    // Recentre la vue sur une polité (clic depuis la recherche) — « aller à ».
+    useEffect(() => {
+        if (!focusReq || !zoomRef.current || !svgRef.current) return;
+        const id = String(focusReq).split("|")[0];
+        const b = layout.labelAnchors.find((a) => a.p.id === id);
+        if (!b) return;
+        const k = 1.4;
+        const bx = b.x + b.w / 2;
+        const by = b.y0 + b.h / 2;
+        const cxs = AXIS_W + (size.w - AXIS_W) / 2;
+        const cys = HEADER_H + (size.h - HEADER_H) / 2;
+        const tr = zoomIdentity.translate(cxs - k * bx, cys - k * by).scale(k);
+        select(svgRef.current).transition().duration(600).call(zoomRef.current.transform, tr);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [focusReq]);
 
     // Coordonnées écran d'un point « monde ».
     const sx = (wx) => tf.k * wx + tf.x;

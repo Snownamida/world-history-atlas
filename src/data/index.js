@@ -3,6 +3,7 @@
 // import.meta.glob (eager) ramasse ce qui existe : pas d'erreur si un fichier manque.
 
 import { REGIONS } from "./meta.js";
+import succession from "./succession.json";
 
 const regionModules = import.meta.glob("./regions/*.json", { eager: true });
 const enrichModules = import.meta.glob("./enrich/*.json", { eager: true });
@@ -43,6 +44,20 @@ for (const mod of Object.values(regionModules)) {
 }
 
 export const POLITIES = normalize(merged);
+
+// Graphe de filiation : héritage/évolution entre polités.
+const _valid = new Set(POLITIES.map((p) => p.id));
+export const SUCCESSION = (Array.isArray(succession) ? succession : []).filter(
+    (e) => e && _valid.has(e.from) && _valid.has(e.to) && e.from !== e.to,
+);
+export const PRED = new Map(); // id -> [prédécesseurs]
+export const SUCC = new Map(); // id -> [successeurs]
+for (const e of SUCCESSION) {
+    if (!PRED.has(e.to)) PRED.set(e.to, []);
+    PRED.get(e.to).push(e.from);
+    if (!SUCC.has(e.from)) SUCC.set(e.from, []);
+    SUCC.get(e.from).push(e.to);
+}
 
 export const DATA_EXTENT = POLITIES.reduce(
     (acc, p) => ({ min: Math.min(acc.min, p.start), max: Math.max(acc.max, p.end) }),

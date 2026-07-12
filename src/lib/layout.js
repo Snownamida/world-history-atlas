@@ -7,7 +7,7 @@
 import { REGIONS, civColor } from "../data/meta.js";
 import { yearToY } from "./scale.js";
 
-export const SLOT_W = 38;
+export const SLOT_W = 28;
 export const CIV_GAP = 1;
 export const REGION_GAP = 14;
 const MIN_H = 2;
@@ -19,25 +19,51 @@ export function driverValue(p, widthBy) {
     return null; // "even"
 }
 
-// Empilage d'intervalles : chaque polité reçoit une voie **permanente** (réutilise
-// une voie libérée). first-fit après tri par début => nombre minimal de voies.
-function packLanes(items) {
+// Tolérance de chevauchement : un changement de dynastie se chevauche souvent de
+// quelques années (Ming 1368–1644 / Qing 1636–1912…). On autorise ce petit
+// recouvrement à partager la voie, pour que le fil principal reste une seule
+// colonne continue au lieu de zigzaguer.
+const OVERLAP_TOL = 30;
+
+// Empilage d'intervalles, guidé par la filiation : une polité hérite de préférence
+// de la VOIE de son prédécesseur (Espagne reprend la voie de l'Empire espagnol),
+// sinon la voie libre la plus récemment libérée (continuité du fil principal).
+function packLanes(items, preds) {
     const laneEnds = [];
+    const laneOf = new Map();
     const sorted = [...items].sort((a, b) => a.start - b.start || a.end - b.end);
     for (const p of sorted) {
-        let lane = laneEnds.findIndex((e) => e <= p.start);
+        let lane = -1;
+        const pr = preds.get(p.id);
+        if (pr) {
+            for (const pid of pr) {
+                if (!laneOf.has(pid)) continue;
+                const L = laneOf.get(pid);
+                if (laneEnds[L] <= p.start + OVERLAP_TOL && (lane === -1 || laneEnds[L] > laneEnds[lane])) lane = L;
+            }
+        }
+        if (lane === -1) {
+            let bestEnd = -Infinity;
+            for (let L = 0; L < laneEnds.length; L++) {
+                if (laneEnds[L] <= p.start + OVERLAP_TOL && laneEnds[L] > bestEnd) {
+                    bestEnd = laneEnds[L];
+                    lane = L;
+                }
+            }
+        }
         if (lane === -1) {
             lane = laneEnds.length;
             laneEnds.push(p.end);
         } else {
-            laneEnds[lane] = p.end;
+            laneEnds[lane] = Math.max(laneEnds[lane], p.end);
         }
         p._lane = lane;
+        laneOf.set(p.id, lane);
     }
     return Math.max(1, laneEnds.length);
 }
 
-export function computeMosaic(polities, widthBy = "even") {
+export function computeMosaic(polities, widthBy = "even", preds = new Map()) {
     const byRegion = new Map(REGIONS.map((r) => [r.key, []]));
     for (const p of polities) if (byRegion.has(p.region)) byRegion.get(p.region).push(p);
 
@@ -50,13 +76,23 @@ export function computeMosaic(polities, widthBy = "even") {
     // des Xia est mince, celle des Qing très large — la civilisation « grandit » à
     // l'écran. Blocs alignés à GAUCHE => colonne vertébrale continue (l'héritage), bord
     // droit en escalier qui montre la puissance. Le blanc à droite d'un petit État est réel.
-    const REF = widthBy === "pop" ? 1e7 : 1e6; // « 1× » : ~1 M km² ou ~10 M hab.
+    // Compression DOUCE, normalisée par le maximum mondial, SANS plafond haut :
+    // exposant 0.63 => les géants restent nettement les plus larges (Inde ≈ 3–4×
+    // Pakistan) mais les petits États restent des filets visibles. Cohérent pour toutes
+    // les régions (même vMax, même formule).
+    const MAXSIZE = 4.6;
+    const POW = 0.63;
     const pv = (p) => (widthBy === "pop" ? p.pop || 0 : p.area || 0);
+    let vMax = 1;
+    for (const p of polities) {
+        const v = pv(p);
+        if (v > vMax) vMax = v;
+    }
     const blockSize = (p) => {
         if (widthBy === "even") return 1;
         const v = pv(p);
-        if (!v) return 0.4; // culture / sans territoire défini
-        return Math.max(0.32, Math.min(4.5, Math.pow(v / REF, 0.42)));
+        if (!v) return 0.35; // culture / sans donnée
+        return Math.max(0.35, MAXSIZE * Math.pow(v / vMax, POW));
     };
 
     const blocks = [];
@@ -86,7 +122,7 @@ export function computeMosaic(polities, widthBy = "even") {
 
         const regionX0 = cursor;
         for (const [civ, list] of civs) {
-            const laneCount = packLanes(list);
+            const laneCount = packLanes(list, preds);
             const civX0 = cursor;
             const color = civColor(civ);
             // largeur réservée d'une voie = son plus gros bloc (pour ne pas chevaucher)

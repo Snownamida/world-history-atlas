@@ -1,5 +1,7 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { POLITIES } from "./data/index.js";
+import { POLITIES, PRED, SUCC } from "./data/index.js";
+
+const BY_ID = new Map(POLITIES.map((p) => [p.id, p]));
 import { EVENTS } from "./data/events.js";
 import { REGIONS, REGION_LABEL, civColor } from "./data/meta.js";
 import { computeMosaic, politiesAliveAt } from "./lib/layout.js";
@@ -21,6 +23,7 @@ export default function App() {
     const [selectedId, setSelectedId] = useState(null);
     const [hoverYear, setHoverYear] = useState(null);
     const [query, setQuery] = useState("");
+    const [focusReq, setFocusReq] = useState(null);
     const [activeRegions, setActiveRegions] = useState(() => new Set(REGIONS.map((r) => r.key)));
 
     useEffect(() => {
@@ -32,7 +35,7 @@ export default function App() {
         () => POLITIES.filter((p) => activeRegions.has(p.region)),
         [activeRegions],
     );
-    const layout = useMemo(() => computeMosaic(filtered, widthBy), [filtered, widthBy]);
+    const layout = useMemo(() => computeMosaic(filtered, widthBy, PRED), [filtered, widthBy]);
 
     const q = query.trim().toLowerCase();
     const matchIds = useMemo(() => {
@@ -98,6 +101,7 @@ export default function App() {
                                     key={p.id}
                                     onMouseDown={() => {
                                         setSelectedId(p.id);
+                                        setFocusReq(p.id + "|" + Date.now());
                                         setQuery("");
                                     }}
                                     className="flex w-full items-center gap-2 px-3 py-1.5 text-left text-sm hover:bg-amber-50"
@@ -223,6 +227,7 @@ export default function App() {
                         events={EVENTS}
                         showEvents={showEvents}
                         widthBy={widthBy}
+                        focusReq={focusReq}
                     />
 
                     {/* Badge : nombre de polités vivantes à l'année survolée */}
@@ -270,6 +275,39 @@ export default function App() {
                                     </>
                                 )}
                             </dl>
+                            {(() => {
+                                const chip = (p) => (
+                                    <button
+                                        key={p.id}
+                                        onClick={() => {
+                                            setSelectedId(p.id);
+                                            setFocusReq(p.id + "|" + Date.now());
+                                        }}
+                                        className="rounded-full bg-slate-100 px-2 py-0.5 text-[11px] text-slate-700 hover:bg-amber-100"
+                                    >
+                                        {p.name[lang] || p.name.en}
+                                    </button>
+                                );
+                                const preds = (PRED.get(selected.id) || []).map((id) => BY_ID.get(id)).filter(Boolean);
+                                const succs = (SUCC.get(selected.id) || []).map((id) => BY_ID.get(id)).filter(Boolean);
+                                if (!preds.length && !succs.length) return null;
+                                return (
+                                    <div className="mt-2 space-y-1 border-t border-black/10 pt-2">
+                                        {preds.length > 0 && (
+                                            <div className="flex flex-wrap items-center gap-1">
+                                                <span className="text-[11px] text-slate-400">↖ {t.from}</span>
+                                                {preds.map(chip)}
+                                            </div>
+                                        )}
+                                        {succs.length > 0 && (
+                                            <div className="flex flex-wrap items-center gap-1">
+                                                <span className="text-[11px] text-slate-400">↳ {t.into}</span>
+                                                {succs.map(chip)}
+                                            </div>
+                                        )}
+                                    </div>
+                                );
+                            })()}
                             <a
                                 href={`https://${lang}.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(selected.name[lang] || selected.name.en)}`}
                                 target="_blank"
