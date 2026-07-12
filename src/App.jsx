@@ -80,7 +80,7 @@ export default function App() {
     return (
         <div className="flex h-full flex-col">
             {/* En-tête */}
-            <header className="z-20 flex flex-wrap items-center gap-x-3 gap-y-2 border-b border-black/10 bg-[#f6f0e4] px-3 py-2">
+            <header className="z-20 flex flex-wrap items-center gap-x-2 gap-y-1.5 border-b border-black/10 bg-[#f6f0e4] px-2.5 py-1.5">
                 <div className="mr-auto flex items-baseline gap-2">
                     <span className="text-lg font-black tracking-tight text-[#2a251c]">🏛️ {t.title}</span>
                     <span className="hidden text-xs text-slate-500 sm:inline">{t.subtitle}</span>

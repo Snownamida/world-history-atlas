@@ -321,23 +321,30 @@ export default function Timeline({
                 <g>
                     <rect x={0} y={0} width={size.w} height={HEADER_H} fill="var(--paper)" />
                     <line x1={0} x2={size.w} y1={HEADER_H} y2={HEADER_H} stroke="#00000018" />
-                    {layout.bands.map((band) => {
-                        const cx = sx(band.cx);
-                        if (cx < AXIS_W - 20 || cx > size.w + 20) return null;
-                        return (
-                            <text
-                                key={band.key}
-                                x={cx}
-                                y={HEADER_H - 9}
-                                textAnchor="middle"
-                                fontSize={13}
-                                fill="#3a352c"
-                                style={{ fontWeight: 700 }}
-                            >
-                                {REGION_LABEL[band.key][lang]}
-                            </text>
-                        );
-                    })}
+                    {(() => {
+                        let lastRight = -Infinity;
+                        return layout.bands.map((band) => {
+                            const cx = sx(band.cx);
+                            if (cx < AXIS_W - 20 || cx > size.w + 20) return null;
+                            const label = REGION_LABEL[band.key][lang];
+                            const halfW = label.length * 4 + 8;
+                            if (cx - halfW < lastRight) return null; // éviter le chevauchement
+                            lastRight = cx + halfW;
+                            return (
+                                <text
+                                    key={band.key}
+                                    x={cx}
+                                    y={HEADER_H - 9}
+                                    textAnchor="middle"
+                                    fontSize={13}
+                                    fill="#3a352c"
+                                    style={{ fontWeight: 700 }}
+                                >
+                                    {label}
+                                </text>
+                            );
+                        });
+                    })()}
                 </g>
             </svg>
 
