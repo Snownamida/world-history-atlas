@@ -77,7 +77,7 @@ export default function Timeline({
     // Transform d'ajustement : colonnes ajustées à la largeur, en haut de la frise.
     const fitTransform = () => {
         const avail = size.w - AXIS_W - 10;
-        const k = Math.max(0.14, Math.min(1.15, avail / worldWidth));
+        const k = Math.max(0.08, Math.min(1.15, avail / worldWidth));
         const x = AXIS_W + 5 + Math.max(0, (avail - worldWidth * k) / 2);
         return zoomIdentity.translate(x, HEADER_H + 4).scale(k);
     };

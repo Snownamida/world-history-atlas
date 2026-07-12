@@ -7,9 +7,9 @@
 import { REGIONS, civColor } from "../data/meta.js";
 import { yearToY } from "./scale.js";
 
-export const SLOT_W = 46;
+export const SLOT_W = 38;
 export const CIV_GAP = 1;
-export const REGION_GAP = 16;
+export const REGION_GAP = 14;
 const MIN_H = 2;
 
 // Valeur de « poids » d'une polité selon le pilote de largeur choisi.
@@ -41,20 +41,22 @@ export function computeMosaic(polities, widthBy = "even") {
     const byRegion = new Map(REGIONS.map((r) => [r.key, []]));
     for (const p of polities) if (byRegion.has(p.region)) byRegion.get(p.region).push(p);
 
-    // Mosaïque : la largeur du bloc ∈ [0.4, 1] × la voie (grand empire = voie
-    // pleine, petit État = fin), sans jamais déborder la voie (grille continue).
-    let areaMax = 1;
-    let popMax = 1;
-    for (const p of polities) {
-        if (p.area > areaMax) areaMax = p.area;
-        if (p.pop > popMax) popMax = p.pop;
-    }
-    const wfrac = (p) => {
+    // Mosaïque : ce n'est pas le bloc mais toute la COLONNE-civ qui s'élargit selon
+    // l'ordre de grandeur de la civilisation — Chine / Rome / Empire britannique =
+    // large couloir, petit État = mince (rapport ~5:1), tout en gardant la continuité
+    // (chaque polité garde sa voie à vie). Une nuance intra-colonne élargit un peu les
+    // plus vastes dynasties d'une même civ.
+    // Chaque bloc a la largeur de SA PROPRE taille (superficie/population) : la Chine
+    // des Xia est mince, celle des Qing très large — la civilisation « grandit » à
+    // l'écran. Blocs alignés à GAUCHE => colonne vertébrale continue (l'héritage), bord
+    // droit en escalier qui montre la puissance. Le blanc à droite d'un petit État est réel.
+    const REF = widthBy === "pop" ? 1e7 : 1e6; // « 1× » : ~1 M km² ou ~10 M hab.
+    const pv = (p) => (widthBy === "pop" ? p.pop || 0 : p.area || 0);
+    const blockSize = (p) => {
         if (widthBy === "even") return 1;
-        const v = driverValue(p, widthBy);
-        if (v == null) return 0.45;
-        const ref = widthBy === "area" ? areaMax : popMax;
-        return Math.max(0.45, Math.min(1, Math.pow(v / ref, 0.26)));
+        const v = pv(p);
+        if (!v) return 0.4; // culture / sans territoire défini
+        return Math.max(0.32, Math.min(4.5, Math.pow(v / REF, 0.42)));
     };
 
     const blocks = [];
@@ -85,19 +87,27 @@ export function computeMosaic(polities, widthBy = "even") {
         const regionX0 = cursor;
         for (const [civ, list] of civs) {
             const laneCount = packLanes(list);
-            const civW = laneCount * SLOT_W;
             const civX0 = cursor;
             const color = civColor(civ);
+            // largeur réservée d'une voie = son plus gros bloc (pour ne pas chevaucher)
+            const laneW = new Array(laneCount).fill(SLOT_W * (widthBy === "even" ? 1 : 0.32));
+            for (const p of list) laneW[p._lane] = Math.max(laneW[p._lane], SLOT_W * blockSize(p));
+            const laneOff = [];
+            let acc = 0;
+            for (let L = 0; L < laneCount; L++) {
+                laneOff[L] = acc;
+                acc += laneW[L];
+            }
+            const civW = acc;
             for (const p of list) {
-                const laneX = civX0 + p._lane * SLOT_W;
-                const w = SLOT_W * wfrac(p);
-                const x = laneX + (SLOT_W - w) / 2;
+                const w = SLOT_W * blockSize(p);
+                const laneX = civX0 + laneOff[p._lane];
                 const y0 = yearToY(p.start);
                 const h = Math.max(MIN_H, yearToY(p.end) - y0);
-                const b = { p, region: region.key, color, x, w, y0, h };
+                const b = { p, region: region.key, color, x: laneX, w, y0, h };
                 blocks.push(b);
                 labelAnchors.push(b);
-                centers.set(p.id, laneX + SLOT_W / 2);
+                centers.set(p.id, laneX + laneW[p._lane] / 2);
             }
             const cStart = Math.min(...list.map((p) => p.start));
             const cEnd = Math.max(...list.map((p) => p.end));
