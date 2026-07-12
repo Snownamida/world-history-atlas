@@ -1,0 +1,21 @@
+[
+  { "id": "aboriginal-australians", "area": null, "pop": 750000 },
+  { "id": "torres-strait-islanders", "area": null, "pop": 8000 },
+  { "id": "lapita-culture", "area": null, "pop": 30000 },
+  { "id": "polynesian-expansion", "area": null, "pop": 500000 },
+  { "id": "tui-tonga-empire", "area": 3000, "pop": 40000 },
+  { "id": "rapa-nui", "area": null, "pop": 15000 },
+  { "id": "kingdom-of-tahiti", "area": 1600, "pop": 30000 },
+  { "id": "hawaiian-kingdom", "area": 16700, "pop": 300000 },
+  { "id": "maori-culture", "area": null, "pop": 100000 },
+  { "id": "maori-kingitanga", "area": 20000, "pop": 40000 },
+  { "id": "colonial-new-south-wales", "area": 800000, "pop": 1350000 },
+  { "id": "colonial-new-zealand", "area": 268000, "pop": 900000 },
+  { "id": "colony-of-fiji", "area": 18270, "pop": 520000 },
+  { "id": "commonwealth-of-australia", "area": 7692000, "pop": 26000000 },
+  { "id": "new-zealand", "area": 268000, "pop": 5200000 },
+  { "id": "independent-samoa", "area": 2842, "pop": 220000 },
+  { "id": "kingdom-of-tonga-modern", "area": 747, "pop": 105000 },
+  { "id": "republic-of-fiji", "area": 18274, "pop": 930000 },
+  { "id": "papua-new-guinea", "area": 462840, "pop": 10300000 }
+]

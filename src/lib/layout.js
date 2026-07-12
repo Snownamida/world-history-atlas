@@ -9,6 +9,33 @@ import { yearToY, DOMAIN_START, DOMAIN_END } from "./scale.js";
 export const SLOT_W = 48;
 export const REGION_GAP = 22;
 const MIN_H = 2;
+const MIN_SHARE = 0.28; // part minimale d'un slot par rapport au partage égal (visibilité)
+
+// Valeur de « poids » d'une polité selon le pilote de largeur choisi.
+export function driverValue(p, widthBy) {
+    if (widthBy === "area") return typeof p.area === "number" && p.area > 0 ? p.area : null;
+    if (widthBy === "pop") return typeof p.pop === "number" && p.pop > 0 ? p.pop : null;
+    return null; // "even"
+}
+
+// Poids (racine carrée pour comprimer les 5 ordres de grandeur). null -> minimal.
+function weightOf(p, widthBy) {
+    if (widthBy === "even") return 1;
+    const v = driverValue(p, widthBy);
+    return v == null ? Math.sqrt(1) : Math.sqrt(v);
+}
+
+// Largeurs des slots d'un segment : proportionnelles au poids, avec plancher.
+function slotWidths(alive, widthBy, W) {
+    const n = alive.length;
+    if (widthBy === "even" || n === 1) return alive.map(() => W / n);
+    const w = alive.map((p) => weightOf(p, widthBy));
+    const sum = w.reduce((a, b) => a + b, 0) || 1;
+    const minShare = MIN_SHARE / n;
+    let shares = w.map((x) => Math.max(x / sum, minShare));
+    const total = shares.reduce((a, b) => a + b, 0);
+    return shares.map((s) => (W * s) / total);
+}
 
 // Frontières temporelles (débuts + fins) écrêtées au domaine visible.
 function boundaries(items) {
@@ -35,7 +62,7 @@ function mergeRects(rects) {
     return out;
 }
 
-export function computeMosaic(polities) {
+export function computeMosaic(polities, widthBy = "even") {
     const byRegion = new Map(REGIONS.map((r) => [r.key, []]));
     for (const p of polities) if (byRegion.has(p.region)) byRegion.get(p.region).push(p);
 
@@ -75,19 +102,20 @@ export function computeMosaic(polities) {
         const perPolity = new Map();
         const weight = new Map(); // id -> {sumcx, sumw}
         for (const seg of segments) {
-            const n = seg.alive.length;
-            const slotW = W / n;
+            const widths = slotWidths(seg.alive, widthBy, W);
             const yA = yearToY(seg.y0);
             const yB = yearToY(seg.y1);
             const h = Math.max(MIN_H, yB - yA);
+            let cx = x0;
             seg.alive.forEach((p, idx) => {
-                const x = x0 + idx * slotW;
+                const sw = widths[idx];
                 if (!perPolity.has(p.id)) perPolity.set(p.id, { p, rects: [] });
-                perPolity.get(p.id).rects.push({ x, w: slotW, y0: yA, h });
+                perPolity.get(p.id).rects.push({ x: cx, w: sw, y0: yA, h });
                 const wgt = weight.get(p.id) || { sx: 0, sw: 0 };
-                wgt.sx += (x + slotW / 2) * h;
+                wgt.sx += (cx + sw / 2) * h;
                 wgt.sw += h;
                 weight.set(p.id, wgt);
+                cx += sw;
             });
         }
 

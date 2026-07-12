@@ -17,6 +17,7 @@ export default function App() {
     const [mapOpen, setMapOpen] = useState(() => (typeof window === "undefined" ? true : window.innerWidth >= 768));
     const [showEvents, setShowEvents] = useState(true);
     const [aboutOpen, setAboutOpen] = useState(false);
+    const [widthBy, setWidthBy] = useState("even");
     const [selectedId, setSelectedId] = useState(null);
     const [hoverYear, setHoverYear] = useState(null);
     const [query, setQuery] = useState("");
@@ -31,7 +32,7 @@ export default function App() {
         () => POLITIES.filter((p) => activeRegions.has(p.region)),
         [activeRegions],
     );
-    const layout = useMemo(() => computeMosaic(filtered), [filtered]);
+    const layout = useMemo(() => computeMosaic(filtered, widthBy), [filtered, widthBy]);
 
     const q = query.trim().toLowerCase();
     const matchIds = useMemo(() => {
@@ -125,6 +126,23 @@ export default function App() {
                     ))}
                 </div>
 
+                {/* Pilote de largeur */}
+                <div
+                    className="flex overflow-hidden rounded-full border border-black/10 bg-white text-sm"
+                    title={t.widthHint(widthBy)}
+                >
+                    <span className="hidden items-center pl-2.5 pr-1 text-xs text-slate-400 lg:flex">↔</span>
+                    {[["even", t.widthEven], ["area", t.widthArea], ["pop", t.widthPop]].map(([w, lab]) => (
+                        <button
+                            key={w}
+                            onClick={() => setWidthBy(w)}
+                            className={`px-2.5 py-1 ${widthBy === w ? "bg-[#6b5533] text-white" : "text-slate-600"}`}
+                        >
+                            {lab}
+                        </button>
+                    ))}
+                </div>
+
                 {/* Repères */}
                 <button
                     onClick={() => setShowEvents((v) => !v)}
@@ -204,6 +222,7 @@ export default function App() {
                         dimUnmatched={!!q}
                         events={EVENTS}
                         showEvents={showEvents}
+                        widthBy={widthBy}
                     />
 
                     {/* Badge : nombre de polités vivantes à l'année survolée */}
@@ -238,6 +257,18 @@ export default function App() {
                                 </dd>
                                 <dt>{t.region}</dt>
                                 <dd className="text-slate-700">{REGION_LABEL[selected.region][lang]}</dd>
+                                {selected.area != null && (
+                                    <>
+                                        <dt>{t.area}</dt>
+                                        <dd className="text-slate-700">≈ {fmtQty(selected.area, lang)} km²</dd>
+                                    </>
+                                )}
+                                {selected.pop != null && (
+                                    <>
+                                        <dt>{t.pop}</dt>
+                                        <dd className="text-slate-700">≈ {fmtQty(selected.pop, lang)}</dd>
+                                    </>
+                                )}
                             </dl>
                             <a
                                 href={`https://${lang}.wikipedia.org/wiki/Special:Search?search=${encodeURIComponent(selected.name[lang] || selected.name.en)}`}
@@ -287,6 +318,20 @@ export default function App() {
             )}
         </div>
     );
+}
+
+// Formatage compact des grands nombres (superficie / population).
+function fmtQty(n, lang) {
+    if (n == null) return "—";
+    if (lang === "zh") {
+        if (n >= 1e8) return +(n / 1e8).toFixed(n >= 1e9 ? 0 : 1) + "亿";
+        if (n >= 1e4) return Math.round(n / 1e4) + "万";
+        return String(n);
+    }
+    if (n >= 1e9) return +(n / 1e9).toFixed(1) + "B";
+    if (n >= 1e6) return +(n / 1e6).toFixed(1) + "M";
+    if (n >= 1e3) return Math.round(n / 1e3) + "K";
+    return String(n);
 }
 
 const ABOUT = {

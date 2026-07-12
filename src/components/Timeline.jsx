@@ -22,6 +22,7 @@ export default function Timeline({
     dimUnmatched,
     events,
     showEvents,
+    widthBy,
 }) {
     const wrapRef = useRef(null);
     const svgRef = useRef(null);
@@ -33,8 +34,8 @@ export default function Timeline({
 
     const { worldWidth } = layout;
     const flow = useMemo(
-        () => (mode === "flow" ? buildFlow(layout) : null),
-        [layout, mode],
+        () => (mode === "flow" ? buildFlow(layout, widthBy) : null),
+        [layout, mode, widthBy],
     );
 
     // Taille du conteneur (responsive).
