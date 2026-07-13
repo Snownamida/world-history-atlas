@@ -157,7 +157,7 @@ export default function Timeline({
 
     // Étiquettes de blocs : seulement celles assez grandes à l'écran (zoom sémantique).
     const labels = [];
-    if (mode === "mosaic") {
+    if (mode !== "flow") {
         for (const b of layout.labelAnchors) {
             const screenH = b.h * tf.k;
             const screenW = b.w * tf.k;
@@ -197,7 +197,20 @@ export default function Timeline({
                         />
                     ))}
 
-                    {mode === "mosaic" &&
+                    {/* Bandes de flux de filiation (mode « blitz généalogique ») */}
+                    {layout.links &&
+                        layout.links.map((lk, i) => (
+                            <path
+                                key={"flk" + i}
+                                d={lk.d}
+                                fill={lk.color}
+                                fillOpacity={0.4}
+                                stroke="none"
+                                style={{ pointerEvents: "none" }}
+                            />
+                        ))}
+
+                    {mode !== "flow" &&
                         layout.blocks.map((b, i) => {
                             const dim = dimUnmatched && matchIds && !matchIds.has(b.p.id);
                             const alive = aliveIds && aliveIds.has(b.p.id);

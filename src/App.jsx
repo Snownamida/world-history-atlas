@@ -6,6 +6,7 @@ const ALL_LINKS = SUCCESSION.map((e) => [e.from, e.to]);
 import { EVENTS } from "./data/events.js";
 import { REGIONS, REGION_LABEL, civColor } from "./data/meta.js";
 import { computeMosaic, politiesAliveAt } from "./lib/layout.js";
+import { buildLineageFlow } from "./lib/lineageFlow.js";
 import { formatYear } from "./lib/scale.js";
 import { UI, LANGS, resolveLang, rememberLang } from "./i18n.js";
 import Timeline from "./components/Timeline.jsx";
@@ -39,8 +40,11 @@ export default function App() {
         [activeRegions],
     );
     const layout = useMemo(
-        () => computeMosaic(filtered, widthBy, PRED, widthExp),
-        [filtered, widthBy, widthExp],
+        () =>
+            mode === "lineage"
+                ? buildLineageFlow(filtered, SUCCESSION, widthBy, widthExp)
+                : computeMosaic(filtered, widthBy, PRED, widthExp),
+        [filtered, widthBy, widthExp, mode],
     );
 
     const q = query.trim().toLowerCase();
@@ -141,7 +145,7 @@ export default function App() {
 
                 {/* Bascule mode */}
                 <div className="flex overflow-hidden rounded-full border border-black/10 bg-white text-sm">
-                    {["mosaic", "flow"].map((m) => (
+                    {["mosaic", "flow", "lineage"].map((m) => (
                         <button
                             key={m}
                             onClick={() => setMode(m)}
