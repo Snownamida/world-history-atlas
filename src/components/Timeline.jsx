@@ -23,7 +23,10 @@ export default function Timeline({
     events,
     showEvents,
     widthBy,
+    widthExp,
     focusReq,
+    lineageLinks,
+    lineageIds,
 }) {
     const wrapRef = useRef(null);
     const svgRef = useRef(null);
@@ -35,9 +38,33 @@ export default function Timeline({
 
     const { worldWidth } = layout;
     const flow = useMemo(
-        () => (mode === "flow" ? buildFlow(layout, widthBy) : null),
-        [layout, mode, widthBy],
+        () => (mode === "flow" ? buildFlow(layout, widthBy, widthExp) : null),
+        [layout, mode, widthBy, widthExp],
     );
+    const blockById = useMemo(() => {
+        const m = new Map();
+        for (const b of layout.labelAnchors) m.set(b.p.id, b);
+        return m;
+    }, [layout]);
+
+    // Courbes de filiation (dans le viewport, suivent le zoom) : bas du prédécesseur
+    // (fin) → haut du successeur (début), même à travers des colonnes éloignées.
+    const linkPaths = useMemo(() => {
+        if (!lineageLinks || !lineageLinks.length) return [];
+        const out = [];
+        for (const [f, t] of lineageLinks) {
+            const a = blockById.get(f);
+            const b = blockById.get(t);
+            if (!a || !b) continue;
+            const ax = a.x + a.w / 2;
+            const ay = a.y0 + a.h;
+            const bx = b.x + b.w / 2;
+            const by = b.y0;
+            const dy = Math.max(24, Math.abs(by - ay) * 0.6);
+            out.push(`M${ax},${ay} C${ax},${ay + dy} ${bx},${by - dy} ${bx},${by}`);
+        }
+        return out;
+    }, [lineageLinks, blockById]);
 
     // Taille du conteneur (responsive).
     useEffect(() => {
@@ -171,6 +198,7 @@ export default function Timeline({
                             const dim = dimUnmatched && matchIds && !matchIds.has(b.p.id);
                             const alive = aliveIds && aliveIds.has(b.p.id);
                             const sel = selectedId === b.p.id;
+                            const lin = !sel && lineageIds && lineageIds.has(b.p.id);
                             return (
                                 <rect
                                     key={i}
@@ -180,9 +208,9 @@ export default function Timeline({
                                     height={b.h}
                                     rx={1.5}
                                     fill={b.color}
-                                    fillOpacity={dim ? 0.14 : alive ? 1 : 0.9}
-                                    stroke={sel ? "#111" : alive ? "#fff" : "#ffffff55"}
-                                    strokeWidth={sel ? 2.2 : alive ? 1.4 : 0.6}
+                                    fillOpacity={dim ? 0.14 : alive || lin ? 1 : 0.9}
+                                    stroke={sel ? "#111" : lin ? "#8a3b12" : alive ? "#fff" : "#ffffff55"}
+                                    strokeWidth={sel ? 2.2 : lin ? 2 : alive ? 1.4 : 0.6}
                                     vectorEffect="non-scaling-stroke"
                                     style={{ cursor: "pointer" }}
                                     onClick={(e) => {
@@ -215,6 +243,22 @@ export default function Timeline({
                                 />
                             );
                         })}
+
+                    {/* Courbes de filiation (héritage / évolution) de la polité sélectionnée */}
+                    {linkPaths.map((d, i) => (
+                        <path
+                            key={"lk" + i}
+                            d={d}
+                            fill="none"
+                            stroke="#8a3b12"
+                            strokeWidth={2}
+                            strokeOpacity={0.9}
+                            strokeDasharray="1 5"
+                            strokeLinecap="round"
+                            vectorEffect="non-scaling-stroke"
+                            style={{ pointerEvents: "none" }}
+                        />
+                    ))}
                 </g>
 
                 {/* Étiquettes de blocs, taille constante (hors viewport) */}

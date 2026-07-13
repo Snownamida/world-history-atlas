@@ -5,14 +5,9 @@
 import { line, curveBasis } from "d3-shape";
 import { civColor } from "../data/meta.js";
 import { yearToY } from "./scale.js";
-import { SLOT_W, driverValue } from "./layout.js";
+import { SLOT_W, driverValue, widthMultiplier } from "./layout.js";
 
 const pathGen = line().x((d) => d[0]).y((d) => d[1]).curve(curveBasis);
-
-// Fourchette large : les mastodontes (Chine, Rome, Empire britannique) deviennent
-// de gros fleuves, les petits États de minces filets (rapport ~10:1).
-const MINW = 8;
-const MAXW = SLOT_W * 3.6;
 
 // Largeur par type (mode « équilibré »).
 function widthByType(p) {
@@ -28,22 +23,19 @@ function profile(t, tp) {
     return Math.pow(Math.max(0, tri), 0.55);
 }
 
-export function buildFlow(layout, widthBy = "even") {
-    // Médiane de la valeur (référence) pour le mode superficie/population.
-    let ref = 1;
+export function buildFlow(layout, widthBy = "even", widthExp = 0.63) {
+    // Même échelle que la mosaïque : normalisée par le max mondial, exposant réglable.
+    let vMax = 1;
     if (widthBy !== "even") {
-        const vals = layout.labelAnchors
-            .map((a) => driverValue(a.p, widthBy))
-            .filter((v) => v != null)
-            .sort((a, b) => a - b);
-        if (vals.length) ref = vals[vals.length >> 1] || 1;
+        for (const a of layout.labelAnchors) {
+            const v = driverValue(a.p, widthBy);
+            if (v && v > vMax) vMax = v;
+        }
     }
 
     const maxWidth = (p) => {
         if (widthBy === "even") return widthByType(p);
-        const v = driverValue(p, widthBy);
-        if (v == null) return MINW;
-        return Math.max(MINW, Math.min(MAXW, SLOT_W * Math.pow(v / ref, 0.42)));
+        return SLOT_W * widthMultiplier(driverValue(p, widthBy), vMax, widthExp);
     };
 
     const streams = [];

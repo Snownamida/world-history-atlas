@@ -20,6 +20,7 @@ export default function App() {
     const [showEvents, setShowEvents] = useState(true);
     const [aboutOpen, setAboutOpen] = useState(false);
     const [widthBy, setWidthBy] = useState("area");
+    const [widthExp, setWidthExp] = useState(0.63);
     const [selectedId, setSelectedId] = useState(null);
     const [hoverYear, setHoverYear] = useState(null);
     const [query, setQuery] = useState("");
@@ -35,7 +36,10 @@ export default function App() {
         () => POLITIES.filter((p) => activeRegions.has(p.region)),
         [activeRegions],
     );
-    const layout = useMemo(() => computeMosaic(filtered, widthBy, PRED), [filtered, widthBy]);
+    const layout = useMemo(
+        () => computeMosaic(filtered, widthBy, PRED, widthExp),
+        [filtered, widthBy, widthExp],
+    );
 
     const q = query.trim().toLowerCase();
     const matchIds = useMemo(() => {
@@ -66,6 +70,22 @@ export default function App() {
         () => POLITIES.find((p) => p.id === selectedId) || null,
         [selectedId],
     );
+
+    // Filiation de la polité sélectionnée : liens à tracer + ids à mettre en avant.
+    const lineage = useMemo(() => {
+        if (!selectedId) return { links: [], ids: null };
+        const links = [];
+        const ids = new Set([selectedId]);
+        for (const pid of PRED.get(selectedId) || []) {
+            links.push([pid, selectedId]);
+            ids.add(pid);
+        }
+        for (const sid of SUCC.get(selectedId) || []) {
+            links.push([selectedId, sid]);
+            ids.add(sid);
+        }
+        return { links, ids };
+    }, [selectedId]);
 
     const toggleRegion = (key) => {
         setActiveRegions((prev) => {
@@ -147,6 +167,27 @@ export default function App() {
                     ))}
                 </div>
 
+                {/* Curseur : force de compression de la largeur (compressé ↔ ratios réels) */}
+                {widthBy !== "even" && (
+                    <label
+                        className="flex items-center gap-1 rounded-full border border-black/10 bg-white px-2 py-1 text-[11px] text-slate-400"
+                        title={t.scaleHint}
+                    >
+                        <span>{t.scaleLo}</span>
+                        <input
+                            type="range"
+                            min="0.4"
+                            max="1"
+                            step="0.03"
+                            value={widthExp}
+                            onChange={(e) => setWidthExp(+e.target.value)}
+                            className="h-1 w-16 cursor-pointer accent-[#6b5533]"
+                            aria-label={t.scaleHint}
+                        />
+                        <span>{t.scaleHi}</span>
+                    </label>
+                )}
+
                 {/* Repères */}
                 <button
                     onClick={() => setShowEvents((v) => !v)}
@@ -227,7 +268,10 @@ export default function App() {
                         events={EVENTS}
                         showEvents={showEvents}
                         widthBy={widthBy}
+                        widthExp={widthExp}
                         focusReq={focusReq}
+                        lineageLinks={lineage.links}
+                        lineageIds={lineage.ids}
                     />
 
                     {/* Badge : nombre de polités vivantes à l'année survolée */}

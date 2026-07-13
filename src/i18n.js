@@ -29,6 +29,7 @@ export const UI = {
         eras: "纪元",
         events: "大事",
         from: "前身", into: "后继",
+        scaleLo: "匀", scaleHi: "真", scaleHint: "宽度比例强度：左=压缩(小国更明显)，右=真实线性比例",
         widthLabel: "宽度", widthEven: "均衡", widthArea: "面积", widthPop: "人口", area: "面积", pop: "人口", widthHint: (d)=>d==="area"?"宽度∝疆域面积":d==="pop"?"宽度∝人口":"宽度=同期平分",
     },
     en: {
@@ -58,6 +59,7 @@ export const UI = {
         eras: "Eras",
         events: "Events",
         from: "From", into: "Into",
+        scaleLo: "even", scaleHi: "real", scaleHint: "Width scale: left = compressed (small states pop), right = true linear ratios",
         widthLabel: "Width", widthEven: "Balanced", widthArea: "Area", widthPop: "Pop.", area: "Area", pop: "Population", widthHint: (d)=>d==="area"?"Width ∝ territory":d==="pop"?"Width ∝ population":"Width = equal share",
     },
     fr: {
@@ -87,6 +89,7 @@ export const UI = {
         eras: "Époques",
         events: "Repères",
         from: "Vient de", into: "Devient",
+        scaleLo: "doux", scaleHi: "réel", scaleHint: "Échelle de largeur : gauche = compressé (petits visibles), droite = ratios linéaires réels",
         widthLabel: "Largeur", widthEven: "Équilibré", widthArea: "Superficie", widthPop: "Pop.", area: "Superficie", pop: "Population", widthHint: (d)=>d==="area"?"Largeur ∝ territoire":d==="pop"?"Largeur ∝ population":"Largeur = part égale",
     },
 };

@@ -12,6 +12,16 @@ export const CIV_GAP = 1;
 export const REGION_GAP = 14;
 const MIN_H = 2;
 
+// Échelle d'affichage : le plus grand du monde = MAXSIZE voies. Tout le reste au
+// prorata (v/vMax) élevé à l'exposant réglable `exp` (1 = strictement linéaire /
+// ratios réels ; plus bas = compression douce pour que les petits restent visibles).
+// Un plancher minuscule évite la largeur nulle. Utilisé par la mosaïque ET le flux.
+export const MAXSIZE = 4.6;
+export function widthMultiplier(v, vMax, exp) {
+    if (!v) return 0.35;
+    return Math.max(0.35, MAXSIZE * Math.pow(v / vMax, exp));
+}
+
 // Valeur de « poids » d'une polité selon le pilote de largeur choisi.
 export function driverValue(p, widthBy) {
     if (widthBy === "area") return typeof p.area === "number" && p.area > 0 ? p.area : null;
@@ -63,7 +73,7 @@ function packLanes(items, preds) {
     return Math.max(1, laneEnds.length);
 }
 
-export function computeMosaic(polities, widthBy = "even", preds = new Map()) {
+export function computeMosaic(polities, widthBy = "even", preds = new Map(), widthExp = 0.63) {
     const byRegion = new Map(REGIONS.map((r) => [r.key, []]));
     for (const p of polities) if (byRegion.has(p.region)) byRegion.get(p.region).push(p);
 
@@ -76,24 +86,15 @@ export function computeMosaic(polities, widthBy = "even", preds = new Map()) {
     // des Xia est mince, celle des Qing très large — la civilisation « grandit » à
     // l'écran. Blocs alignés à GAUCHE => colonne vertébrale continue (l'héritage), bord
     // droit en escalier qui montre la puissance. Le blanc à droite d'un petit État est réel.
-    // Compression DOUCE, normalisée par le maximum mondial, SANS plafond haut :
-    // exposant 0.63 => les géants restent nettement les plus larges (Inde ≈ 3–4×
-    // Pakistan) mais les petits États restent des filets visibles. Cohérent pour toutes
-    // les régions (même vMax, même formule).
-    const MAXSIZE = 4.6;
-    const POW = 0.63;
+    // Largeur du bloc : voir widthMultiplier. Exposant `widthExp` réglable par curseur.
+    // Cohérent pour toutes les régions (même vMax global, même formule).
     const pv = (p) => (widthBy === "pop" ? p.pop || 0 : p.area || 0);
     let vMax = 1;
     for (const p of polities) {
         const v = pv(p);
         if (v > vMax) vMax = v;
     }
-    const blockSize = (p) => {
-        if (widthBy === "even") return 1;
-        const v = pv(p);
-        if (!v) return 0.35; // culture / sans donnée
-        return Math.max(0.35, MAXSIZE * Math.pow(v / vMax, POW));
-    };
+    const blockSize = (p) => (widthBy === "even" ? 1 : widthMultiplier(pv(p), vMax, widthExp));
 
     const blocks = [];
     const labelAnchors = [];
