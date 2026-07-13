@@ -27,6 +27,7 @@ export default function Timeline({
     focusReq,
     lineageLinks,
     lineageIds,
+    allLinks,
 }) {
     const wrapRef = useRef(null);
     const svgRef = useRef(null);
@@ -49,22 +50,25 @@ export default function Timeline({
 
     // Courbes de filiation (dans le viewport, suivent le zoom) : bas du prédécesseur
     // (fin) → haut du successeur (début), même à travers des colonnes éloignées.
-    const linkPaths = useMemo(() => {
-        if (!lineageLinks || !lineageLinks.length) return [];
-        const out = [];
-        for (const [f, t] of lineageLinks) {
-            const a = blockById.get(f);
-            const b = blockById.get(t);
-            if (!a || !b) continue;
-            const ax = a.x + a.w / 2;
-            const ay = a.y0 + a.h;
-            const bx = b.x + b.w / 2;
-            const by = b.y0;
-            const dy = Math.max(24, Math.abs(by - ay) * 0.6);
-            out.push(`M${ax},${ay} C${ax},${ay + dy} ${bx},${by - dy} ${bx},${by}`);
-        }
-        return out;
-    }, [lineageLinks, blockById]);
+    const linkPath = (f, t) => {
+        const a = blockById.get(f);
+        const b = blockById.get(t);
+        if (!a || !b) return null;
+        const ax = a.x + a.w / 2;
+        const ay = a.y0 + a.h;
+        const bx = b.x + b.w / 2;
+        const by = b.y0;
+        const dy = Math.max(20, Math.abs(by - ay) * 0.5);
+        return `M${ax},${ay} C${ax},${ay + dy} ${bx},${by - dy} ${bx},${by}`;
+    };
+    const linkPaths = useMemo(
+        () => (lineageLinks || []).map(([f, t]) => linkPath(f, t)).filter(Boolean),
+        [lineageLinks, blockById],
+    );
+    const allPaths = useMemo(
+        () => (allLinks || []).map(([f, t]) => linkPath(f, t)).filter(Boolean),
+        [allLinks, blockById],
+    );
 
     // Taille du conteneur (responsive).
     useEffect(() => {
@@ -244,7 +248,21 @@ export default function Timeline({
                             );
                         })}
 
-                    {/* Courbes de filiation (héritage / évolution) de la polité sélectionnée */}
+                    {/* Toutes les filiations, discrètes (héritage / évolution) */}
+                    {allPaths.map((d, i) => (
+                        <path
+                            key={"al" + i}
+                            d={d}
+                            fill="none"
+                            stroke="#8a5a2b"
+                            strokeWidth={1}
+                            strokeOpacity={0.22}
+                            vectorEffect="non-scaling-stroke"
+                            style={{ pointerEvents: "none" }}
+                        />
+                    ))}
+
+                    {/* Filiation de la polité sélectionnée, mise en avant */}
                     {linkPaths.map((d, i) => (
                         <path
                             key={"lk" + i}

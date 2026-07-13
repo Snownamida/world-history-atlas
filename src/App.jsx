@@ -1,7 +1,8 @@
 import React, { useEffect, useMemo, useState } from "react";
-import { POLITIES, PRED, SUCC } from "./data/index.js";
+import { POLITIES, PRED, SUCC, SUCCESSION } from "./data/index.js";
 
 const BY_ID = new Map(POLITIES.map((p) => [p.id, p]));
+const ALL_LINKS = SUCCESSION.map((e) => [e.from, e.to]);
 import { EVENTS } from "./data/events.js";
 import { REGIONS, REGION_LABEL, civColor } from "./data/meta.js";
 import { computeMosaic, politiesAliveAt } from "./lib/layout.js";
@@ -18,6 +19,7 @@ export default function App() {
     const [mode, setMode] = useState("mosaic");
     const [mapOpen, setMapOpen] = useState(() => (typeof window === "undefined" ? true : window.innerWidth >= 768));
     const [showEvents, setShowEvents] = useState(true);
+    const [showLinks, setShowLinks] = useState(true);
     const [aboutOpen, setAboutOpen] = useState(false);
     const [widthBy, setWidthBy] = useState("area");
     const [widthExp, setWidthExp] = useState(0.63);
@@ -188,6 +190,14 @@ export default function App() {
                     </label>
                 )}
 
+                {/* Filiation */}
+                <button
+                    onClick={() => setShowLinks((v) => !v)}
+                    className={`hidden rounded-full border border-black/10 px-3 py-1 text-sm sm:block ${showLinks ? "bg-[#8a3b12] text-white" : "bg-white text-slate-600"}`}
+                >
+                    ⇣ {t.links}
+                </button>
+
                 {/* Repères */}
                 <button
                     onClick={() => setShowEvents((v) => !v)}
@@ -272,6 +282,7 @@ export default function App() {
                         focusReq={focusReq}
                         lineageLinks={lineage.links}
                         lineageIds={lineage.ids}
+                        allLinks={showLinks ? ALL_LINKS : null}
                     />
 
                     {/* Badge : nombre de polités vivantes à l'année survolée */}
