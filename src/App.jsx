@@ -19,7 +19,7 @@ export default function App() {
     const [mode, setMode] = useState("mosaic");
     const [mapOpen, setMapOpen] = useState(() => (typeof window === "undefined" ? true : window.innerWidth >= 768));
     const [showEvents, setShowEvents] = useState(true);
-    const [showLinks, setShowLinks] = useState(true);
+    const [showLinks, setShowLinks] = useState(false);
     const [aboutOpen, setAboutOpen] = useState(false);
     const [widthBy, setWidthBy] = useState("area");
     const [widthExp, setWidthExp] = useState(0.63);
