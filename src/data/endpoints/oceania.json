@@ -1,0 +1,21 @@
+[
+  { "id": "aboriginal-australians", "areaStart": null, "areaEnd": null, "popStart": 10000, "popEnd": 750000 },
+  { "id": "torres-strait-islanders", "areaStart": null, "areaEnd": null, "popStart": 2000, "popEnd": 8000 },
+  { "id": "lapita-culture", "areaStart": null, "areaEnd": null, "popStart": 5000, "popEnd": 30000 },
+  { "id": "polynesian-expansion", "areaStart": null, "areaEnd": null, "popStart": 20000, "popEnd": 500000 },
+  { "id": "tui-tonga-empire", "areaStart": 800, "areaEnd": 500, "popStart": 10000, "popEnd": 18000 },
+  { "id": "rapa-nui", "areaStart": null, "areaEnd": null, "popStart": 2000, "popEnd": 500 },
+  { "id": "kingdom-of-tahiti", "areaStart": 500, "areaEnd": 1600, "popStart": 30000, "popEnd": 12000 },
+  { "id": "hawaiian-kingdom", "areaStart": 8000, "areaEnd": 16700, "popStart": 250000, "popEnd": 40000 },
+  { "id": "maori-culture", "areaStart": null, "areaEnd": null, "popStart": 5000, "popEnd": 100000 },
+  { "id": "maori-kingitanga", "areaStart": 20000, "areaEnd": 10000, "popStart": 40000, "popEnd": 25000 },
+  { "id": "colonial-new-south-wales", "areaStart": 10000, "areaEnd": 800000, "popStart": 1000, "popEnd": 1350000 },
+  { "id": "colonial-new-zealand", "areaStart": 150000, "areaEnd": 268000, "popStart": 90000, "popEnd": 900000 },
+  { "id": "colony-of-fiji", "areaStart": 18270, "areaEnd": 18270, "popStart": 120000, "popEnd": 520000 },
+  { "id": "commonwealth-of-australia", "areaStart": 7692000, "areaEnd": 7692000, "popStart": 3800000, "popEnd": 26000000 },
+  { "id": "new-zealand", "areaStart": 268000, "areaEnd": 268000, "popStart": 1000000, "popEnd": 5200000 },
+  { "id": "independent-samoa", "areaStart": 2842, "areaEnd": 2842, "popStart": 110000, "popEnd": 220000 },
+  { "id": "kingdom-of-tonga-modern", "areaStart": 747, "areaEnd": 747, "popStart": 85000, "popEnd": 105000 },
+  { "id": "republic-of-fiji", "areaStart": 18274, "areaEnd": 18274, "popStart": 520000, "popEnd": 930000 },
+  { "id": "papua-new-guinea", "areaStart": 462840, "areaEnd": 462840, "popStart": 2900000, "popEnd": 10300000 }
+]

@@ -89,12 +89,22 @@ export function computeMosaic(polities, widthBy = "even", preds = new Map(), wid
     // Largeur du bloc : voir widthMultiplier. Exposant `widthExp` réglable par curseur.
     // Cohérent pour toutes les régions (même vMax global, même formule).
     const pv = (p) => (widthBy === "pop" ? p.pop || 0 : p.area || 0);
+    const vStart = (p) => (widthBy === "pop" ? p.popStart : p.areaStart);
+    const vEnd = (p) => (widthBy === "pop" ? p.popEnd : p.areaEnd);
     let vMax = 1;
     for (const p of polities) {
         const v = pv(p);
         if (v > vMax) vMax = v;
     }
-    const blockSize = (p) => (widthBy === "even" ? 1 : widthMultiplier(pv(p), vMax, widthExp));
+    // Profil de largeur début → pic → fin (multiples de SLOT_W), dégradation gracieuse.
+    const wm = (v) => SLOT_W * widthMultiplier(v, vMax, widthExp);
+    const profileW = (p) => {
+        if (widthBy === "even") return { s: SLOT_W, k: SLOT_W, e: SLOT_W, max: SLOT_W };
+        const s = wm(vStart(p) ?? pv(p));
+        const k = wm(pv(p));
+        const e = wm(vEnd(p) ?? pv(p));
+        return { s, k, e, max: Math.max(s, k, e) };
+    };
 
     const blocks = [];
     const labelAnchors = [];
@@ -126,9 +136,11 @@ export function computeMosaic(polities, widthBy = "even", preds = new Map(), wid
             const laneCount = packLanes(list, preds);
             const civX0 = cursor;
             const color = civColor(civ);
-            // largeur réservée d'une voie = son plus gros bloc (pour ne pas chevaucher)
+            // profils + largeur réservée d'une voie = son plus gros bloc (pas de chevauchement)
+            const prof = new Map();
+            for (const p of list) prof.set(p.id, profileW(p));
             const laneW = new Array(laneCount).fill(SLOT_W * (widthBy === "even" ? 1 : 0.32));
-            for (const p of list) laneW[p._lane] = Math.max(laneW[p._lane], SLOT_W * blockSize(p));
+            for (const p of list) laneW[p._lane] = Math.max(laneW[p._lane], prof.get(p.id).max);
             const laneOff = [];
             let acc = 0;
             for (let L = 0; L < laneCount; L++) {
@@ -137,14 +149,22 @@ export function computeMosaic(polities, widthBy = "even", preds = new Map(), wid
             }
             const civW = acc;
             for (const p of list) {
-                const w = SLOT_W * blockSize(p);
+                const pr = prof.get(p.id);
                 const laneX = civX0 + laneOff[p._lane];
-                const y0 = yearToY(p.start);
-                const h = Math.max(MIN_H, yearToY(p.end) - y0);
-                const b = { p, region: region.key, color, x: laneX, w, y0, h };
+                const yTop = yearToY(p.start);
+                const yBot = Math.max(yTop + MIN_H, yearToY(p.end));
+                // bloc aligné à GAUCHE ; bord droit = profil début→pic→fin (renflement type fleuve)
+                const pkYear =
+                    typeof p.peak === "number" && p.peak > p.start && p.peak < p.end
+                        ? p.peak
+                        : (p.start + p.end) / 2;
+                const yPk = Math.min(yBot, Math.max(yTop, yearToY(pkYear)));
+                const rx = (w) => (laneX + w).toFixed(1);
+                const d = `M${laneX},${yTop} L${laneX},${yBot} L${rx(pr.e)},${yBot} L${rx(pr.k)},${yPk.toFixed(1)} L${rx(pr.s)},${yTop} Z`;
+                const b = { p, region: region.key, color, x: laneX, w: pr.max, y0: yTop, h: yBot - yTop, d };
                 blocks.push(b);
                 labelAnchors.push(b);
-                centers.set(p.id, laneX + laneW[p._lane] / 2);
+                centers.set(p.id, laneX + pr.max / 2);
             }
             const cStart = Math.min(...list.map((p) => p.start));
             const cEnd = Math.max(...list.map((p) => p.end));

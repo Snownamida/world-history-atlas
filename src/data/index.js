@@ -7,6 +7,7 @@ import succession from "./succession.json";
 
 const regionModules = import.meta.glob("./regions/*.json", { eager: true });
 const enrichModules = import.meta.glob("./enrich/*.json", { eager: true });
+const endpointModules = import.meta.glob("./endpoints/*.json", { eager: true });
 
 const REGION_KEYS = new Set(REGIONS.map((r) => r.key));
 
@@ -17,6 +18,16 @@ for (const mod of Object.values(enrichModules)) {
     if (!Array.isArray(arr)) continue;
     for (const e of arr) {
         if (e && e.id) ENRICH.set(e.id, { area: e.area ?? null, pop: e.pop ?? null });
+    }
+}
+
+// id -> { areaStart, areaEnd, popStart, popEnd } (valeurs aux années de début/fin).
+const ENDPOINTS = new Map();
+for (const mod of Object.values(endpointModules)) {
+    const arr = mod.default || mod;
+    if (!Array.isArray(arr)) continue;
+    for (const e of arr) {
+        if (e && e.id) ENDPOINTS.set(e.id, e);
     }
 }
 
@@ -31,6 +42,13 @@ function normalize(raw) {
         const en = ENRICH.get(p.id);
         p.area = en && typeof en.area === "number" ? en.area : null;
         p.pop = en && typeof en.pop === "number" ? en.pop : null;
+        const ep = ENDPOINTS.get(p.id);
+        const num = (v) => (typeof v === "number" ? v : null);
+        // Valeurs début/fin ; défaut = pic (dégradation gracieuse si données absentes).
+        p.areaStart = ep ? num(ep.areaStart) ?? p.area : p.area;
+        p.areaEnd = ep ? num(ep.areaEnd) ?? p.area : p.area;
+        p.popStart = ep ? num(ep.popStart) ?? p.pop : p.pop;
+        p.popEnd = ep ? num(ep.popEnd) ?? p.pop : p.pop;
         seen.add(p.id);
         out.push(p);
     }

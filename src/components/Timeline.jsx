@@ -204,13 +204,9 @@ export default function Timeline({
                             const sel = selectedId === b.p.id;
                             const lin = !sel && lineageIds && lineageIds.has(b.p.id);
                             return (
-                                <rect
+                                <path
                                     key={i}
-                                    x={b.x}
-                                    y={b.y0}
-                                    width={b.w}
-                                    height={b.h}
-                                    rx={1.5}
+                                    d={b.d}
                                     fill={b.color}
                                     fillOpacity={dim ? 0.14 : alive || lin ? 1 : 0.9}
                                     stroke={sel ? "#111" : lin ? "#8a3b12" : alive ? "#fff" : "#ffffff55"}
